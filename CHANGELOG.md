@@ -1,3 +1,6 @@
+### 5.5.8
+* fix _setNumber-method causing module compatability issues
+
 ### 5.5.7
 * Changes in payment method description
 * Fixed on site messaging in admin description
