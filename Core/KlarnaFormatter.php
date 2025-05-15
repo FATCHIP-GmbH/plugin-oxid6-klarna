@@ -231,7 +231,7 @@ class KlarnaFormatter extends Base
             $table = self::$aFemaleSalutations;
         }
 
-        if (in_array(strtolower($sCountryISO), $table[$title])) {
+        if (isset($table[$title]) && in_array(strtolower($sCountryISO), $table[$title])) {
             return $title;
         }
 
