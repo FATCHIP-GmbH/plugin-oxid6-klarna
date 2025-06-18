@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="[{$oViewConf->getResourceUrl()}]main.css">
-<link rel="stylesheet" href="[{$oViewConf->getModuleUrl('tcklarna', 'out/admin/src/css/tcklarna_admin2.css') }]">
+<link rel="stylesheet" href="[{$oViewConf->getModuleUrl('tcklarna', 'out/admin/src/css/tcklarna_admin2.css')}]">
 <script type="text/javascript" src="[{$oViewConf->getModuleUrl('tcklarna', 'out/src/js/libs/jquery-1.12.4.min.js')}]"></script>
 
 <div class="[{$box|default:'box'}] full-width" style="[{if !$box && !$bottom_buttons}]height: 100%;[{/if}]">
@@ -12,7 +12,7 @@
                 <p>[{"TCKLARNA_WELCOME_TO_CONFIGURATION"|oxmultilangassign:$klarnaOxidLink}]</p>
                 <div class="top-button-group">
                     <div class="w50per">
-                        <a href="https://eu.portal.klarna.com/signup/oxid" target="_blank">
+                        <a href="https://portal.klarna.com/products/signup/basic-info?utm_source=klarnacom&utm_campaign=/de/verkaeufer/&utm_medium=referral&utm_content=klarnacom-link&_gl=1*17c7ixe*_gcl_aw*R0NMLjE3MzE5Mjk4NjAuQ2owS0NRaUE2T3U1QmhDckFSSXNBUG9UeHJBQmZ3bVUtRmZwQWxtRmFxeTVFTnFBYzRld25POXF3QXlfZ2VSNGVPNjduRXFrTFlKX054SWFBb2hJRUFMd193Y0I.*_gcl_au*NzgzNjMxMDQ0LjE3MzE2Nzc1NDQ." target="_blank">
                             <button class="btn-save">[{oxmultilang ident="TCKLARNA_REGISTER_NOW_BUTTON"}]</button>
                         </a>
                     </div>
