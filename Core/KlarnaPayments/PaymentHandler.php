@@ -69,6 +69,11 @@ class PaymentHandler implements PaymentHandlerInterface
 
     protected function updateOrder(Order $oOrder, $response)
     {
+        // save klarna payment method to order
+        if ($paymentMethod = $response["authorized_payment_method"]["type"]) {
+            $oOrder->oxorder__tcklarna_klarnapaymentmethod = new Field($paymentMethod, Field::T_RAW);
+        }
+
         $oOrder->oxorder__tcklarna_orderid = new Field($response['order_id'], Field::T_RAW);
         $oOrder->saveMerchantIdAndServerMode();
         $oOrder->save();
