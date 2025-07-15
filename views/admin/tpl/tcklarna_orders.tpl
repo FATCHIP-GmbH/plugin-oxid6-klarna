@@ -185,7 +185,7 @@
                 [{assign var=tcklarna_paymentmethod value=$oOrder->oxorder__tcklarna_klarnapaymentmethod->value}]
                 <strong>Klarna order ID:</strong> <i>[{$tcklarna_orderid}]</i>
                 <strong>Klarna reference:</strong> <i>[{$sKlarnaRef}]</i>
-                <strong>Klarna payment method:</strong> <i>[{oxmultilang ident="TCKLARNA_AUTHPAYMENTMETHOD_"|cat:$order->oxorder__tcklarna_klarnapaymentmethod->value}]</i>
+                <strong>Klarna payment method:</strong> <i>[{oxmultilang ident="TCKLARNA_AUTHPAYMENTMETHOD_"|cat:$oOrder->oxorder__tcklarna_klarnapaymentmethod->value}]</i>
             [{else}]
                 <strong>Klarna order ID:</strong> <i>[{$tcklarna_orderid}]</i>
                 <strong>Klarna reference:</strong> <i>[{$sKlarnaRef}]</i>
