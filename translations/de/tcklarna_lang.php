@@ -80,6 +80,17 @@ $aLang = array(
     'TCKLARNA_PAY_NOW_SUBTITLE'      => 'Einfach und direkt bezahlen',
     'TCKLARNA_ORDER_AMOUNT_TOO_HIGH' => 'Der Bestellwert ist zu hoch.',
 
+    'TCKLARNA_AUTHPAYMENTMETHOD'                       => 'Verwendete Zahlart: ',
+    'TCKLARNA_AUTHPAYMENTMETHOD_unknown'               => 'Klarna',
+    'TCKLARNA_AUTHPAYMENTMETHOD_pay_by_card'           => 'Kreditkarte',
+    'TCKLARNA_AUTHPAYMENTMETHOD_direct_debit'          => 'Lastschrift',
+    'TCKLARNA_AUTHPAYMENTMETHOD_direct_bank_transfer'  => 'Sofortüberweisung',
+    'TCKLARNA_AUTHPAYMENTMETHOD_slice_it_by_card'      => '3 zinsfreie Raten',
+    'TCKLARNA_AUTHPAYMENTMETHOD_fixed_sum_credit'      => 'Finanzierung',
+    'TCKLARNA_AUTHPAYMENTMETHOD_b2b_invoice'           => 'B2B Rechnung (Billie)',
+    'TCKLARNA_AUTHPAYMENTMETHOD_invoice'               => 'Rechnung',
+    'TCKLARNA_AUTHPAYMENTMETHOD_pay_later_by_card'     => 'Kartenzahlung in 30 Tagen',
+
     'TCKLARNA_ANONYMIZED_PRODUCT'                  => 'Anonymisierter Produkttitel:',
 
     'TCKLARNA_IS_ERROR_DEFAULT' => 'Something went wrong. Reload the page and try again.',

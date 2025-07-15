@@ -180,7 +180,17 @@
             [{if $sKlarnaRef eq ''}]
                 [{assign var=sKlarnaRef value=" - "}]
             [{/if}]
-            <strong>Klarna order ID:</strong> <i>[{$tcklarna_orderid}]</i> <strong>Klarna reference:</strong> <i>[{$sKlarnaRef}]</i>
+
+            [{if $oOrder->oxorder__tcklarna_klarnapaymentmethod->value}]
+                [{assign var=tcklarna_paymentmethod value=$oOrder->oxorder__tcklarna_klarnapaymentmethod->value}]
+                <strong>Klarna order ID:</strong> <i>[{$tcklarna_orderid}]</i>
+                <strong>Klarna reference:</strong> <i>[{$sKlarnaRef}]</i>
+                <strong>Klarna payment method:</strong> <i>[{oxmultilang ident="TCKLARNA_AUTHPAYMENTMETHOD_"|cat:$oOrder->oxorder__tcklarna_klarnapaymentmethod->value}]</i>
+            [{else}]
+                <strong>Klarna order ID:</strong> <i>[{$tcklarna_orderid}]</i>
+                <strong>Klarna reference:</strong> <i>[{$sKlarnaRef}]</i>
+                <strong>Klarna payment method:</strong> <i>[{oxmultilang ident="TCKLARNA_AUTHPAYMENTMETHOD_unknown"}]</i>
+            [{/if}]
         </span>
         <div style='clear:both'></div>
     </div>
