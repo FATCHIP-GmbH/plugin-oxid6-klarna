@@ -82,14 +82,14 @@ $aLang = array(
 
     'TCKLARNA_AUTHPAYMENTMETHOD'                       => 'Verwendete Zahlart: ',
     'TCKLARNA_AUTHPAYMENTMETHOD_unknown'               => 'Klarna',
-    'TCKLARNA_AUTHPAYMENTMETHOD_pay_by_card'           => 'Kreditkarte',
-    'TCKLARNA_AUTHPAYMENTMETHOD_direct_debit'          => 'Lastschrift',
-    'TCKLARNA_AUTHPAYMENTMETHOD_direct_bank_transfer'  => 'Sofortüberweisung',
-    'TCKLARNA_AUTHPAYMENTMETHOD_slice_it_by_card'      => '3 zinsfreie Raten',
-    'TCKLARNA_AUTHPAYMENTMETHOD_fixed_sum_credit'      => 'Finanzierung',
-    'TCKLARNA_AUTHPAYMENTMETHOD_b2b_invoice'           => 'B2B Rechnung (Billie)',
-    'TCKLARNA_AUTHPAYMENTMETHOD_invoice'               => 'Rechnung',
-    'TCKLARNA_AUTHPAYMENTMETHOD_pay_later_by_card'     => 'Kartenzahlung in 30 Tagen',
+    'TCKLARNA_AUTHPAYMENTMETHOD_pay_by_card'           => 'Klarna Kreditkarte',
+    'TCKLARNA_AUTHPAYMENTMETHOD_direct_debit'          => 'Klarna Lastschrift',
+    'TCKLARNA_AUTHPAYMENTMETHOD_direct_bank_transfer'  => 'Klarna Sofortüberweisung',
+    'TCKLARNA_AUTHPAYMENTMETHOD_slice_it_by_card'      => 'Klarna 3 zinsfreie Raten',
+    'TCKLARNA_AUTHPAYMENTMETHOD_fixed_sum_credit'      => 'Klarna Finanzierung',
+    'TCKLARNA_AUTHPAYMENTMETHOD_b2b_invoice'           => 'Klarna B2B Rechnung (Billie)',
+    'TCKLARNA_AUTHPAYMENTMETHOD_invoice'               => 'KlarnaRechnung',
+    'TCKLARNA_AUTHPAYMENTMETHOD_pay_later_by_card'     => 'Klarna Kartenzahlung in 30 Tagen',
 
     'TCKLARNA_ANONYMIZED_PRODUCT'                  => 'Anonymisierter Produkttitel:',
 

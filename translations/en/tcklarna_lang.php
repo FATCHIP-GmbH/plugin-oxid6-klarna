@@ -85,14 +85,14 @@ $aLang = array(
 
     'TCKLARNA_AUTHPAYMENTMETHOD'                       => 'Used payment type: ',
     'TCKLARNA_AUTHPAYMENTMETHOD_unknown'               => 'Klarna',
-    'TCKLARNA_AUTHPAYMENTMETHOD_pay_by_card'           => 'Credit Card',
-    'TCKLARNA_AUTHPAYMENTMETHOD_direct_debit'          => 'Direct Debit',
-    'TCKLARNA_AUTHPAYMENTMETHOD_direct_bank_transfer'  => 'Direct Bank Transfer',
-    'TCKLARNA_AUTHPAYMENTMETHOD_slice_it_by_card'      => 'Pay in 3',
-    'TCKLARNA_AUTHPAYMENTMETHOD_fixed_sum_credit'      => 'Financing',
-    'TCKLARNA_AUTHPAYMENTMETHOD_b2b_invoice'           => 'B2B invoice (Billie)',
-    'TCKLARNA_AUTHPAYMENTMETHOD_invoice'               => 'Invoice',
-    'TCKLARNA_AUTHPAYMENTMETHOD_pay_later_by_card'     => 'Pay later by Card',
+    'TCKLARNA_AUTHPAYMENTMETHOD_pay_by_card'           => 'Klarna Credit Card',
+    'TCKLARNA_AUTHPAYMENTMETHOD_direct_debit'          => 'Klarna Direct Debit',
+    'TCKLARNA_AUTHPAYMENTMETHOD_direct_bank_transfer'  => 'Klarna Direct Bank Transfer',
+    'TCKLARNA_AUTHPAYMENTMETHOD_slice_it_by_card'      => 'Klarna Pay in 3',
+    'TCKLARNA_AUTHPAYMENTMETHOD_fixed_sum_credit'      => 'Klarna Financing',
+    'TCKLARNA_AUTHPAYMENTMETHOD_b2b_invoice'           => 'Klarna B2B invoice (Billie)',
+    'TCKLARNA_AUTHPAYMENTMETHOD_invoice'               => 'Klarna Invoice',
+    'TCKLARNA_AUTHPAYMENTMETHOD_pay_later_by_card'     => 'Klarna Pay later by Card',
 
     'TCKLARNA_ANONYMIZED_PRODUCT'                  => 'Anonymized product title:',
 
