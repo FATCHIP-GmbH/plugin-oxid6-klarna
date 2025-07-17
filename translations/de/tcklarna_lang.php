@@ -88,7 +88,7 @@ $aLang = array(
     'TCKLARNA_AUTHPAYMENTMETHOD_slice_it_by_card'      => 'Klarna 3 zinsfreie Raten',
     'TCKLARNA_AUTHPAYMENTMETHOD_fixed_sum_credit'      => 'Klarna Finanzierung',
     'TCKLARNA_AUTHPAYMENTMETHOD_b2b_invoice'           => 'Klarna B2B Rechnung (Billie)',
-    'TCKLARNA_AUTHPAYMENTMETHOD_invoice'               => 'KlarnaRechnung',
+    'TCKLARNA_AUTHPAYMENTMETHOD_invoice'               => 'Klarna Rechnung',
     'TCKLARNA_AUTHPAYMENTMETHOD_pay_later_by_card'     => 'Klarna Kartenzahlung in 30 Tagen',
 
     'TCKLARNA_ANONYMIZED_PRODUCT'                  => 'Anonymisierter Produkttitel:',
