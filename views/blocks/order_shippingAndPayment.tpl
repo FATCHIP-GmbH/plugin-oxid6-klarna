@@ -15,11 +15,16 @@
             var offset = 5;
             var height = parseInt(parentStyle.height) - offset * 2;
             var margin = parseInt(parentStyle.paddingTop) - offset;
-            $('<img>')
-                .attr('src', "[{$payment->getBadgeUrl()}]")
-                .attr('height', height + 'px')
-                .css({'margin': '-' + margin + 'px 10px'})
-                .appendTo($parent)
+
+            // Clear existing content and append "Klarna" + badge image
+            $parent.empty().append(
+                $('<span>')
+                    .text('Klarna '),
+                $('<img>')
+                    .attr('src', "[{$payment->getBadgeUrl()}]")
+                    .attr('height', height + 'px')
+                    .css({ 'margin': margin + 'px 10px', 'vertical-align': 'middle' })
+            );
         }
     [{/capture}]
     [{oxscript add=$insertLogoJS priority=10}]
