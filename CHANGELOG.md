@@ -1,3 +1,6 @@
+### 5.5.9
+* add selected klarna payment type to order
+
 ### 5.5.8
 * fix _setNumber-method causing module compatability issues
 
