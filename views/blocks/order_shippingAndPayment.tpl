@@ -21,7 +21,7 @@
                 $('<span>')
                     .text('Klarna '),
                 $('<img>')
-                    .attr('src', "{{ payment.getBadgeUrl() }}")
+                    .attr('src', "[{$payment->getBadgeUrl()}]")
                     .attr('height', height + 'px')
                     .css({ 'margin': margin + 'px 10px', 'vertical-align': 'middle' })
             );
