@@ -2,6 +2,7 @@
 
 use OxidEsales\Eshop\Application\Component\Widget\ArticleDetails;
 use OxidEsales\Eshop\Application\Controller\Admin\PaymentMain;
+use OxidEsales\EshopCommunity\modules\tc\tcklarna\Controller\KlarnaDeviceEligibilityController;
 use TopConcepts\Klarna\Component\KlarnaBasketComponent;
 use TopConcepts\Klarna\Component\KlarnaUserComponent;
 use TopConcepts\Klarna\Component\Widgets\KlarnaArticleDetails;
@@ -106,6 +107,7 @@ $aModule = array(
         'KlarnaAcknowledge'             => KlarnaAcknowledgeController::class,
         'KlarnaValidate'                => KlarnaValidationController::class,
         'KlarnaAuthCallbackEndpoint'    => KlarnaAuthCallbackEndpoint::class,
+        'KlarnaDeviceEligibility'       => KlarnaDeviceEligibilityController::class,
     ),
     'extend'      => array(
         // models

@@ -317,4 +317,11 @@ class KlarnaViewConfig extends KlarnaViewConfig_parent
     {
         return (bool)KlarnaUtils::getShopConfVar('blKlarnaEnablePreFilling');
     }
+
+    public function getKcoApplePayDeviceEligibility()
+    {
+        $oSession = Registry::getSession();
+
+        return $oSession->getVariable("kcoApplePayDeviceEligible");
+    }
 }
