@@ -19,6 +19,8 @@ final class Version20230323131941 extends AbstractMigration
 {
     public function up(Schema $schema) : void
     {
+        require_once __DIR__ . '/../../../../../bootstrap.php';
+
         $this->connection->getDatabasePlatform()->registerDoctrineTypeMapping('enum', 'string');
 
         //deactivate old payments. Removing them would cause issues when displaying old orders.

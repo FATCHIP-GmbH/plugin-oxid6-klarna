@@ -18,6 +18,8 @@ final class Version20230614132959 extends AbstractMigration
 {
     public function up(Schema $schema) : void
     {
+        require_once __DIR__ . '/../../../../../bootstrap.php';
+
         $this->connection->getDatabasePlatform()->registerDoctrineTypeMapping('enum', 'string');
 
         $this->extendDbTables($schema);
