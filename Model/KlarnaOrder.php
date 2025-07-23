@@ -17,6 +17,7 @@
 
 namespace TopConcepts\Klarna\Model;
 
+use OxidSolutionCatalysts\PayPal\Core\PayPalDefinitions;
 use TopConcepts\Klarna\Core\KlarnaOrderManagementClient;
 use TopConcepts\Klarna\Core\KlarnaUtils;
 use TopConcepts\Klarna\Core\Exception\KlarnaClientException;
@@ -289,10 +290,22 @@ class KlarnaOrder extends KlarnaOrder_parent
     
     protected function _sendOrderByEmail($oUser = null, $oBasket = null, $oPayment = null) {
 
-        if (is_object($oPayment) && in_array($oPayment->oxpayments__oxid->value, KlarnaPayment::getKlarnaPaymentsIds())) {
+        $isKlarnaPayment            = in_array($oPayment->oxpayments__oxid->value, KlarnaPayment::getKlarnaPaymentsIds());
+
+        $isPayPalCheckoutPayment    = class_exists(PayPalDefinitions::class) &&
+            defined(PayPalDefinitions::class . '::STANDARD_PAYPAL_PAYMENT_ID') &&
+            $oPayment->oxpayments__oxid->value == PayPalDefinitions::STANDARD_PAYPAL_PAYMENT_ID;
+
+        if (is_object($oPayment) && $isKlarnaPayment) {
             $oPayment->assign(
                 [
                     'oxdesc' => str_replace('Klarna ', '', $oPayment->getFieldData('oxdesc'))
+                ]
+            );
+        }else if (is_object($oPayment) && $isPayPalCheckoutPayment) {
+            $oPayment->assign(
+                [
+                    'oxdesc' => "PayPal"
                 ]
             );
         }
