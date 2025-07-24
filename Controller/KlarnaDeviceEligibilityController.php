@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-namespace OxidEsales\EshopCommunity\modules\tc\tcklarna\Controller;
+namespace TopConcepts\Klarna\Controller;
 
 use TopConcepts\Klarna\Model\KlarnaUser;
 use OxidEsales\Eshop\Application\Controller\FrontendController;
