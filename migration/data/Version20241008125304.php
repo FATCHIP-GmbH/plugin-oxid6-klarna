@@ -21,6 +21,8 @@ final class Version20241008125304 extends AbstractMigration
 
     public function up(Schema $schema) : void
     {
+        require_once __DIR__ . '/../../../../../bootstrap.php';
+
         $this->removeOneKlarna();
     }
     

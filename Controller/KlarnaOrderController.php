@@ -135,6 +135,16 @@ class KlarnaOrderController extends KlarnaOrderController_parent
 
         }
 
+        $paymentId = Registry::getRequest()->getRequestParameter("payment_id");
+        $isExternalPayment = $paymentId && !in_array($paymentId, KlarnaPaymentHelper::getKlarnaPaymentsIds());
+
+        if ($isExternalPayment) {
+            $klarnaFakeUsername = Registry::getSession()->getVariable('klarna_checkout_user_email');
+            $fakeUser = KlarnaUtils::getFakeUser($klarnaFakeUsername);
+            $fakeUser->setActiveUser();
+            Registry::getSession()->setVariable("usr", $fakeUser->getId());
+        }
+
         if ($keborderpayload = $oSession->getVariable("keborderpayload")) {
             $this->addTplParam("keborderpayload", $keborderpayload);
         }

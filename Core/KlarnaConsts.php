@@ -137,7 +137,7 @@ class KlarnaConsts
     public static function getKlarnaExternalPaymentNames()
     {
         return array(
-            'Nachnahme', 'Vorkasse', 'Amazon Payments', 'PayPal',
+            'Nachnahme', 'Vorkasse', 'Amazon Payments', 'PayPal', 'Google Pay', 'Apple Pay'
         );
     }
 

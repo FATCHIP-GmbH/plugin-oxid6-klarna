@@ -19,6 +19,7 @@ namespace TopConcepts\Klarna\Model;
 
 
 use OxidEsales\Eshop\Application\Model\Discount;
+use OxidEsales\Eshop\Application\Model\User;
 use OxidEsales\Eshop\Core\Config;
 use TopConcepts\Klarna\Core\KlarnaUtils;
 use TopConcepts\Klarna\Core\Exception\KlarnaBasketTooLargeException;
@@ -158,6 +159,26 @@ class KlarnaBasket extends KlarnaBasket_parent
         $this->_orderHash = md5(json_encode($aOrderLines));
 
         return $aOrderLines;
+    }
+
+    /**
+     * Active user getter
+     *
+     * @return User
+     */
+    public function getUser()
+    {
+        $klarnaFakeUsername = Registry::getSession()->getVariable('klarna_checkout_user_email');
+
+        if (!$klarnaFakeUsername) {
+            return parent::getUser();
+        }
+
+        if ($user = parent::getUser()) {
+            return $user;
+        }
+
+        return KlarnaUtils::getFakeUser($klarnaFakeUsername);
     }
 
     protected function getOrderLang($orderMgmtId)

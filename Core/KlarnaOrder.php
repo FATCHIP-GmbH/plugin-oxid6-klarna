@@ -483,28 +483,32 @@ class KlarnaOrder extends BaseModel
                              && $oConfig->mustAddShopIdToRequest()
                                 ? '&shp=' . $oConfig->getShopId()
                                 : '';
+
+            $externalName = $oPayment->oxpayments__tcklarna_externalname->value;
             if ($oPayment->oxpayments__tcklarna_externalpayment->value) {
 
                 if ($paymentId === 'oxidpaypal') {
                     $requestParams .= '&displayCartInPayPal=1';
                 }
 
-
-                $externalPaymentMethods[] = array(
-                    'name'         => $oPayment->oxpayments__tcklarna_externalname->value,
-                    'redirect_url' => $oConfig->getSslShopUrl() .
-                                      'index.php?cl=order&fnc=klarnaExternalPayment&payment_id=' . $paymentId . $requestParams,
-                    'image_url'    => $this->resolveImageUrl($oPayment),
-                    'fee'          => KlarnaUtils::parseFloatAsInt($oPrice->getBruttoPrice() * 100),
-                    'description'  => KlarnaUtils::stripHtmlTags($oPayment->oxpayments__oxlongdesc->getRawValue()),
-                    'countries'    => $aCountryISO,
-                );
+                // don't add Apple Pay as external payment if user's device is not eligible
+                if ($externalName !== "Apple Pay" || $this->userIsApplePayEligible()) {
+                    $externalPaymentMethods[] = array(
+                        'name'         => $externalName,
+                        'redirect_url' => $oConfig->getSslShopUrl() .
+                            'index.php?cl=order&fnc=klarnaExternalPayment&payment_id=' . $paymentId . $requestParams,
+                        'image_url'    => $this->resolveImageUrl($oPayment),
+                        'fee'          => KlarnaUtils::parseFloatAsInt($oPrice->getBruttoPrice() * 100),
+                        'description'  => KlarnaUtils::stripHtmlTags($oPayment->oxpayments__oxlongdesc->getRawValue()),
+                        'countries'    => $aCountryISO,
+                    );
+                }
             }
 
             if ($oPayment->oxpayments__tcklarna_externalcheckout->value) {
                 $requestParams             .= '&externalCheckout=1';
                 $externalCheckoutMethods[] = array(
-                    'name'         => $oPayment->oxpayments__tcklarna_externalname->value,
+                    'name'         => $externalName,
                     'redirect_url' => $oConfig->getSslShopUrl() .
                                       'index.php?cl=order&fnc=klarnaExternalPayment&payment_id=' . $paymentId . $requestParams,
                     'image_url'    => $this->resolveImageUrl($oPayment, true),
@@ -516,6 +520,11 @@ class KlarnaOrder extends BaseModel
         }
 
         return array('payments' => $externalPaymentMethods, 'checkouts' => $externalCheckoutMethods);
+    }
+
+    protected function userIsApplePayEligible()
+    {
+        return Registry::getSession()->getVariable("kcoApplePayDeviceEligible");
     }
 
     /**
