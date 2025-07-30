@@ -19,8 +19,8 @@ namespace TopConcepts\Klarna\Component;
 
 
 use OxidEsales\Eshop\Core\Field;
-use OxidEsales\EshopCommunity\Application\Model\Basket;
-use OxidEsales\EshopCommunity\Application\Model\BasketItem;
+use OxidEsales\Eshop\Application\Model\Basket;
+use OxidEsales\Eshop\Application\Model\BasketItem;
 use TopConcepts\Klarna\Core\KlarnaClientBase;
 use TopConcepts\Klarna\Core\KlarnaOrder;
 use TopConcepts\Klarna\Core\KlarnaOrderManagementClient;

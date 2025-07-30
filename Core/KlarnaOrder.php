@@ -34,7 +34,7 @@ use OxidEsales\Eshop\Application\Model\Payment;
 use OxidEsales\Eshop\Application\Model\User;
 use OxidEsales\Eshop\Core\Model\BaseModel;
 use OxidEsales\Eshop\Core\Registry;
-use OxidEsales\EshopCommunity\Application\Model\PaymentList;
+use OxidEsales\Eshop\Application\Model\PaymentList;
 
 class KlarnaOrder extends BaseModel
 {
