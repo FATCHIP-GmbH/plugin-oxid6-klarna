@@ -7,8 +7,6 @@
     <div class="clear clearfix"></div>
 [{/if}]
 
-[{$oViewConf->logoutUserIfNeeded()}]
-
 [{if $oViewConf->getKcoApplePayDeviceEligibility() === null}]
     <script>
         function getParameterByName(name, url) {

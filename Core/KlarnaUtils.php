@@ -369,8 +369,8 @@ class KlarnaUtils
         $session->deleteVariable("kexFakeUserId");
 
         $session = Registry::getSession();
-        if ($session->getVariable("blNeedLogout")) {
-            if ($session->getUser()->logout()) {
+        if ($session->getVariable("blNeedLogout") && !$session->getVariable("klarnaLoggedInNaturally")) {
+            if ($session->getUser() && $session->getUser()->logout()) {
                 $session->deleteVariable("blNeedLogout");
             }
         }

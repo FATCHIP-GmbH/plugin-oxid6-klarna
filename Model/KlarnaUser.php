@@ -486,6 +486,7 @@ class KlarnaUser extends KlarnaUser_parent
         $result = parent::logout();
         if ($result && !$this->isAdmin()) {
             KlarnaUtils::fullyResetKlarnaSession();
+            Registry::getSession()->deleteVariable("klarnaLoggedInNaturally");
         }
 
         return $result;
@@ -508,6 +509,8 @@ class KlarnaUser extends KlarnaUser_parent
             );
             Registry::getSession()->deleteVariable('klarna_checkout_user_email');
             $this->_type = self::LOGGED_IN;
+
+            Registry::getSession()->setVariable("klarnaLoggedInNaturally", true);
         }
 
         return $result;
