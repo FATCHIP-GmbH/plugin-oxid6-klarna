@@ -25,6 +25,7 @@ use TopConcepts\Klarna\Core\KlarnaFormatter;
 use TopConcepts\Klarna\Core\KlarnaOrder;
 use TopConcepts\Klarna\Core\KlarnaUtils;
 use TopConcepts\Klarna\Core\Exception\KlarnaClientException;
+use TopConcepts\Klarna\Model\KlarnaPaymentHelper;
 use TopConcepts\Klarna\Model\KlarnaUser;
 use OxidEsales\Eshop\Application\Controller\BasketController;
 use OxidEsales\Eshop\Application\Controller\FrontendController;
@@ -159,6 +160,15 @@ class KlarnaAjaxController extends FrontendController
      */
     protected function updateUserObject()
     {
+        // if the user is registered, we need the whole object not just the fake user to ensure no data is lost
+        $paymentId = Registry::getRequest()->getRequestParameter("payment_id");
+        $isExternalPayment = $paymentId && !in_array($paymentId, KlarnaPaymentHelper::getKlarnaPaymentsIds());
+        if ($isExternalPayment && $this->_oUser->getType() === KlarnaUser::LOGGED_IN) {
+            $this->_oUser->load($this->_oUser->getId());
+            // ensure user is always logged out
+            Registry::getSession()->setVariable('blNeedLogout', true);
+        }
+        
         if ($this->_aOrderData['billing_address'] !== $this->_aOrderData['shipping_address']) {
             $this->_oUser->updateDeliveryAddress(KlarnaFormatter::klarnaToOxidAddress($this->_aOrderData, 'shipping_address'));
         } else {

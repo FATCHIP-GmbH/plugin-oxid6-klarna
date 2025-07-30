@@ -354,17 +354,26 @@ class KlarnaUtils
      */
     public static function fullyResetKlarnaSession()
     {
-        Registry::getSession()->deleteVariable('paymentid');
-        Registry::getSession()->deleteVariable('klarna_checkout_order_id');
-        Registry::getSession()->deleteVariable('amazonOrderReferenceId');
-        Registry::getSession()->deleteVariable('klarna_checkout_user_email');
-        Registry::getSession()->deleteVariable('externalCheckout');
-        Registry::getSession()->deleteVariable('sAuthToken');
-        Registry::getSession()->deleteVariable('klarna_session_data');
-        Registry::getSession()->deleteVariable('finalizeRequired');
-        Registry::getSession()->deleteVariable('sCountryISO');
-        Registry::getSession()->deleteVariable('sFakeUserId');
-        Registry::getSession()->deleteVariable("kexFakeUserId");
+        $session = Registry::getSession();
+
+        $session->deleteVariable('paymentid');
+        $session->deleteVariable('klarna_checkout_order_id');
+        $session->deleteVariable('amazonOrderReferenceId');
+        $session->deleteVariable('klarna_checkout_user_email');
+        $session->deleteVariable('externalCheckout');
+        $session->deleteVariable('sAuthToken');
+        $session->deleteVariable('klarna_session_data');
+        $session->deleteVariable('finalizeRequired');
+        $session->deleteVariable('sCountryISO');
+        $session->deleteVariable('sFakeUserId');
+        $session->deleteVariable("kexFakeUserId");
+
+        $session = Registry::getSession();
+        if ($session->getVariable("blNeedLogout")) {
+            if ($session->getUser()->logout()) {
+                $session->deleteVariable("blNeedLogout");
+            }
+        }
     }
 
     /**

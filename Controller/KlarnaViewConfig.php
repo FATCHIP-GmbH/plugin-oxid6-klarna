@@ -188,6 +188,16 @@ class KlarnaViewConfig extends KlarnaViewConfig_parent
         return KlarnaUtils::isKlarnaPaymentsEnabled();
     }
 
+    public function logoutUserIfNeeded()
+    {
+        $session = Registry::getSession();
+        if ($session->getVariable("blNeedLogout")) {
+            if ($session->getUser()->logout()) {
+                $session->deleteVariable("blNeedLogout");
+            }
+        }
+    }
+
     /**
      * @param bool $blShipping
      * @return mixed
