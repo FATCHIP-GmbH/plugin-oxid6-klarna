@@ -1,3 +1,8 @@
+### 5.6.0
+* add Apple Pay and Google Pay as external Payment options for Klarna Checkout and device eligibility check for Apple Pay
+* fix migrations being unable to access oxNew
+* fix osc_paypal and oepaypal compatibility issues
+
 ### 5.5.9
 * add selected klarna payment type to order
 
