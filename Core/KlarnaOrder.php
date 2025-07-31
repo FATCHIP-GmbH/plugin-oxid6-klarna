@@ -19,7 +19,7 @@ namespace TopConcepts\Klarna\Core;
 
 use OxidEsales\Eshop\Application\Model\DeliveryList;
 use OxidEsales\Eshop\Core\UtilsView;
-use OxidEsales\EshopCommunity\Core\Exception\SystemComponentException;
+use OxidEsales\Eshop\Core\Exception\SystemComponentException;
 use TopConcepts\Klarna\Controller\Admin\KlarnaShipping;
 use TopConcepts\Klarna\Core\Exception\KlarnaConfigException;
 use TopConcepts\Klarna\Model\EmdPayload\KlarnaPassThrough;

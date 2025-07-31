@@ -19,7 +19,7 @@ namespace TopConcepts\Klarna\Core;
 
 
 use OxidEsales\Eshop\Core\DatabaseProvider;
-use OxidEsales\EshopCommunity\Core\Database\Adapter\Doctrine\ResultSet;
+use OxidEsales\Eshop\Core\Database\Adapter\Doctrine\ResultSet;
 use TopConcepts\Klarna\Model\KlarnaUser;
 use OxidEsales\Eshop\Application\Model\Basket;
 use OxidEsales\Eshop\Application\Model\Payment;

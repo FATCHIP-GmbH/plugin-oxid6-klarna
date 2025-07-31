@@ -18,7 +18,7 @@
 namespace TopConcepts\Klarna\Model;
 
 
-use OxidEsales\EshopCommunity\Core\Exception\SystemComponentException;
+use OxidEsales\Eshop\Core\Exception\SystemComponentException;
 use TopConcepts\Klarna\Core\KlarnaConsts;
 use TopConcepts\Klarna\Core\KlarnaFormatter;
 use TopConcepts\Klarna\Core\KlarnaUtils;
