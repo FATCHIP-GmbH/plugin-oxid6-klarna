@@ -952,6 +952,11 @@ class KlarnaOrderController extends KlarnaOrderController_parent
      */
     public function klarnaExternalPayment()
     {
+        if (!Registry::getRequest()->getRequestParameter("kcoreloaded")) {
+            $queryString = $_SERVER['QUERY_STRING'];
+            Registry::getUtils()->redirect(Registry::getConfig()->getShopSecureHomeUrl() . $queryString . "&kcoreloaded=1", false);
+        }
+
         $oSession = Registry::getSession();
 
         $orderId   = $oSession->getVariable('klarna_checkout_order_id');
