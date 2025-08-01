@@ -487,6 +487,7 @@ class KlarnaUser extends KlarnaUser_parent
         if ($result && !$this->isAdmin()) {
             KlarnaUtils::fullyResetKlarnaSession();
             Registry::getSession()->deleteVariable("klarnaLoggedInNaturally");
+            Registry::getSession()->deleteVariable("blNeedLogout");
         }
 
         return $result;

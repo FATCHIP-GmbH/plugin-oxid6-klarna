@@ -918,7 +918,7 @@ class KlarnaOrderController extends KlarnaOrderController_parent
             $this->_oUser->oxuser__oxbirthdate = new Field($this->_aOrderData['customer']['date_of_birth']);
         }
 
-        if ($this->_oUser->isWritable()) {
+        if ($this->_oUser->isWritable() && !($isExternalPayment && $this->_oUser->getType() === KlarnaUser::LOGGED_IN)) {
             try {
                 if($this->_oUser->getType() == KlarnaUser::NOT_EXISTING
                     && count($this->_oUser->getUserGroups()) == 0){
