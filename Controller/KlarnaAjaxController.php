@@ -164,7 +164,10 @@ class KlarnaAjaxController extends FrontendController
         $paymentId = Registry::getRequest()->getRequestParameter("payment_id");
         $isExternalPayment = $paymentId && !in_array($paymentId, KlarnaPaymentHelper::getKlarnaPaymentsIds());
         if ($isExternalPayment && $this->_oUser->getType() === KlarnaUser::LOGGED_IN) {
-            $this->_oUser->load($this->_oUser->getId());
+            //reload the user by their email to get a clean object
+            $mail = $this->_oUser->oxuser__oxusername->value;
+            $this->_oUser = oxNew(User::class);
+            $this->_oUser->loadByEmail($mail);
             // ensure user is always logged out
             Registry::getSession()->setVariable('blNeedLogout', true);
         }
@@ -179,7 +182,7 @@ class KlarnaAjaxController extends FrontendController
         if (isset($this->_aOrderData['customer']['date_of_birth'])) {
             $this->_oUser->oxuser__oxbirthdate = new Field($this->_aOrderData['customer']['date_of_birth']);
         }
-        if ($this->_oUser->isWritable()) {
+        if ($this->_oUser->isWritable() && $this->_oUser->oxuser__oxusername->value) {
             $this->_oUser->save();
         }
     }

@@ -558,4 +558,28 @@ class KlarnaUser extends KlarnaUser_parent
         }
         return true;
     }
+
+    public function exists($sOXID = null)
+    {
+        // skip reloading user by username because it overwrites external payment users
+        if ($this->isFake()) {
+            if (!$sOXID) {
+                $sOXID = $this->getId();
+            }
+            if (!$sOXID) {
+                return false;
+            }
+
+            $viewName = $this->getCoreTableName();
+            $database = \OxidEsales\Eshop\Core\DatabaseProvider::getDb(\OxidEsales\Eshop\Core\DatabaseProvider::FETCH_MODE_ASSOC);
+            $query = "select {$this->_sExistKey} from {$viewName} where {$this->_sExistKey} = :oxid";
+
+            return (bool) $database->getOne($query, [
+                ':oxid' => $sOXID
+            ]);
+        }
+
+        return parent::exists($sOXID);
+    }
+
 }
