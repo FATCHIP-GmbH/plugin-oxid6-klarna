@@ -902,7 +902,7 @@ class KlarnaOrderController extends KlarnaOrderController_parent
         $isExternalPayment = $paymentId && !in_array($paymentId, KlarnaPaymentHelper::getKlarnaPaymentsIds());
         if ($isExternalPayment && $this->_oUser->getType() === KlarnaUser::LOGGED_IN) {
             //reload the user by their email to get a clean object
-            $mail = $this->_oUser->oxuser__oxusername->value;
+            $mail = $this->_aOrderData["shipping_address"]["email"];
             $this->_oUser = oxNew(User::class);
             $this->_oUser->loadByEmail($mail);
             // ensure user is always logged out
@@ -1137,22 +1137,12 @@ class KlarnaOrderController extends KlarnaOrderController_parent
             $this->addTplParam("sLocale", strtolower(KlarnaConsts::getLocale()));
         }
 
-        //if address changes were made to an existing external payment user,
-        // the DB state will have changed after initiating the user component. Reload is needed.
-        $paymentId = Registry::getRequest()->getRequestParameter("payment_id");
-        $isExternalPayment = $paymentId && !in_array($paymentId, KlarnaPaymentHelper::getKlarnaPaymentsIds());
-        if ($isExternalPayment) {
-            $this->reinitiateUserComponent();
+        if (!Registry::getRequest()->getRequestParameter("kcoreloaded")) {
+            $queryString = $_SERVER['QUERY_STRING'];
+            Registry::getUtils()->redirect(Registry::getConfig()->getShopSecureHomeUrl() . $queryString . "&kcoreloaded=1", false);
         }
 
         return $template;
-    }
-
-    protected function reinitiateUserComponent()
-    {
-        if ($oxcmp_user = $this->_oaComponents["oxcmp_user"]) {
-            $oxcmp_user->init();
-        }
     }
 
     /**
