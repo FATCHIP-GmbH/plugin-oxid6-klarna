@@ -483,7 +483,7 @@ class KlarnaOrderController extends KlarnaOrderController_parent
         // login only if registered a new account with password
         if ($this->isRegisterNewUserNeeded()) {
             Registry::getSession()->setVariable('usr', $this->_oUser->getId());
-            Registry::getSession()->setVariable('blNeedLogout', true); // TODO: seem to be not used - remove?
+            Registry::getSession()->setVariable('blNeedLogout', true);
         }
 
         $this->setUser($this->_oUser);
@@ -897,6 +897,18 @@ class KlarnaOrderController extends KlarnaOrderController_parent
      */
     protected function updateUserObject()
     {
+        // if the user is registered, we need the whole object not just the fake user to ensure no data is lost
+        $paymentId = Registry::getRequest()->getRequestParameter("payment_id");
+        $isExternalPayment = $paymentId && !in_array($paymentId, KlarnaPaymentHelper::getKlarnaPaymentsIds());
+        if ($isExternalPayment && $this->_oUser->getType() === KlarnaUser::LOGGED_IN) {
+            //reload the user by their email to get a clean object
+            $mail = $this->_aOrderData["shipping_address"]["email"];
+            $this->_oUser = oxNew(User::class);
+            $this->_oUser->loadByEmail($mail);
+            // ensure user is always logged out
+            Registry::getSession()->setVariable('blNeedLogout', true);
+        }
+
         if ($this->_aOrderData['billing_address'] !== $this->_aOrderData['shipping_address']) {
             $this->_oUser->updateDeliveryAddress(KlarnaFormatter::klarnaToOxidAddress($this->_aOrderData, 'shipping_address'));
         } else {
@@ -909,7 +921,7 @@ class KlarnaOrderController extends KlarnaOrderController_parent
             $this->_oUser->oxuser__oxbirthdate = new Field($this->_aOrderData['customer']['date_of_birth']);
         }
 
-        if ($this->_oUser->isWritable()) {
+        if (($this->_oUser->isWritable() || $isExternalPayment) && $this->_oUser->oxuser__oxusername->value) {
             try {
                 if($this->_oUser->getType() == KlarnaUser::NOT_EXISTING
                     && count($this->_oUser->getUserGroups()) == 0){
@@ -1123,6 +1135,11 @@ class KlarnaOrderController extends KlarnaOrderController_parent
                 }
             }
             $this->addTplParam("sLocale", strtolower(KlarnaConsts::getLocale()));
+        }
+
+        if (!Registry::getRequest()->getRequestParameter("kcoreloaded")) {
+            $queryString = $_SERVER['QUERY_STRING'];
+            Registry::getUtils()->redirect(Registry::getConfig()->getShopSecureHomeUrl() . $queryString . "&kcoreloaded=1", false);
         }
 
         return $template;

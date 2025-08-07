@@ -7,7 +7,6 @@
     <div class="clear clearfix"></div>
 [{/if}]
 
-
 [{if $oViewConf->getKcoApplePayDeviceEligibility() === null}]
     <script>
         function getParameterByName(name, url) {

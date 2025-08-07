@@ -7,7 +7,7 @@ namespace TopConcepts\Klarna\Migrations;
 use Doctrine\DBAL\Schema\Schema;
 use Doctrine\Migrations\AbstractMigration;
 use OxidEsales\Eshop\Core\Field;
-use OxidEsales\EshopCommunity\Core\Registry;
+use OxidEsales\Eshop\Core\Registry;
 use TopConcepts\Klarna\Core\KlarnaPaymentTypes;
 use OxidEsales\Eshop\Core\Model\BaseModel;
 use OxidEsales\Eshop\Core\DbMetaDataHandler;
