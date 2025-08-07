@@ -649,4 +649,9 @@ class KlarnaBasket extends KlarnaBasket_parent
     {
         $this->_calcVoucherDiscount();
     }
+
+    public function klarnaDeleteUserFromBasket()
+    {
+        $this->_oUser = null;
+    }
 }

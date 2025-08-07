@@ -2,6 +2,7 @@
 
 use OxidEsales\Eshop\Application\Component\Widget\ArticleDetails;
 use OxidEsales\Eshop\Application\Controller\Admin\PaymentMain;
+use OxidSolutionCatalysts\PayPal\Controller\ProxyController;
 use TopConcepts\Klarna\Controller\KlarnaDeviceEligibilityController;
 use TopConcepts\Klarna\Component\KlarnaBasketComponent;
 use TopConcepts\Klarna\Component\KlarnaUserComponent;
@@ -23,6 +24,7 @@ use TopConcepts\Klarna\Controller\Admin\KlarnaPaymentMain;
 use TopConcepts\Klarna\Controller\Admin\KlarnaShipping;
 use TopConcepts\Klarna\Controller\Admin\KlarnaStart;
 use TopConcepts\Klarna\Controller\KlarnaAuthCallbackEndpoint;
+use TopConcepts\Klarna\Controller\KlarnaPPProxyController;
 use TopConcepts\Klarna\Controller\KlarnaUserController;
 use TopConcepts\Klarna\Controller\KlarnaAcknowledgeController;
 use TopConcepts\Klarna\Controller\KlarnaAjaxController;
@@ -127,6 +129,7 @@ $aModule = array(
         UserController::class       => KlarnaUserController::class,
         PaymentController::class    => KlarnaPaymentController::class,
         BasketController::class     => KlarnaBasketController::class,
+        ProxyController::class      => KlarnaPPProxyController::class,
 
         // admin
         OrderAddress::class         => KlarnaOrderAddress::class,
