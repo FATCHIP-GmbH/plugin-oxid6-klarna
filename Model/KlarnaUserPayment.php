@@ -46,7 +46,7 @@ class KlarnaUserPayment extends KlarnaUserPayment_parent
         $oPayment->load($paymentId);
 
         $from   = '/' . preg_quote('-', '/') . '/';
-        $locale = preg_replace($from, '_', strtolower(KlarnaConsts::getLocale()), 1);
+        $locale = preg_replace($from, '_', strtolower(oxNew(KlarnaConsts::class)->getLocale()), 1);
 
         $name = $oPayment->getPaymentCategoryName();
         if ($name === 'pay_over_time') {

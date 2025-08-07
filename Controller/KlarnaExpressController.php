@@ -284,7 +284,7 @@ class KlarnaExpressController extends FrontendController
      */
     public function getKlarnaModalFlagCountries()
     {
-        $flagCountries = KlarnaConsts::getKlarnaPopUpFlagCountries();
+        $flagCountries = oxNew(KlarnaConsts::class)->getKlarnaPopUpFlagCountries();
 
         $result = array();
         foreach ($flagCountries as $isoCode) {
@@ -304,7 +304,7 @@ class KlarnaExpressController extends FrontendController
      */
     public function getKlarnaModalOtherCountries()
     {
-        $flagCountries               = KlarnaConsts::getKlarnaPopUpFlagCountries();
+        $flagCountries               = oxNew(KlarnaConsts::class)->getKlarnaPopUpFlagCountries();
         $activeKlarnaGlobalCountries = KlarnaUtils::getKlarnaGlobalActiveShopCountries();
 
         $result = array();
@@ -397,7 +397,7 @@ class KlarnaExpressController extends FrontendController
      */
     protected function getKlarnaOrder($oBasket)
     {
-        return new KlarnaOrder($oBasket, $this->_oUser);
+        return oxNew(KlarnaOrder::class,$oBasket, $this->_oUser);
     }
 
     /**

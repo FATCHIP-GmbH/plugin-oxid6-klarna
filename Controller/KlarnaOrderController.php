@@ -1134,7 +1134,7 @@ class KlarnaOrderController extends KlarnaOrderController_parent
                     $this->addTplParam("client_token", $aKPSessionData['client_token']);
                 }
             }
-            $this->addTplParam("sLocale", strtolower(KlarnaConsts::getLocale()));
+            $this->addTplParam("sLocale", strtolower(oxNew(KlarnaConsts::class)->getLocale()));
         }
 
         if (!Registry::getRequest()->getRequestParameter("kcoreloaded")) {
@@ -1181,7 +1181,7 @@ class KlarnaOrderController extends KlarnaOrderController_parent
             $oUser = $this->getUser();
         }
         $sCountryISO = KlarnaUtils::getCountryISO($oUser->getFieldData('oxcountryid'));
-        if (in_array($sCountryISO, KlarnaConsts::getKlarnaCoreCountries())) {
+        if (in_array($sCountryISO, oxNew(KlarnaConsts::class)->getKlarnaCoreCountries())) {
             return true;
         }
 

@@ -395,7 +395,7 @@ class KlarnaUser extends KlarnaUser_parent
      */
     public function getKlarnaPaymentCurrency()
     {
-        $country2currency = KlarnaConsts::getCountry2CurrencyArray();
+        $country2currency = oxNew(KlarnaConsts::class)->getCountry2CurrencyArray();
         $cur              = $this->resolveCountry();
         if (isset($country2currency[$cur])) {
 

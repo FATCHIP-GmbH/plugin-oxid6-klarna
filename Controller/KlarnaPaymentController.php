@@ -192,7 +192,7 @@ class KlarnaPaymentController extends KlarnaPaymentController_parent
             }
 
             $from   = '/' . preg_quote('-', '/') . '/';
-            $locale = preg_replace($from, '_', strtolower(KlarnaConsts::getLocale(true)), 1);
+            $locale = preg_replace($from, '_', strtolower(oxNew(KlarnaConsts::class)->getLocale(true)), 1);
 
             $this->addTplParam("sLocale", $locale);
         }

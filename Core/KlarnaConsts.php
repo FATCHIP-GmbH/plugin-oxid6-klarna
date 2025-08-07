@@ -60,7 +60,7 @@ class KlarnaConsts
      * @codeCoverageIgnore
      * @return array
      */
-    public static function getKlarnaGlobalCountries()
+    public function getKlarnaGlobalCountries()
     {
         return array('AX', 'AL', 'DZ', 'AS', 'AD', 'AI', 'AQ', 'AG', 'AR', 'AM', 'AW', 'AU', 'AT', 'AZ', 'BS', 'BH',
                      'BD', 'BB', 'BE', 'BZ', 'BJ', 'BM', 'BT', 'BO', 'BQ', 'BW', 'BV', 'BR', 'IO', 'BN', 'BG', 'BF',
@@ -82,7 +82,7 @@ class KlarnaConsts
      * @codeCoverageIgnore
      * @return array
      */
-    public static function getKlarnaCoreCountries()
+    public function getKlarnaCoreCountries()
     {
         return array('SE', 'NO', 'FI', 'DE', 'AT', 'NL', 'GB', 'DK', 'CH', 'ES', 'FR', 'BE', 'IT', 'IE');
     }
@@ -91,7 +91,7 @@ class KlarnaConsts
      * @codeCoverageIgnore
      * @return array
      */
-    public static function getKlarnaKCOB2BCountries()
+    public function getKlarnaKCOB2BCountries()
     {
         return array('SE', 'NO', 'FI');
     }
@@ -100,7 +100,7 @@ class KlarnaConsts
      * @codeCoverageIgnore
      * @return array
      */
-    public static function getKlarnaKPB2BCountries()
+    public function getKlarnaKPB2BCountries()
     {
         return array('SE', 'NO', 'FI', 'DK', 'DE');
     }
@@ -109,7 +109,7 @@ class KlarnaConsts
      * @codeCoverageIgnore
      * @return array
      */
-    public static function getCountry2CurrencyArray()
+    public function getCountry2CurrencyArray()
     {
         return array(
             'SE' => 'SEK',
@@ -134,7 +134,7 @@ class KlarnaConsts
      * @codeCoverageIgnore
      * @return array
      */
-    public static function getKlarnaExternalPaymentNames()
+    public function getKlarnaExternalPaymentNames()
     {
         return array(
             'Nachnahme', 'Vorkasse', 'Amazon Payments', 'PayPal', 'Google Pay', 'Apple Pay'
@@ -145,7 +145,7 @@ class KlarnaConsts
      * @codeCoverageIgnore
      * @return array
      */
-    public static function getEmdPaymentTypeOptions()
+    public function getEmdPaymentTypeOptions()
     {
         return array(
             'other'          => Registry::getLang()->translateString('TCKLARNA_OTHER_PAYMENT'),
@@ -158,7 +158,7 @@ class KlarnaConsts
      * @codeCoverageIgnore
      * @return array
      */
-    public static function getFullHistoryOrdersOptions()
+    public function getFullHistoryOrdersOptions()
     {
         return array(
             self::EMD_ORDER_HISTORY_ALL  => Registry::getLang()->translateString('TCKLARNA_EMD_ORDER_HISTORY_ALL'),
@@ -171,7 +171,7 @@ class KlarnaConsts
      * @param null $key
      * @return array|mixed
      */
-    public static function getFooterImgUrls($key = null)
+    public function getFooterImgUrls($key = null)
     {
         $aFooterImgUrls = array(
             'longBlack'  => '//cdn.klarna.com/1.0/shared/image/generic/badge/%s/checkout/long-blue.png?width=440',
@@ -193,7 +193,7 @@ class KlarnaConsts
      * @param bool $default
      * @return mixed
      */
-    public static function getLocale($default = false)
+    public function getLocale($default = false)
     {
         $oLang = Registry::getLang();
 
@@ -247,12 +247,12 @@ class KlarnaConsts
      *
      * @return array
      */
-    public static function getKlarnaPopUpFlagCountries()
+    public function getKlarnaPopUpFlagCountries()
     {
         return array('DE', 'AT', 'CH');
     }
     
-    public static function getCustomerTypes() {
+    public function getCustomerTypes() {
         return array(
             'B2C'     => array('person'),
             'B2B'     => array('organization'),

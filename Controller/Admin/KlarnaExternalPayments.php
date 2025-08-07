@@ -38,7 +38,7 @@ class KlarnaExternalPayments extends KlarnaBaseConfig
 
         $this->addTplParam('mode', $this->getActiveKlarnaMode());
         $this->addTplParam('activePayments', $this->getPaymentList());
-        $this->addTplParam('paymentNames', KlarnaConsts::getKlarnaExternalPaymentNames());
+        $this->addTplParam('paymentNames', oxNew(KlarnaConsts::class)->getKlarnaExternalPaymentNames());
 
         return $this->_sThisTemplate;
     }

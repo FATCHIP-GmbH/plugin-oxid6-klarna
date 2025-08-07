@@ -134,7 +134,7 @@ class KlarnaGeneral extends KlarnaBaseConfig
             return $this->_aKlarnaCountries;
         }
         $sViewName = getViewName('oxcountry', $this->getViewDataElement('adminlang'));
-        $isoList   = KlarnaConsts::getKlarnaCoreCountries();
+        $isoList   = oxNew(KlarnaConsts::class)->getKlarnaCoreCountries();
 
         /** @var \OxidEsales\EshopCommunity\Core\Database\Adapter\Doctrine\Database $db */
         $db  = DatabaseProvider::getDb(DatabaseProvider::FETCH_MODE_ASSOC);

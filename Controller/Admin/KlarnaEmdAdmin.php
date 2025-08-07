@@ -80,7 +80,7 @@ class KlarnaEmdAdmin extends KlarnaBaseConfig
      */
     public function getEmdPaymentTypeOptions()
     {
-        return KlarnaConsts::getEmdPaymentTypeOptions();
+        return oxNew(KlarnaConsts::class)->getEmdPaymentTypeOptions();
     }
 
     /**
@@ -89,7 +89,7 @@ class KlarnaEmdAdmin extends KlarnaBaseConfig
      */
     public function getFullHistoryOrdersOptions()
     {
-        return KlarnaConsts::getFullHistoryOrdersOptions();
+        return oxNew(KlarnaConsts::class)->getFullHistoryOrdersOptions();
     }
 
 }

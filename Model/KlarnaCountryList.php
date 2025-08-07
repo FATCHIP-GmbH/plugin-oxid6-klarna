@@ -33,7 +33,7 @@ class KlarnaCountryList extends KlarnaCountryList_parent
     public function loadActiveKlarnaCheckoutCountries($iLang = null, $filterKcoList = true)
     {
         $sViewName = getViewName('oxcountry', $iLang);
-        $isoList   = KlarnaConsts::getKlarnaGlobalCountries();
+        $isoList   = oxNew(KlarnaConsts::class)->getKlarnaGlobalCountries();
         $isoList   = implode("','", $isoList);
         $sSelect   = "SELECT {$sViewName}.oxid, {$sViewName}.oxtitle, {$sViewName}.oxisoalpha2 FROM {$sViewName}
                       JOIN oxobject2payment 
@@ -65,7 +65,7 @@ class KlarnaCountryList extends KlarnaCountryList_parent
     public function loadActiveNonKlarnaCheckoutCountries($iLang = null)
     {
         $sViewName = getViewName('oxcountry', $iLang);
-        $isoList   = KlarnaConsts::getKlarnaGlobalCountries();
+        $isoList   = oxNew(KlarnaConsts::class)->getKlarnaGlobalCountries();
         $isoList   = implode("','", $isoList);
         $sSelect   = "SELECT oxid, oxtitle, oxisoalpha2 FROM {$sViewName}
                       WHERE oxactive=1 
@@ -84,7 +84,7 @@ class KlarnaCountryList extends KlarnaCountryList_parent
     public function loadActiveKCOGlobalCountries($iLang = null)
     {
         $sViewName = getViewName('oxcountry', $iLang);
-        $isoList   = KlarnaConsts::getKlarnaGlobalCountries();
+        $isoList   = oxNew(KlarnaConsts::class)->getKlarnaGlobalCountries();
         $isoList   = implode("','", $isoList);
         $sSelect   = "SELECT {$sViewName}.oxid, {$sViewName}.oxtitle, {$sViewName}.oxisoalpha2 FROM {$sViewName}
                       WHERE {$sViewName}.oxactive=1 
@@ -111,7 +111,7 @@ class KlarnaCountryList extends KlarnaCountryList_parent
     {
         $paymentId = DatabaseProvider::getDb()->quote($paymentId);
         $sViewName = getViewName('oxcountry');
-        $isoList   = KlarnaConsts::getKlarnaGlobalCountries();
+        $isoList   = oxNew(KlarnaConsts::class)->getKlarnaGlobalCountries();
         $isoList   = implode("','", $isoList);
         $sSelect   = "SELECT {$sViewName}.oxid, {$sViewName}.oxtitle, {$sViewName}.oxisoalpha2 FROM {$sViewName}
                       JOIN oxobject2payment 
