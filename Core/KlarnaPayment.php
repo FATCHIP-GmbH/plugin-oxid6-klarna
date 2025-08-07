@@ -149,7 +149,7 @@ class KlarnaPayment extends BaseModel
 
         $sCountryISO = $oUser->resolveCountry();
         $this->resolveB2Options($sCountryISO);
-        $sLocale     = KlarnaConsts::getLocale(false);
+        $sLocale     = oxNew(KlarnaConsts::class)->getLocale(false);
         $currencyISO = $oBasket->getBasketCurrency()->name;
         if ($oUser->getKlarnaPaymentCurrency() !== $currencyISO) {
             $this->currencyToCountryMatch = false;
@@ -199,7 +199,7 @@ class KlarnaPayment extends BaseModel
         $this->activeB2Option = KlarnaUtils::getShopConfVar('sKlarnaB2Option');
 
         if(strpos($this->activeB2Option, 'B2B') !== false){
-            $this->b2bAllowed = in_array($sCountryISO, KlarnaConsts::getKlarnaKPB2BCountries());
+            $this->b2bAllowed = in_array($sCountryISO, oxNew(KlarnaConsts::class)->getKlarnaKPB2BCountries());
         }
 
         if($this->activeB2Option === 'B2B'){
@@ -406,7 +406,7 @@ class KlarnaPayment extends BaseModel
     public function validateCountryAndCurrency()
     {
         $sCountryISO = KlarnaUtils::getCountryISO($this->oUser->getFieldData('oxcountryid'));
-        if (!in_array($sCountryISO, KlarnaConsts::getKlarnaCoreCountries())) {
+        if (!in_array($sCountryISO, oxNew(KlarnaConsts::class)->getKlarnaCoreCountries())) {
             $this->addErrorMessage('TCKLARNA_KP_NOT_KLARNA_CORE_COUNTRY');
         }
 

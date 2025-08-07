@@ -37,11 +37,11 @@ class KlarnaDesign extends KlarnaBaseConfig
         }
 
         $from   = '/' . preg_quote('-', '/') . '/';
-        $locale = preg_replace($from, '_', strtolower(KlarnaConsts::getLocale(true)), 1);
+        $locale = preg_replace($from, '_', strtolower(oxNew(KlarnaConsts::class)->getLocale(true)), 1);
 
         $this->addTplParam('mode', $this->getActiveKlarnaMode());
         $this->addTplParam('locale', $locale);
-        $this->addTplParam('aKlarnaFooterImgUrls', KlarnaConsts::getFooterImgUrls());
+        $this->addTplParam('aKlarnaFooterImgUrls', oxNew(KlarnaConsts::class)->getFooterImgUrls());
 
         $this->addTplParam('kebtheme', array('default', 'light', 'outlined'));
         $this->addTplParam('kebshape', array('default', 'rect', 'pill'));

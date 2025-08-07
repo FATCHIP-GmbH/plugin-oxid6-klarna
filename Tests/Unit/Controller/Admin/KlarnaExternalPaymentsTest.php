@@ -21,7 +21,7 @@ class KlarnaExternalPaymentsTest extends ModuleUnitTestCase {
         $this->assertEquals('tcklarna_external_payments.tpl', $result);
         $this->assertEquals('test', $viewData['mode']);
         $this->assertNotEmpty($viewData['activePayments']);
-        $this->assertEquals(KlarnaConsts::getKlarnaExternalPaymentNames(), $viewData['paymentNames']);
+        $this->assertEquals(oxNew(KlarnaConsts::class)->getKlarnaExternalPaymentNames(), $viewData['paymentNames']);
 
     }
 

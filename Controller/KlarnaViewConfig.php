@@ -73,7 +73,7 @@ class KlarnaViewConfig extends KlarnaViewConfig_parent
     public function getKlarnaFooterContent()
     {
         $sCountryISO = KlarnaUtils::getShopConfVar('sKlarnaDefaultCountry');
-        if (!in_array($sCountryISO, KlarnaConsts::getKlarnaCoreCountries())) {
+        if (!in_array($sCountryISO, oxNew(KlarnaConsts::class)->getKlarnaCoreCountries())) {
             return false;
         }
 
@@ -83,13 +83,13 @@ class KlarnaViewConfig extends KlarnaViewConfig_parent
         if ($klFooter) {
 
             if ($klFooter === self::TCKLARNA_FOOTER_DISPLAY_PAYMENT_METHODS && KlarnaUtils::isKlarnaCheckoutEnabled()) {
-                $sLocale = strtolower(KlarnaConsts::getLocale(true));
+                $sLocale = strtolower(oxNew(KlarnaConsts::class)->getLocale(true));
             } else if ($klFooter === self::TCKLARNA_FOOTER_DISPLAY_LOGO)
                 $sLocale = '';
             else
                 return false;
 
-            $url  = sprintf(KlarnaConsts::getFooterImgUrls(KlarnaUtils::getShopConfVar('sKlarnaFooterValue')), $sLocale);
+            $url  = sprintf(oxNew(KlarnaConsts::class)->getFooterImgUrls(KlarnaUtils::getShopConfVar('sKlarnaFooterValue')), $sLocale);
             $from = '/' . preg_quote('-', '/') . '/';
             if(KlarnaUtils::getShopConfVar('sKlarnaFooterValue') != 'logoFooter') {
                 $url  = preg_replace($from, '_', $url, 1);
@@ -152,7 +152,7 @@ class KlarnaViewConfig extends KlarnaViewConfig_parent
 
     public function getLocale()
     {
-        return KlarnaConsts::getLocale();
+        return oxNew(KlarnaConsts::class)->getLocale();
     }
 
     /**

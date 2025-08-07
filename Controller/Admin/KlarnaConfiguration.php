@@ -44,7 +44,7 @@ class KlarnaConfiguration extends KlarnaBaseConfig
 
         $oPayment = oxNew(Payment::class);
         $this->addTplParam('aKPMethods', $oPayment->getKPMethods());
-        $this->addTplParam('sLocale', KlarnaConsts::getLocale(true));
+        $this->addTplParam('sLocale', oxNew(KlarnaConsts::class)->getLocale(true));
 
         $klarnaMode = $this->getActiveKlarnaMode();
         if ($klarnaMode === KlarnaConsts::MODULE_MODE_KCO) {

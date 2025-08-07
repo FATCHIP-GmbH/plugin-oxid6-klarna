@@ -242,7 +242,7 @@ class KlarnaOrder extends BaseModel
         $this->activeB2Option = KlarnaUtils::getShopConfVar('sKlarnaB2Option');
 
         if (strpos($this->activeB2Option, 'B2B') !== false) {
-            $this->b2bAllowed = in_array($sCountryISO, KlarnaConsts::getKlarnaKCOB2BCountries());
+            $this->b2bAllowed = in_array($sCountryISO, oxNew(KlarnaConsts::class)->getKlarnaKCOB2BCountries());
         }
 
         if($this->activeB2Option === 'B2B'){
@@ -257,7 +257,7 @@ class KlarnaOrder extends BaseModel
     
     protected function setCustomerData() {
         $append = array();
-        $typeList = KlarnaConsts::getCustomerTypes();
+        $typeList = oxNew(KlarnaConsts::class)->getCustomerTypes();
         $type = $typeList[$this->activeB2Option];
         if ($this->b2bAllowed && empty($this->_aUserData['billing_address']['organization_name']) === false) {
             $append['customer']['type'] = 'organization';
@@ -548,7 +548,7 @@ class KlarnaOrder extends BaseModel
             $designSettings = array();
         }
         
-        $typeList = KlarnaConsts::getCustomerTypes();
+        $typeList = oxNew(KlarnaConsts::class)->getCustomerTypes();
         $type = $typeList[$this->activeB2Option];
         $options['allowed_customer_types'] = $type;
         

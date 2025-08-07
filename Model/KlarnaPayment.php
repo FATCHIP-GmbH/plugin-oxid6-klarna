@@ -242,7 +242,7 @@ class KlarnaPayment extends KlarnaPayment_parent
         }
 
         $from   = '/' . preg_quote('-', '/') . '/';
-        $locale = preg_replace($from, '_', strtolower(KlarnaConsts::getLocale()), 1);
+        $locale = preg_replace($from, '_', strtolower(oxNew(KlarnaConsts::class)->getLocale()), 1);
 
         //temp fix for payment name mismatch slice_it -> pay_over_time
         if ($klName === 'pay_over_time') {
@@ -256,7 +256,7 @@ class KlarnaPayment extends KlarnaPayment_parent
                     $klName
                 )
             ) == false) {
-            $locale = preg_replace($from, '_', strtolower(KlarnaConsts::getLocale(true)), 1);
+            $locale = preg_replace($from, '_', strtolower(oxNew(KlarnaConsts::class)->getLocale(true)), 1);
         }
 
         return sprintf("https://cdn.klarna.com/1.0/shared/image/generic/badge/%s/%s/standard/pink.png",

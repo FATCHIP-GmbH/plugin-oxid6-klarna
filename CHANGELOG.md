@@ -2,6 +2,8 @@
 * fix incorrect namespace usage
 * fix userdata being corrupted when doing kco external payments
 * fix KCO colliding with PayPal external Checkout
+* fix KlarnaConsts static
+* fix new KlarnaOrder
 
 ### 5.6.0
 * add Apple Pay and Google Pay as external Payment options for Klarna Checkout and device eligibility check for Apple Pay
