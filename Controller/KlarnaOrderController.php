@@ -849,7 +849,7 @@ class KlarnaOrderController extends KlarnaOrderController_parent
             $oSession = $this->getSession();
             /** @var Basket|\TopConcepts\Klarna\Model\KlarnaBasket $oBasket */
             $oBasket = $oSession->getBasket();
-            $oKlarnaOrder = new KlarnaOrder($oBasket, $this->_oUser);
+            $oKlarnaOrder = oxNew(KlarnaOrder::class, $oBasket, $this->_oUser);
             $oClient      = $this->getKlarnaCheckoutClient();
             $aOrderData   = $oKlarnaOrder->getOrderData();
             if ($this->forceReloadOnCountryChange && isset($this->_aOrderData['billing_address']) && isset($this->_aOrderData['shipping_address'])) {
@@ -1240,7 +1240,7 @@ class KlarnaOrderController extends KlarnaOrderController_parent
      */
     protected function initKlarnaOrder($oBasket)
     {
-        return new KlarnaOrder($oBasket, $this->_oUser);
+        return oxNew(KlarnaOrder::class, $oBasket, $this->_oUser);
     }
 
     public function getPayment() {
