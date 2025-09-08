@@ -36,6 +36,7 @@ use TopConcepts\Klarna\Controller\KlarnaPaymentController;
 use TopConcepts\Klarna\Controller\KlarnaThankYouController;
 use TopConcepts\Klarna\Controller\KlarnaValidationController;
 use TopConcepts\Klarna\Controller\KlarnaViewConfig;
+use TopConcepts\Klarna\Controller\KlarnaNewsletterController;
 use TopConcepts\Klarna\Core\Config;
 use TopConcepts\Klarna\Model\KlarnaAddress;
 use TopConcepts\Klarna\Model\KlarnaArticle;
@@ -57,6 +58,7 @@ use OxidEsales\Eshop\Application\Controller\Admin\OrderList;
 use OxidEsales\Eshop\Application\Controller\Admin\OrderMain;
 use OxidEsales\Eshop\Application\Controller\Admin\OrderOverview;
 use OxidEsales\Eshop\Application\Controller\BasketController;
+use OxidEsales\Eshop\Application\Controller\NewsletterController;
 use OxidEsales\Eshop\Application\Controller\OrderController;
 use OxidEsales\Eshop\Application\Controller\PaymentController;
 use OxidEsales\Eshop\Application\Controller\ThankYouController;
@@ -130,6 +132,7 @@ $aModule = array(
         PaymentController::class    => KlarnaPaymentController::class,
         BasketController::class     => KlarnaBasketController::class,
         ProxyController::class      => KlarnaPPProxyController::class,
+        NewsletterController::class => KlarnaNewsletterController::class,
 
         // admin
         OrderAddress::class         => KlarnaOrderAddress::class,
