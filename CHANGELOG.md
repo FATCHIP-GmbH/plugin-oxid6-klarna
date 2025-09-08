@@ -1,3 +1,6 @@
+### 5.6.2
+* fix newsletter subscription colliding with KCO fake users
+
 ### 5.6.1
 * fix incorrect namespace usage
 * fix userdata being corrupted when doing kco external payments
