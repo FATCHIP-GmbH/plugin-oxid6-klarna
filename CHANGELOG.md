@@ -1,5 +1,7 @@
 ### 5.6.2
 * fix newsletter subscription colliding with KCO fake users
+* extract duplicate user update related code 
+* fix user being saved without a username
 
 ### 5.6.1
 * fix incorrect namespace usage
