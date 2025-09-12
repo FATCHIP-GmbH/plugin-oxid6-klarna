@@ -18,14 +18,12 @@
 namespace TopConcepts\Klarna\Controller;
 
 
-use OxidEsales\Eshop\Application\Model\Order;
 use TopConcepts\Klarna\Core\KlarnaCheckoutClient;
 use TopConcepts\Klarna\Core\KlarnaClientBase;
-use TopConcepts\Klarna\Core\KlarnaFormatter;
 use TopConcepts\Klarna\Core\KlarnaOrder;
+use TopConcepts\Klarna\Core\KlarnaUserUpdater;
 use TopConcepts\Klarna\Core\KlarnaUtils;
 use TopConcepts\Klarna\Core\Exception\KlarnaClientException;
-use TopConcepts\Klarna\Model\KlarnaPaymentHelper;
 use TopConcepts\Klarna\Model\KlarnaUser;
 use OxidEsales\Eshop\Application\Controller\BasketController;
 use OxidEsales\Eshop\Application\Controller\FrontendController;
@@ -86,7 +84,10 @@ class KlarnaAjaxController extends FrontendController
             }
 
             $this->_initUser();
-            $this->updateUserObject();
+            /** @var KlarnaUserUpdater $userUpdater */
+            $userUpdater = oxNew(KlarnaUserUpdater::class);
+            $paymentId = Registry::getRequest()->getRequestParameter("payment_id");
+            $userUpdater->updateUserObject($this->_oUser, $this->_aOrderData, $paymentId);
 
         } else {
             return Registry::getUtils()->showMessageAndExit('Invalid payment ID');
@@ -147,44 +148,12 @@ class KlarnaAjaxController extends FrontendController
             ),
             Field::T_RAW
         );
-        if ($this->_oUser->isWritable()) {
+        if ($this->_oUser->isWritable() && $this->_oUser->oxuser__oxusername->value) {
             $this->_oUser->save();
         }
 
         $oBasket = Registry::getSession()->getBasket();
         $oBasket->setBasketUser($this->_oUser);
-    }
-
-    /**
-     * Update User object
-     */
-    protected function updateUserObject()
-    {
-        // if the user is registered, we need the whole object not just the fake user to ensure no data is lost
-        $paymentId = Registry::getRequest()->getRequestParameter("payment_id");
-        $isExternalPayment = $paymentId && !in_array($paymentId, KlarnaPaymentHelper::getKlarnaPaymentsIds());
-        if ($isExternalPayment && $this->_oUser->getType() === KlarnaUser::LOGGED_IN) {
-            //reload the user by their email to get a clean object
-            $mail = $this->_oUser->oxuser__oxusername->value;
-            $this->_oUser = oxNew(User::class);
-            $this->_oUser->loadByEmail($mail);
-            // ensure user is always logged out
-            Registry::getSession()->setVariable('blNeedLogout', true);
-        }
-        
-        if ($this->_aOrderData['billing_address'] !== $this->_aOrderData['shipping_address']) {
-            $this->_oUser->updateDeliveryAddress(KlarnaFormatter::klarnaToOxidAddress($this->_aOrderData, 'shipping_address'));
-        } else {
-            $this->_oUser->clearDeliveryAddress();
-        }
-
-        $this->_oUser->assign(KlarnaFormatter::klarnaToOxidAddress($this->_aOrderData, 'billing_address'));
-        if (isset($this->_aOrderData['customer']['date_of_birth'])) {
-            $this->_oUser->oxuser__oxbirthdate = new Field($this->_aOrderData['customer']['date_of_birth']);
-        }
-        if ($this->_oUser->isWritable() && $this->_oUser->oxuser__oxusername->value) {
-            $this->_oUser->save();
-        }
     }
 
     /**
