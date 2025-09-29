@@ -1,3 +1,6 @@
+### 5.6.3
+* remove cancel call, when acknowledge is called more than once
+
 ### 5.6.2
 * fix newsletter subscription colliding with KCO fake users
 * extract duplicate user update related code 
