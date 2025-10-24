@@ -40,8 +40,6 @@ class PaymentHandler implements PaymentHandlerInterface
         $result = is_array($response) ? $this->checkFraudStatus($response) : false;
         if ($result) {
             $this->updateOrder($oOrder, $response);
-            //TODO: don't use config
-            Registry::getConfig()->setConfigParam('kp_order_id', $response['order_id']);
         }
 
         return $result;
