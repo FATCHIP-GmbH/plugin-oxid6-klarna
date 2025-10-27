@@ -67,14 +67,12 @@ class KlarnaOrder extends KlarnaOrder_parent
 
             if ($this->isKlarna()) {
 
-                $session = Registry::getSession();
-                $oConfig = Registry::getConfig();
-
                 if ($this->isKP()) {
-                    $klarna_id = $oConfig->getConfigParam('kp_order_id');
+                    $klarna_id  = $this->oxorder__tcklarna_orderid->value;
                 }
 
                 if ($this->isKCO()) {
+                    $session = Registry::getSession();
                     $klarna_id = $session->getVariable('klarna_checkout_order_id');
                     $this->oxorder__tcklarna_orderid = new Field($klarna_id, Field::T_RAW);
                     $this->saveMerchantIdAndServerMode();
