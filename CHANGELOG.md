@@ -1,3 +1,7 @@
+### 5.6.4
+* prevent in_array error because of unknown salutation
+* fix shop config being used for order specific data
+
 ### 5.6.3
 * remove cancel call, when acknowledge is called more than once
 
