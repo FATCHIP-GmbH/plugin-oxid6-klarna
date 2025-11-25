@@ -180,12 +180,12 @@ class KlarnaOrder extends BaseModel
             }
 
             $this->_aOrderData['shipping_options'] = $this->tcklarna_getAllSets($oBasket);
+            if (KlarnaUtils::isKlarnaCheckoutEnabled()) {
+                $externalMethods = $this->getExternalPaymentMethods($oBasket, $this->_oUser);
 
-            $externalMethods = $this->getExternalPaymentMethods($oBasket, $this->_oUser);
-
-            $this->_aOrderData['external_payment_methods'] = $externalMethods['payments'];
-            $this->_aOrderData['external_checkouts']       = $externalMethods['checkouts'];
-
+                $this->_aOrderData['external_payment_methods'] = $externalMethods['payments'];
+                $this->_aOrderData['external_checkouts'] = $externalMethods['checkouts'];
+            }
             $this->addOptions();
 
             if (!$this->isAutofocusEnabled()) {
