@@ -1,3 +1,7 @@
+### 5.6.5
+* fix KEC user handling
+* set external_payment_methods and external_checkouts only for KCO
+
 ### 5.6.4
 * prevent in_array error because of unknown salutation
 * fix shop config being used for order specific data
