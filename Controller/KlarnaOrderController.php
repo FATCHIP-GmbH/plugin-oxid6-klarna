@@ -135,21 +135,22 @@ class KlarnaOrderController extends KlarnaOrderController_parent
 
         }
 
-        $paymentId = Registry::getRequest()->getRequestParameter("payment_id");
-        $isExternalPayment = $paymentId && !in_array($paymentId, KlarnaPaymentHelper::getKlarnaPaymentsIds());
-
-        if ($isExternalPayment) {
-            $klarnaFakeUsername = Registry::getSession()->getVariable('klarna_checkout_user_email');
-            $fakeUser = KlarnaUtils::getFakeUser($klarnaFakeUsername);
-            $fakeUser->setActiveUser();
-            Registry::getSession()->setVariable("usr", $fakeUser->getId());
-        }
 
         if ($keborderpayload = $oSession->getVariable("keborderpayload")) {
             $this->addTplParam("keborderpayload", $keborderpayload);
         }
 
         if (KlarnaUtils::isKlarnaCheckoutEnabled()) {
+
+            $paymentId = Registry::getRequest()->getRequestParameter("payment_id");
+            $isExternalPayment = $paymentId && !in_array($paymentId, KlarnaPaymentHelper::getKlarnaPaymentsIds());
+
+            if ($isExternalPayment) {
+                $klarnaFakeUsername = Registry::getSession()->getVariable('klarna_checkout_user_email');
+                $fakeUser = KlarnaUtils::getFakeUser($klarnaFakeUsername);
+                $fakeUser->setActiveUser();
+                Registry::getSession()->setVariable("usr", $fakeUser->getId());
+            }
 
             $oConfig = Registry::getConfig();
             $shopParam = method_exists($oConfig, 'mustAddShopIdToRequest')
@@ -1288,6 +1289,12 @@ class KlarnaOrderController extends KlarnaOrderController_parent
         if ([$address['email']] && $fakeUserId = $db->getOne($sql,[$address['email']])) {
             $fakeUser = oxNew(User::class);
             $fakeUser->load($fakeUserId);
+            // remove former created tmp-user
+            if( $userToDeleteFakeId = Registry::getSession()->getVariable("kexFakeUserId")){
+                $userToDelete = oxNew(User::class);
+                $userToDelete->load($userToDeleteFakeId);
+                $userToDelete->delete();
+            }
             Registry::getSession()->setVariable("kexFakeUserId",$fakeUserId);
         }else {
             $fakeUser->oxuser__oxusername = new Field($address["email"], Field::T_RAW);
@@ -1325,6 +1332,7 @@ class KlarnaOrderController extends KlarnaOrderController_parent
         $oSession->setVariable('paymentid', KlarnaPaymentHelper::KLARNA_PAYMENT_PAY_NOW);
         /** @var Basket $oBasket */
         $oBasket = $oSession->getBasket();
+        Registry::getSession()->setVariable('usr', $fakeUser->getId());
         $oBasket->setShipping(KlarnaUtils::getShopConfVar("sKlarnaKEBMethod"));
         $oBasket->setPayment(KlarnaPaymentHelper::KLARNA_PAYMENT_PAY_NOW);
         $oBasket->onUpdate();

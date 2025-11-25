@@ -162,6 +162,7 @@ class KlarnaBasketComponent extends KlarnaBasketComponent_parent
             $oUser->resolveCountry();
             $countryid = $oUser->getKlarnaDeliveryCountry()->getId();
             $oUser->oxuser__oxcountryid = new Field($countryid, Field::T_RAW);
+            $oUser->oxuser__oxusername = new Field($tempMail, Field::T_RAW);
 
             $oUser->save();
 
