@@ -1237,6 +1237,7 @@ class KlarnaOrderController extends KlarnaOrderController_parent
         $shippingAddress->oxaddress__oxcountryid = new Field($cId, Field::T_RAW);
         $shippingAddress->oxaddress__oxlname = new Field($address["family_name"], Field::T_RAW);
         $shippingAddress->oxaddress__oxfname = new Field($address["given_name"], Field::T_RAW);
+        $shippingAddress->oxaddress__oxaddinfo = new Field($address["street_address2"], Field::T_RAW);
         $shippingAddress->oxaddress__oxfon = new Field($address["phone"], Field::T_RAW);
         $shippingAddress->oxaddress__oxzip = new Field($address["postal_code"], Field::T_RAW);
 
@@ -1309,6 +1310,7 @@ class KlarnaOrderController extends KlarnaOrderController_parent
         $fakeUser->oxuser__oxcountryid = new Field($countryId, Field::T_RAW);
         $fakeUser->oxuser__oxlname = new Field($address["family_name"], Field::T_RAW);
         $fakeUser->oxuser__oxfname = new Field($address["given_name"], Field::T_RAW);
+        $fakeUser->oxuser__oxaddinfo = new Field($address["street_address2"], Field::T_RAW);
         $fakeUser->oxuser__oxfon = new Field($address["phone"], Field::T_RAW);
         $fakeUser->oxuser__oxzip = new Field($address["postal_code"], Field::T_RAW);
 
