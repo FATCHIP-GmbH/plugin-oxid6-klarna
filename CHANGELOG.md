@@ -1,3 +1,8 @@
+### 5.6.6
+* readd cancel call, when acknowledge is called more than once and order cant be loaded
+* fix fakeuser login logic in KCO
+* add street_address2 for KEX
+
 ### 5.6.5
 * fix KEC user handling
 * set external_payment_methods and external_checkouts only for KCO
