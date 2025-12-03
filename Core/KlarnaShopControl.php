@@ -24,4 +24,14 @@ class KlarnaShopControl extends KlarnaShopControl_parent
 
         return parent::_initializeViewObject($sClass, $sFunction, $aParams, $aViewsChain);
     }
+    protected function executeAction($view, $functionName)
+    {
+        //logout User and Reset Session if user is Fake-User and if he leaves checkout
+        $oActTopView = $this->getConfig()->getTopActiveView();
+        if (KlarnaUtils::isKlarnaCheckoutEnabled() && Registry::getSession()->getVariable("blNeedLogout") && !Registry::getSession()->getVariable("klarnaLoggedInNaturally") && $oActTopView->getClassName() != 'klarnaexpress' && $oActTopView->getClassName() != 'order' && $oActTopView->getClassName() != 'thankyou' && $oActTopView->getClassName() != 'ajaxpay') {
+            KlarnaUtils::fullyResetKlarnaSession();
+        }
+        parent::executeAction($view, $functionName);
+    }
+
 }
