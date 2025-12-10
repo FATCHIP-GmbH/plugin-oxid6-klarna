@@ -310,4 +310,21 @@ class KlarnaOrder extends KlarnaOrder_parent
 
         return parent::_sendOrderByEmail($oUser, $oBasket, $oPayment);
     }
+
+    /**
+     * Check if an order with the given id already exists and is not a Klarna Checkout order.
+     */
+    public function checkForeignOrderExist($oxid)
+    {
+        $masterDb = \OxidEsales\Eshop\Core\DatabaseProvider::getMaster();
+        $params = [
+            ':oxid' => $oxid
+        ];
+        $existingPaymentId = $masterDb->getOne('select OXPAYMENTID from oxorder where oxid = :oxid', $params);
+        if (!empty($existingPaymentId) && $existingPaymentId !== 'klarna_checkout') {
+            return true;
+        }
+
+        return false;
+    }
 }
