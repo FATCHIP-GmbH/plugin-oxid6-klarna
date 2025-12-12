@@ -1,3 +1,6 @@
+### 5.6.7
+* fix data collisions if Klarna checkout is opened in two separate tabs
+
 ### 5.6.6
 * readd cancel call, when acknowledge is called more than once and order cant be loaded
 * fix fakeuser login logic in KCO
