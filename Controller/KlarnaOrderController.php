@@ -352,6 +352,18 @@ class KlarnaOrderController extends KlarnaOrderController_parent
                 Registry::getSession()->setVariable('sDelAddrMD5', $this->getDeliveryAddressMD5());
             }
 
+            if (!empty($sessionChallenge = Registry::getSession()->getVariable('sess_challenge'))) {
+                // Check if the existing session challenge exists in the database in a non-Klarna order
+                /** @var \TopConcepts\Klarna\Model\KlarnaOrder $oOrder */
+                $oOrder = oxNew(Order::class);
+                if ($oOrder->checkForeignOrderExist($sessionChallenge)) {
+                    // Session challenge already exists as a non-Klarna order, regenerate
+                    $sGetChallenge = Registry::getUtilsObject()->generateUID();
+                    Registry::getSession()->setVariable('sess_challenge', $sGetChallenge);
+                }
+            }
+
+
             // Are we in the KCO context
             if ($paymentId === 'klarna_checkout') {
                 if (!$this->getSession()->checkSessionChallenge()) {
@@ -375,7 +387,7 @@ class KlarnaOrderController extends KlarnaOrderController_parent
                 $dt = new \DateTime();
                 Registry::getSession()->setVariable('sTokenTimeStamp', $dt->getTimestamp());
             }
-        } else if (Registry::getRequest()->getRequestParameter('klarna_order_id')) {
+        } else if (Registry::getRequest()->getRequestParameter('klarna_order_id') || Registry::getRequest()->getRequestParameter('kexpaymentid')) {
             // executing Klarna order but basket has no klarna paymentId -> basket is not properly init'd, customer must try again
             KlarnaUtils::fullyResetKlarnaSession();
             Registry::getUtilsView()->addErrorToDisplay('KLARNA_WENT_WRONG_TRY_AGAIN', false, true);
@@ -519,15 +531,6 @@ class KlarnaOrderController extends KlarnaOrderController_parent
         if (!Registry::getSession()->getVariable('sess_challenge')) {
             $sGetChallenge = Registry::getUtilsObject()->generateUID();
             Registry::getSession()->setVariable('sess_challenge', $sGetChallenge);
-        } else {
-            // Check if the existing session challenge exists in the database in a non-KCO order
-            $orderId = Registry::getSession()->getVariable('sess_challenge');
-            /** @var \TopConcepts\Klarna\Model\KlarnaOrder $oOrder */
-            $oOrder = oxNew(Order::class);
-            if ($oOrder->checkForeignOrderExist($orderId)) {
-                $sGetChallenge = Registry::getUtilsObject()->generateUID();
-                Registry::getSession()->setVariable('sess_challenge', $sGetChallenge);
-            }
         }
 
         $oBasket->calculateBasket(true);

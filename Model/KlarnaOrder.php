@@ -321,7 +321,7 @@ class KlarnaOrder extends KlarnaOrder_parent
             ':oxid' => $oxid
         ];
         $existingPaymentId = $masterDb->getOne('select OXPAYMENTID from oxorder where oxid = :oxid', $params);
-        if (!empty($existingPaymentId) && $existingPaymentId !== 'klarna_checkout') {
+        if (!empty($existingPaymentId) && strpos($existingPaymentId, 'klarna_') !== 0) {
             return true;
         }
 
