@@ -1,5 +1,5 @@
 ### 5.6.7
-* fix data collisions if Klarna checkout is opened in two separate tabs
+* fix data collisions if Klarna checkout, Klarna Payments or Klarna Express and PayPal Checkout is opened in two separate tabs
 
 ### 5.6.6
 * readd cancel call, when acknowledge is called more than once and order cant be loaded
