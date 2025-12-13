@@ -31,6 +31,8 @@ abstract class KlarnaClientBase extends Base
 {
     const TEST_API_URL = 'https://api.playground.klarna.com/';
     const LIVE_API_URL = 'https://api.klarna.com/';
+    const TEST_KCO_API_URL = 'https://api.playground.klarna.com/';
+    const LIVE_KCO_API_URL = 'https://api.klarna.com/';
 
     /**
      * @var \Requests_Session
@@ -94,7 +96,12 @@ abstract class KlarnaClientBase extends Base
      */
     protected function initHttpHandler()
     {
-        $apiUrl = $this->isTest() ? self::TEST_API_URL : self::LIVE_API_URL;
+        if (KlarnaUtils::isKlarnaCheckoutEnabled()){
+            $apiUrl = $this->isTest() ? self::TEST_KCO_API_URL : self::LIVE_KCO_API_URL;
+        }
+        else {
+            $apiUrl = $this->isTest() ? self::TEST_API_URL : self::LIVE_API_URL;
+        }
         $this->session = new \Requests_Session($apiUrl, $this->getApiClientHeader());
     }
 
