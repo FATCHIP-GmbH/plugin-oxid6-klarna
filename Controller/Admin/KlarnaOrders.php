@@ -20,6 +20,8 @@ class KlarnaOrders extends AdminDetailsController
 {
     const KLARNA_PORTAL_PLAYGROUND_URL = 'https://portal.playground.klarna.com/orders/merchants/%s/orders/%s';
     const KLARNA_PORTAL_LIVE_URL       = 'https://portal.klarna.com/orders/merchants/%s/orders/%s';
+    const KUSTOM_PORTAL_PLAYGROUND_URL = 'https://portal.playground.kustom.co/orders/%s';
+    const KUSTOM_PORTAL_LIVE_URL       = 'https://portal.kustom.co/orders/%s';
 
     protected $_sThisTemplate = 'tcklarna_orders.tpl';
 
@@ -228,16 +230,27 @@ class KlarnaOrders extends AdminDetailsController
      */
     public function getKlarnaPortalLink()
     {
-        if ($this->getEditObject()->oxorder__tcklarna_servermode->value === 'playground') {
-            $url = self::KLARNA_PORTAL_PLAYGROUND_URL;
+        if ($this->getEditObject()->oxorder__oxpaymenttype->value == 'klarna_checkout') {
+            if ($this->getEditObject()->oxorder__tcklarna_servermode->value === 'playground') {
+                $url = self::KUSTOM_PORTAL_PLAYGROUND_URL;
+            } else {
+                $url = self::KUSTOM_PORTAL_LIVE_URL;
+            }
+            $orderId = $this->getEditObject()->oxorder__tcklarna_orderid->value;
+
+            return sprintf($url, $orderId);
         } else {
-            $url = self::KLARNA_PORTAL_LIVE_URL;
+            if ($this->getEditObject()->oxorder__tcklarna_servermode->value === 'playground') {
+                $url = self::KLARNA_PORTAL_PLAYGROUND_URL;
+            } else {
+                $url = self::KLARNA_PORTAL_LIVE_URL;
+            }
+            $mid     = $this->getEditObject()->oxorder__tcklarna_merchantid->value;
+            $orderId = $this->getEditObject()->oxorder__tcklarna_orderid->value;
+
+            return sprintf($url, $mid, $orderId);
         }
 
-        $mid     = $this->getEditObject()->oxorder__tcklarna_merchantid->value;
-        $orderId = $this->getEditObject()->oxorder__tcklarna_orderid->value;
-
-        return sprintf($url, $mid, $orderId);
     }
 
     /**
