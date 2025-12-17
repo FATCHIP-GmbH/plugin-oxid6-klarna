@@ -93,6 +93,7 @@ Replace into oxconfig (oxid, oxshopid, oxmodule, oxvarname, oxvartype, oxvarvalu
 Replace into oxconfig (oxid, oxshopid, oxmodule, oxvarname, oxvartype, oxvarvalue) values('0ddcd4b8df2950a85402157e5c21ebe3', '1', 'tcklarna', 'sKlarnaShippingDetails_EN', 'str', ENCODE( "We\'ll take care of quick shipping!", 'fq45QS09_fqyx09239QQ') );
 
 Replace into oxconfig (oxid, oxshopid, oxmodule, oxvarname, oxvartype, oxvarvalue) values('3344c6128d6cbf3c1bc04c285a0e6e0a', '1', 'tcklarna', 'blKlarnaDisplayExpressButton', 'bool', ENCODE( '1', 'fq45QS09_fqyx09239QQ') );
+Replace into oxconfig (oxid, oxshopid, oxmodule, oxvarname, oxvartype, oxvarvalue) values('3666c6128d6cbf3c1bc04c999a0e6e0a', '1', 'tcklarna', 'blKlarnaDisplayExpressButtonInBasket', 'bool', ENCODE( '1', 'fq45QS09_fqyx09239QQ') );
 
 update oxconfig set oxvarvalue=ENCODE( '<script src=\"https://embed.bannerflow.com/599d7ec18d988017005eb27d?targeturl=https%3A//www.klarna.com&politeloading=off&merchantid={{merchantid}}&responsive=on\" async></script>', 'fq45QS09_fqyx09239QQ') where oxvarname='sKlarnaBannerSrc_EN' and oxshopid=1;
 update oxconfig set oxvarvalue=ENCODE( '1', 'fq45QS09_fqyx09239QQ') where oxvarname='sKlarnaFooterDisplay' and oxshopid=1;
