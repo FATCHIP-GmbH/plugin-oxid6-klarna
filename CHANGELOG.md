@@ -1,6 +1,7 @@
 ### 5.6.7
 * fix data collisions if Klarna checkout, Klarna Payments or Klarna Express and PayPal Checkout is opened in two separate tabs
 * change Klarna API Url to Kustom API Url and Klarna portal link to Kustom portal link for KCO
+* add Klarna Express-Checkout button to cart-page
 
 ### 5.6.6
 * readd cancel call, when acknowledge is called more than once and order cant be loaded
