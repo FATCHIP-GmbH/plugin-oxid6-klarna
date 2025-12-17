@@ -405,6 +405,33 @@
                     </tr>
                     <tr class="dark">
                         <td class="name">
+                            [{oxmultilang ident="TCKLARNA_ON_BASKET_PAGE"}]
+                        </td>
+                        <td class="input w460">
+                            <div class="input">
+                                <div class="display">
+                                    <label class="label toggle" for="DisplayExpressButtonInBasket">
+                                        <input type="hidden"
+                                               name="confbools[blKlarnaDisplayExpressButtonInBasket]"
+                                               value="0">
+                                        <input type="checkbox" class="toggle_input"
+                                               name="confbools[blKlarnaDisplayExpressButtonInBasket]"
+                                               value="1" id="DisplayExpressButtonInBasket"
+                                               [{if ($confbools.blKlarnaDisplayExpressButtonInBasket)}]checked[{/if}] [{$readonly}]/>
+                                        <div class="toggle-control"></div>
+                                    </label>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="info-block">
+                                                        <span class="kl-tooltip"
+                                                              title="[{oxmultilang ident="TCKLARNA_BUY_NOW_ON_BASKET_TOOLTIP"}]">
+                                                            <i class="fa fa-question fa-lg" aria-hidden="true"></i>
+                                                        </span>
+                        </td>
+                    </tr>
+                    <tr class="dark">
+                        <td class="name">
                             [{oxmultilang ident="TCKLARNA_ON_PROD_PAGE"}]
                         </td>
                         <td class="input w460">

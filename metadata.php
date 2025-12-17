@@ -215,6 +215,11 @@ $aModule = array(
             'file'     => 'views/blocks/basket_checkout_basket_next_step_top.tpl',
         ),
         array(
+            'template' => 'page/checkout/basket.tpl',
+            'block'    => 'basket_btn_next_bottom',
+            'file'     => 'views/blocks/basket_checkout_basket_btn_next_bottom.tpl',
+        ),
+        array(
             'template' => 'page/checkout/inc/basketcontents.tpl',
             'block'    => 'checkout_basketcontents_summary',
             'file'     => 'views/blocks/checkout_basketcontents_summary.tpl',

@@ -145,6 +145,11 @@ class KlarnaViewConfig extends KlarnaViewConfig_parent
         return KlarnaUtils::getShopConfVar('blKlarnaDisplayExpressButton') && $this->getKEBClientId();
     }
 
+    public function displayExpressButtonInBasket()
+    {
+        return KlarnaUtils::getShopConfVar('blKlarnaDisplayExpressButtonInBasket') && $this->getKEBClientId();
+    }
+
     public function getKEBClientId()
     {
         return KlarnaUtils::getShopConfVar("sKlarnaExpressButtonClientId");

@@ -414,7 +414,7 @@ class KlarnaOrder extends BaseModel
 
     protected function isExpressEnabled()
     {
-        return KlarnaUtils::isKlarnaPaymentsEnabled() && KlarnaUtils::getShopConfVar('blKlarnaDisplayExpressButton') && $this->getKEBClientId();
+        return KlarnaUtils::isKlarnaPaymentsEnabled() && (KlarnaUtils::getShopConfVar('blKlarnaDisplayExpressButton') || KlarnaUtils::getShopConfVar('blKlarnaDisplayExpressButtonInBasket')) && $this->getKEBClientId();
     }
 
     protected function getKEBClientId()
