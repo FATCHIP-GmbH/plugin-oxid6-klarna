@@ -229,7 +229,7 @@ class KlarnaViewConfig extends KlarnaViewConfig_parent
     /**
      * @return bool
      */
-    public function isUserLoggedIn()
+    public function isUserLoggedIn(): bool
     {
         if ($user = $this->getUser()) {
             return $user->oxuser__oxid->value == Registry::getSession()->getVariable('usr');
