@@ -31,8 +31,8 @@ abstract class KlarnaClientBase extends Base
 {
     const TEST_API_URL = 'https://api.playground.klarna.com/';
     const LIVE_API_URL = 'https://api.klarna.com/';
-    const TEST_KCO_API_URL = 'https://api.playground.klarna.com/';
-    const LIVE_KCO_API_URL = 'https://api.klarna.com/';
+    const TEST_KCO_API_URL = 'https://api.playground.kustom.co/';
+    const LIVE_KCO_API_URL = 'https://api.kustom.co/';
 
     /**
      * @var \Requests_Session
