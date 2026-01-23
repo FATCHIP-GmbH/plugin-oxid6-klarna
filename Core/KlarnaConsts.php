@@ -91,7 +91,15 @@ class KlarnaConsts
      * @codeCoverageIgnore
      * @return array
      */
-    public function getKlarnaKCOB2BCountries()
+    public function getKustomCoreCountries()
+    {
+        return array('SE', 'NO', 'FI', 'DE', 'AT', 'NL', 'GB', 'DK', 'CH', 'ES', 'FR', 'BE', 'IT', 'IE');
+    }
+    /**
+     * @codeCoverageIgnore
+     * @return array
+     */
+    public function getKustomKCOB2BCountries()
     {
         return array('SE', 'NO', 'FI');
     }

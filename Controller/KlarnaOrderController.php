@@ -1159,8 +1159,14 @@ class KlarnaOrderController extends KlarnaOrderController_parent
             $oUser = $this->getUser();
         }
         $sCountryISO = KlarnaUtils::getCountryISO($oUser->getFieldData('oxcountryid'));
-        if (in_array($sCountryISO, oxNew(KlarnaConsts::class)->getKlarnaCoreCountries())) {
-            return true;
+        if (KlarnaUtils::isKlarnaCheckoutEnabled()){
+            if (in_array($sCountryISO, oxNew(KlarnaConsts::class)->getKustomCoreCountries())) {
+                return true;
+            }
+        } else {
+            if (in_array($sCountryISO, oxNew(KlarnaConsts::class)->getKlarnaCoreCountries())) {
+                return true;
+            }
         }
 
         return false;

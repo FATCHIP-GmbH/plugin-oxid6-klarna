@@ -73,9 +73,16 @@ class KlarnaViewConfig extends KlarnaViewConfig_parent
     public function getKlarnaFooterContent()
     {
         $sCountryISO = KlarnaUtils::getShopConfVar('sKlarnaDefaultCountry');
-        if (!in_array($sCountryISO, oxNew(KlarnaConsts::class)->getKlarnaCoreCountries())) {
-            return false;
+        if (KlarnaUtils::isKlarnaCheckoutEnabled()){
+            if (!in_array($sCountryISO, oxNew(KlarnaConsts::class)->getKustomCoreCountries())) {
+                return false;
+            }
+        } else {
+            if (!in_array($sCountryISO, oxNew(KlarnaConsts::class)->getKlarnaCoreCountries())) {
+                return false;
+            }
         }
+
 
         $response = false;
 
