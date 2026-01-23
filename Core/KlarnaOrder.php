@@ -242,7 +242,7 @@ class KlarnaOrder extends BaseModel
         $this->activeB2Option = KlarnaUtils::getShopConfVar('sKlarnaB2Option');
 
         if (strpos($this->activeB2Option, 'B2B') !== false) {
-            $this->b2bAllowed = in_array($sCountryISO, oxNew(KlarnaConsts::class)->getKlarnaKCOB2BCountries());
+            $this->b2bAllowed = in_array($sCountryISO, oxNew(KlarnaConsts::class)->getKustomKCOB2BCountries());
         }
 
         if($this->activeB2Option === 'B2B'){

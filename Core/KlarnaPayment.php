@@ -406,8 +406,14 @@ class KlarnaPayment extends BaseModel
     public function validateCountryAndCurrency()
     {
         $sCountryISO = KlarnaUtils::getCountryISO($this->oUser->getFieldData('oxcountryid'));
-        if (!in_array($sCountryISO, oxNew(KlarnaConsts::class)->getKlarnaCoreCountries())) {
-            $this->addErrorMessage('TCKLARNA_KP_NOT_KLARNA_CORE_COUNTRY');
+        if (KlarnaUtils::isKlarnaCheckoutEnabled()){
+            if (!in_array($sCountryISO, oxNew(KlarnaConsts::class)->getKustomCoreCountries())) {
+                $this->addErrorMessage('TCKLARNA_KP_NOT_KLARNA_CORE_COUNTRY');
+            }
+        } else {
+            if (!in_array($sCountryISO, oxNew(KlarnaConsts::class)->getKlarnaCoreCountries())) {
+                $this->addErrorMessage('TCKLARNA_KP_NOT_KLARNA_CORE_COUNTRY');
+            }
         }
 
         if (!$this->currencyToCountryMatch) {
