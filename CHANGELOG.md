@@ -1,3 +1,7 @@
+### 5.6.8
+* expand supported country list with their specific currencies
+* add separate supported country list for KCO
+
 ### 5.6.7
 * fix data collisions if Klarna checkout, Klarna Payments or Klarna Express and PayPal Checkout is opened in two separate tabs
 * change Klarna API Url to Kustom API Url and Klarna portal link to Kustom portal link for KCO
