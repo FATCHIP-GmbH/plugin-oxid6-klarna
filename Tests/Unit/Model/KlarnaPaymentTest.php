@@ -238,16 +238,16 @@ class KlarnaPaymentTest extends ModuleUnitTestCase
                     'identifier' => 'pay_later',
                     'name'       => 'Rechnung.',
                     'asset_urls' => [
-                        'descriptive' => 'https://cdn.klarna.com/1.0/shared/image/generic/badge/de_de/pay_later/descriptive/pink.svg',
-                        'standard'    => 'https://cdn.klarna.com/1.0/shared/image/generic/badge/de_de/pay_later/standard/pink.svg',
+                        'descriptive' => 'https://x.klarnacdn.net/payment-method/assets/badges/generic/klarna.svg',
+                        'standard'    => 'https://x.klarnacdn.net/payment-method/assets/badges/generic/klarna.svg',
                     ],
                 ],
                 [
                     'identifier' => 'pay_over_time',
                     'name'       => 'Ratenkauf.',
                     'asset_urls' => [
-                        'descriptive' => 'https://cdn.klarna.com/1.0/shared/image/generic/badge/de_de/slice_it/descriptive/pink.svg',
-                        'standard'    => 'https://cdn.klarna.com/1.0/shared/image/generic/badge/de_de/slice_it/standard/pink.svg',
+                        'descriptive' => 'https://x.klarnacdn.net/payment-method/assets/badges/generic/klarna.svg',
+                        'standard'    => 'https://x.klarnacdn.net/payment-method/assets/badges/generic/klarna.svg',
                     ],
                 ],
             ],
@@ -256,8 +256,8 @@ class KlarnaPaymentTest extends ModuleUnitTestCase
         return [
             [$sessionData, 'pay_later', $sessionData['payment_method_categories'][0]['asset_urls']['standard']],
             [$sessionData, 'pay_over_time', $sessionData['payment_method_categories'][1]['asset_urls']['standard']],
-            [null, 'pay_over_time', "https://cdn.klarna.com/1.0/shared/image/generic/badge/de_de/slice_it/standard/pink.png"],
-            [null, 'klarna_pay_now', "https://cdn.klarna.com/1.0/shared/image/generic/badge/de_de/klarna_pay_now/standard/pink.png"]
+            [null, 'pay_over_time', "https://x.klarnacdn.net/payment-method/assets/badges/generic/klarna.svg"],
+            [null, 'klarna_pay_now', "https://x.klarnacdn.net/payment-method/assets/badges/generic/klarna.svg"]
         ];
     }
 }
