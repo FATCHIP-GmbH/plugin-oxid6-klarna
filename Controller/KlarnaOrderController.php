@@ -84,6 +84,8 @@ class KlarnaOrderController extends KlarnaOrderController_parent
      */
     protected $isExternalCheckout = false;
 
+    const UNKNOWN_PAYMENT_ID = 'unknown';
+
     protected function getTimeStamp()
     {
         $dt = new \DateTime();
@@ -536,6 +538,16 @@ class KlarnaOrderController extends KlarnaOrderController_parent
         $oBasket->calculateBasket(true);
 
         $oOrder = oxNew(Order::class);
+        try {
+            $kcoId = Registry::getSession()->getVariable('klarna_checkout_order_id');
+            $iso = Registry::getSession()->getVariable('sCountryISO');
+            $mgmtClient = $this->getKlarnaMgmtClient($iso);
+            $klarnaOrder = $mgmtClient->getOrder($kcoId);
+            $paymentName = strtolower($klarnaOrder['initial_payment_method']['type']);
+            $oOrder->oxorder__tcklarna_klarnapaymentmethod = new Field($paymentName, Field::T_RAW);
+        } catch (StandardException $e) {
+            $oOrder->oxorder__tcklarna_klarnapaymentmethod = new Field(self::UNKNOWN_PAYMENT_ID, Field::T_RAW);
+        }
         try {
             $iSuccess = $oOrder->finalizeOrder($oBasket, $this->_oUser);
         } catch (StandardException $e) {
@@ -1376,5 +1388,14 @@ class KlarnaOrderController extends KlarnaOrderController_parent
         $street = $addressData['streetName'] ?? '';
         $streetNo = $addressData['houseNumber'] ?? '';
         return array($street, $streetNo);
+    }
+
+    /**
+     * @param $sCountryISO
+     * @return KlarnaClientBase|KlarnaOrderManagementClient
+     */
+    protected function getKlarnaMgmtClient($sCountryISO)
+    {
+        return KlarnaOrderManagementClient::getInstance($sCountryISO);
     }
 }
