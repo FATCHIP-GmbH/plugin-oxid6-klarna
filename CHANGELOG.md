@@ -1,3 +1,8 @@
+### 5.6.9
+* fix KCO compatibility issue for PayPal OSC Module v2.6.5
+* add the selected payment method to the order and order confirmation email for KCO
+* fix missing Klarna Badges
+
 ### 5.6.8
 * expand supported country list with their specific currencies
 * add separate supported country list for KCO
