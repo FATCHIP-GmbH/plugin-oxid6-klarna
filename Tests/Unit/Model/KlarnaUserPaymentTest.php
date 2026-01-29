@@ -33,12 +33,12 @@ class KlarnaUserPaymentTest extends ModuleUnitTestCase
     public function paymentDataProvider()
     {
         return [
-            ['klarna_checkout', '//cdn.klarna.com/1.0/shared/image/generic/logo/en_gb/basic/logo_black.png', true],
-            ['klarna_pay_now', '//cdn.klarna.com/1.0/shared/image/generic/badge/de_de/pay_now/standard/pink.png', true],
-            ['klarna_pay_later', '//cdn.klarna.com/1.0/shared/image/generic/badge/de_de/pay_later/standard/pink.png', true],
+            ['klarna_checkout', '//x.klarnacdn.net/payment-method/assets/badges/generic/klarna.svg', true],
+            ['klarna_pay_now', '//x.klarnacdn.net/payment-method/assets/badges/generic/klarna.svg', true],
+            ['klarna_pay_later', '//x.klarnacdn.net/payment-method/assets/badges/generic/klarna.svg', true],
             ['other', '//cdn.klarna.com/1.0/shared/image/generic/badge/de_de//standard/pink.png', false],
             ['klarna_fake', '//cdn.klarna.com/1.0/shared/image/generic/badge/de_de//standard/pink.png', false],
-            ['klarna_slice_it', '//cdn.klarna.com/1.0/shared/image/generic/badge/de_de/slice_it/standard/pink.png', true],
+            ['klarna_slice_it', '//x.klarnacdn.net/payment-method/assets/badges/generic/klarna.svg', true],
         ];
     }
 
