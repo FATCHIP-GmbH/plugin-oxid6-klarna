@@ -103,6 +103,12 @@ $aLang = array(
     'TCKLARNA_AUTHPAYMENTMETHOD_blik'                  => 'BLIK',
     'TCKLARNA_AUTHPAYMENTMETHOD_twint'                 => 'TWINT',
     'TCKLARNA_AUTHPAYMENTMETHOD_bancontact'            => 'Bancontact',
+    'TCKLARNA_AUTHPAYMENTMETHOD_diners'                => 'Kreditkarte',
+    'TCKLARNA_AUTHPAYMENTMETHOD_discover'              => 'Kreditkarte',
+    'TCKLARNA_AUTHPAYMENTMETHOD_elo'                   => 'Kreditkarte',
+    'TCKLARNA_AUTHPAYMENTMETHOD_jcb'                   => 'Kreditkarte',
+    'TCKLARNA_AUTHPAYMENTMETHOD_union_pay'             => 'Kreditkarte',
+    'TCKLARNA_AUTHPAYMENTMETHOD_pay_by_bank'           => 'Pay by Bank',
     'TCKLARNA_AUTHPAYMENTMETHOD_other'                 => 'Kustom Checkout',
 
     'TCKLARNA_ANONYMIZED_PRODUCT'                  => 'Anonymisierter Produkttitel:',
