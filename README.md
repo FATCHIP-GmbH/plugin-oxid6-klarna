@@ -6,7 +6,7 @@ Klarna Checkout and Klarna Payments Module for the OXID eShop
 ### Title: Klarna Checkout and Klarna Payments Module for the OXID eShop
 ### Author: Fatchip GmbH, https://www.fatchip.de
 ### Prefix: tcklarna
-### Version: 5.5.5
+### Version: 5.6.9
 ### Link: https://www.klarna.com/de/verkaeufer/plattformen-und-partner/oxid/
 ### Mail: oxid@klarna.com
 
