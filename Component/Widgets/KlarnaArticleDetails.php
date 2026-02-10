@@ -25,14 +25,6 @@ use OxidEsales\Eshop\Core\Registry;
  */
 class KlarnaArticleDetails extends KlarnaArticleDetails_parent
 {
-    public function render()
-    {
-        $this->addTplParam("kebtheme", KlarnaUtils::getShopConfVar("sKlarnaKEBTheme"));
-        $this->addTplParam("kebshape", KlarnaUtils::getShopConfVar("sKlarnaKEBShape"));
-
-        return parent::render();
-    }
-
     public function isUserLoggedIn()
     {
         return $this->getUser() !== null;

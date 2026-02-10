@@ -7,8 +7,8 @@
         <div id="klarna_express_button" class="pull-right" style="display: none"></div>
 
         <script>
-            var tcKlarnaKebTheme = "[{$kebtheme}]";
-            var tcKlarnaKebShape = "[{$kebshape}]";
+            var tcKlarnaKebTheme = "[{$oViewConf->getKlarnaKEBTheme()}]";
+            var tcKlarnaKebShape = "[{$oViewConf->getKlarnaKEBShape()}]";
         </script>
         [{oxscript include="https://x.klarnacdn.net/kp/lib/v1/api.js"}]
         <script>
