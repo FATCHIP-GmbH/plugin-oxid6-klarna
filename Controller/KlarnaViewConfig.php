@@ -336,4 +336,20 @@ class KlarnaViewConfig extends KlarnaViewConfig_parent
 
         return $oSession->getVariable("kcoApplePayDeviceEligible");
     }
+
+    /**
+     * @return string
+     */
+    public function getKlarnaKEBTheme()
+    {
+        return (string)KlarnaUtils::getShopConfVar("sKlarnaKEBTheme");
+    }
+
+    /**
+     * @return string
+     */
+    public function getKlarnaKEBShape()
+    {
+        return (string)KlarnaUtils::getShopConfVar("sKlarnaKEBShape");
+    }
 }

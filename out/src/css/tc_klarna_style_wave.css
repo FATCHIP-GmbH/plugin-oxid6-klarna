@@ -66,3 +66,7 @@
 .is-logged-in #instant {
     height: auto;
 }
+
+#klarna_express_button {
+    margin-bottom: 10px;
+}
