@@ -1,3 +1,7 @@
+### 5.7.0
+* fix KEX button design settings
+* add rtoken to confirmation-call
+
 ### 5.6.9
 * fix KCO compatibility issue for PayPal OSC Module v2.6.5
 * add the selected payment method to the order and order confirmation email for KCO
