@@ -20,8 +20,8 @@ class KlarnaOrders extends AdminDetailsController
 {
     const KLARNA_PORTAL_PLAYGROUND_URL = 'https://portal.playground.klarna.com/orders/merchants/%s/orders/%s';
     const KLARNA_PORTAL_LIVE_URL       = 'https://portal.klarna.com/orders/merchants/%s/orders/%s';
-    const KUSTOM_PORTAL_PLAYGROUND_URL = 'https://portal.playground.kustom.co/orders/%s';
-    const KUSTOM_PORTAL_LIVE_URL       = 'https://portal.kustom.co/orders/%s';
+    const KUSTOM_PORTAL_PLAYGROUND_URL = 'https://portal.playground.kustom.co/orders/list/%s?merchantId=%s';
+    const KUSTOM_PORTAL_LIVE_URL       = 'https://portal.kustom.co/orders/list/%s?merchantId=%s';
 
     protected $_sThisTemplate = 'tcklarna_orders.tpl';
 
@@ -237,8 +237,9 @@ class KlarnaOrders extends AdminDetailsController
                 $url = self::KUSTOM_PORTAL_LIVE_URL;
             }
             $orderId = $this->getEditObject()->oxorder__tcklarna_orderid->value;
+            $mid     = $this->getEditObject()->oxorder__tcklarna_merchantid->value;
 
-            return sprintf($url, $orderId);
+            return sprintf($url, $orderId, $mid);
         } else {
             if ($this->getEditObject()->oxorder__tcklarna_servermode->value === 'playground') {
                 $url = self::KLARNA_PORTAL_PLAYGROUND_URL;

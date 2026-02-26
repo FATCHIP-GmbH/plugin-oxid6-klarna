@@ -2,6 +2,7 @@
 * fix KEX button design settings
 * add rtoken to confirmation-call
 * fix multiple orders with the same klarna order id
+* fix Kustom-portal link
 
 ### 5.6.9
 * fix KCO compatibility issue for PayPal OSC Module v2.6.5
