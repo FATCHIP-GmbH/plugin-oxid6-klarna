@@ -1,3 +1,6 @@
+### 5.8.0
+* fix critical SQL injection vulnerability
+
 ### 5.7.0
 * fix KEX button design settings
 * add rtoken to confirmation-call
