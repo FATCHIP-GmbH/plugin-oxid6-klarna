@@ -66,8 +66,8 @@ class KlarnaArticle extends KlarnaArticle_parent
         $sArticleTable = $this->getViewName();
         if (strlen($sArtNum) === 64) {
             $sArtNum   .= '%';
-            $sSQL      = "SELECT art.oxid FROM {$sArticleTable} art WHERE art.OXACTIVE=1 AND art.OXARTNUM LIKE \"{$sArtNum}\"";
-            $articleId = DatabaseProvider::getDb(DatabaseProvider::FETCH_MODE_ASSOC)->getOne($sSQL);
+            $sSQL      = "SELECT art.oxid FROM {$sArticleTable} art WHERE art.OXACTIVE=1 AND art.OXARTNUM LIKE ?";
+            $articleId = DatabaseProvider::getDb(DatabaseProvider::FETCH_MODE_ASSOC)->getOne($sSQL, array($sArtNum));
         } else {
             if (KlarnaUtils::getShopConfVar('blKlarnaEnableAnonymization')) {
                 $sSQL = "SELECT oxartid 
