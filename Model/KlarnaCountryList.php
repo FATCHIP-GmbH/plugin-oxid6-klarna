@@ -92,11 +92,13 @@ class KlarnaCountryList extends KlarnaCountryList_parent
         $this->selectString($sSelect);
     }
 
-    public function getKalarnaCountriesTitles($iLang, $isoList)
+    public function getKlarnaCountriesTitles($iLang)
     {
         $sViewName = getViewName('oxcountry', $iLang);
+        $isoList   = oxNew(KlarnaConsts::class)->getKlarnaCoreCountries();
+        $isoList   = implode("','", $isoList);
         $sSelect   = "SELECT {$sViewName}.oxisoalpha2, {$sViewName}.oxtitle FROM {$sViewName}
-            WHERE {$sViewName}.oxisoalpha2 IN ('".implode("','", $isoList)."')";
+            WHERE {$sViewName}.oxisoalpha2 IN ('{$isoList}')";
 
         $this->selectString($sSelect);
         $result = array();
