@@ -802,7 +802,7 @@ class KlarnaOrderController extends KlarnaOrderController_parent
     /**
      * Ajax - updates country heading above iframe
      * @param $aPost
-     * @return string
+     * @return void
      *
      */
     protected function updateSession($aPost)
@@ -811,6 +811,11 @@ class KlarnaOrderController extends KlarnaOrderController_parent
         $responseStatus = 'success';
 
         if ($aPost['country']) {
+            if (preg_match('/^[A-Z]{3}$/', $aPost['country']) !== 1) {
+                Registry::getUtils()->showMessageAndExit(
+                    $this->jsonResponse(__FUNCTION__, 'error', 'Invalid country code')
+                );
+            }
 
             $oCountry = oxNew(Country::class);
             $sSql     = $oCountry->buildSelectString(array('oxisoalpha3' => $aPost['country']));
@@ -829,7 +834,7 @@ class KlarnaOrderController extends KlarnaOrderController_parent
             $responseStatus      = 'redirect';
         }
 
-        return Registry::getUtils()->showMessageAndExit(
+        Registry::getUtils()->showMessageAndExit(
             $this->jsonResponse(__FUNCTION__, $responseStatus, $responseData)
         );
     }

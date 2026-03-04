@@ -33,20 +33,20 @@ class KlarnaCountryList extends KlarnaCountryList_parent
     public function loadActiveKlarnaCheckoutCountries($iLang = null, $filterKcoList = true)
     {
         $sViewName = getViewName('oxcountry', $iLang);
-        $isoList   = oxNew(KlarnaConsts::class)->getKlarnaGlobalCountries();
-        $isoList   = implode("','", $isoList);
         $sSelect   = "SELECT {$sViewName}.oxid, {$sViewName}.oxtitle, {$sViewName}.oxisoalpha2 FROM {$sViewName}
                       JOIN oxobject2payment 
                       ON oxobject2payment.oxobjectid = {$sViewName}.oxid
                       WHERE oxobject2payment.oxpaymentid = 'klarna_checkout'
                       AND oxobject2payment.oxtype = 'oxcountry'
                       AND {$sViewName}.oxactive=1";
+        $params = [];
 
         if($filterKcoList === true) {
-            $sSelect.= " AND {$sViewName}.oxisoalpha2 IN ('{$isoList}')";
+            $sSelect.= " AND {$sViewName}.oxisoalpha2 IN (:countries)";
+            $params[':countries'] = oxNew(KlarnaConsts::class)->getKlarnaGlobalCountries();
         }
 
-        $this->selectString($sSelect);
+        $this->selectString($sSelect, $params);
 
         if(!count($this)) {
             $sSelect = "SELECT {$sViewName}.oxid, {$sViewName}.oxtitle, {$sViewName}.oxisoalpha2 
@@ -111,19 +111,19 @@ class KlarnaCountryList extends KlarnaCountryList_parent
 
     public function loadActiveKlarnaCountriesByPaymentId($paymentId)
     {
-        $paymentId = DatabaseProvider::getDb()->quote($paymentId);
         $sViewName = getViewName('oxcountry');
-        $isoList   = oxNew(KlarnaConsts::class)->getKlarnaGlobalCountries();
-        $isoList   = implode("','", $isoList);
         $sSelect   = "SELECT {$sViewName}.oxid, {$sViewName}.oxtitle, {$sViewName}.oxisoalpha2 FROM {$sViewName}
                       JOIN oxobject2payment 
                       ON oxobject2payment.oxobjectid = {$sViewName}.oxid
-                      WHERE oxobject2payment.oxpaymentid = {$paymentId}
+                      WHERE oxobject2payment.oxpaymentid = :paymentId
                       AND oxobject2payment.oxtype = 'oxcountry'
                       AND {$sViewName}.oxactive=1";
 
-        $sSelect.= " AND {$sViewName}.oxisoalpha2 IN ('{$isoList}')";
+        $sSelect.= " AND {$sViewName}.oxisoalpha2 IN (:countries)";
 
-        $this->selectString($sSelect);
+        $this->selectString($sSelect, [
+            ':paymentId' => $paymentId,
+            ':countries' => oxNew(KlarnaConsts::class)->getKlarnaGlobalCountries()
+        ]);
     }
 }
