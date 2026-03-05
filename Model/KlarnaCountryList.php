@@ -65,16 +65,14 @@ class KlarnaCountryList extends KlarnaCountryList_parent
     public function loadActiveNonKlarnaCheckoutCountries($iLang = null)
     {
         $sViewName = getViewName('oxcountry', $iLang);
-        $isoList   = oxNew(KlarnaConsts::class)->getKlarnaGlobalCountries();
-        $isoList   = implode("','", $isoList);
         $sSelect   = "SELECT oxid, oxtitle, oxisoalpha2 FROM {$sViewName}
                       WHERE oxactive=1 
                       AND (
-                      oxisoalpha2 NOT IN ('{$isoList}')
-                      OR oxid NOT IN (SELECT oxobjectid FROM oxobject2payment WHERE oxpaymentid = 'klarna_checkout')
+                          oxisoalpha2 NOT IN (:countries)
+                          OR oxid NOT IN (SELECT oxobjectid FROM oxobject2payment WHERE oxpaymentid = 'klarna_checkout')
                       )
                       ORDER BY oxorder, oxtitle";
-        $this->selectString($sSelect);
+        $this->selectString($sSelect, [':countries' => oxNew(KlarnaConsts::class)->getKlarnaGlobalCountries()]);
     }
 
     /**
@@ -84,23 +82,19 @@ class KlarnaCountryList extends KlarnaCountryList_parent
     public function loadActiveKCOGlobalCountries($iLang = null)
     {
         $sViewName = getViewName('oxcountry', $iLang);
-        $isoList   = oxNew(KlarnaConsts::class)->getKlarnaGlobalCountries();
-        $isoList   = implode("','", $isoList);
         $sSelect   = "SELECT {$sViewName}.oxid, {$sViewName}.oxtitle, {$sViewName}.oxisoalpha2 FROM {$sViewName}
                       WHERE {$sViewName}.oxactive=1 
-                      AND {$sViewName}.oxisoalpha2 IN ('{$isoList}')";
-        $this->selectString($sSelect);
+                      AND {$sViewName}.oxisoalpha2 IN (:countries)";
+        $this->selectString($sSelect, [':countries' => oxNew(KlarnaConsts::class)->getKlarnaGlobalCountries()]);
     }
 
     public function getKlarnaCountriesTitles($iLang)
     {
         $sViewName = getViewName('oxcountry', $iLang);
-        $isoList   = oxNew(KlarnaConsts::class)->getKlarnaCoreCountries();
-        $isoList   = implode("','", $isoList);
         $sSelect   = "SELECT {$sViewName}.oxisoalpha2, {$sViewName}.oxtitle FROM {$sViewName}
-            WHERE {$sViewName}.oxisoalpha2 IN ('{$isoList}')";
+            WHERE {$sViewName}.oxisoalpha2 IN (:countries)";
 
-        $this->selectString($sSelect);
+        $this->selectString($sSelect, [':countries' => oxNew(KlarnaConsts::class)->getKlarnaCoreCountries()]);
         $result = array();
         foreach($this as $country) {
             $result[$country->oxcountry__oxisoalpha2->value] = $country->oxcountry__oxtitle->value;
