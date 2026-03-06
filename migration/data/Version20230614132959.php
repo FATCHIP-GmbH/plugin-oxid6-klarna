@@ -169,21 +169,6 @@ final class Version20230614132959 extends AbstractMigration
                 DEFAULT CHARSET = utf8;
             ");
         }
-
-        if (!$schema->hasTable('tcklarna_instant_basket')) {
-            $this->addSql("
-                CREATE TABLE `tcklarna_instant_basket` (
-                    `OXID` VARCHAR(32) CHARACTER SET latin1 COLLATE latin1_general_ci NOT NULL,
-                    `BASKET_INFO` MEDIUMBLOB,
-                    `STATUS`  VARCHAR(32) NOT NULL DEFAULT 'OPENED',
-                    `TYPE` VARCHAR(32) NOT NULL DEFAULT '',
-                    `TIMESTAMP` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT 'Timestamp',
-                    PRIMARY KEY (`OXID`)
-                )
-                ENGINE = InnoDB
-                DEFAULT CHARSET = utf8;
-            ");
-        }
     }
 
     /**

@@ -12,7 +12,6 @@ use TopConcepts\Klarna\Controller\KlarnaThankYouController;
 use TopConcepts\Klarna\Core\KlarnaCheckoutClient;
 use TopConcepts\Klarna\Core\Exception\KlarnaClientException;
 use TopConcepts\Klarna\Core\Exception\KlarnaWrongCredentialsException;
-use TopConcepts\Klarna\Model\KlarnaInstantBasket;
 use TopConcepts\Klarna\Tests\Unit\ModuleUnitTestCase;
 
 /**
@@ -116,8 +115,7 @@ class KlarnaThankYouControllerTest extends ModuleUnitTestCase
         $oBasket->expects($this->once())->method('getProductsCount')->will($this->returnValue(1));
         $oBasket->expects($this->once())->method('getOrderId')->will($this->returnValue(1));
 
-        $controller = $this->getMockBuilder(KlarnaThankYouController::class)->
-        setMethods(['getNewKlarnaInstantBasket'])->getMock();
+        $controller = $this->getMockBuilder(KlarnaThankYouController::class)->getMock();
 
         $this->setProtectedClassProperty($controller, '_oBasket', $oBasket);
 
