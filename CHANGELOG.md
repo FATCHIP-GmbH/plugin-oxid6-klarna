@@ -1,3 +1,9 @@
+### 5.5.10
+* remove dead Klarna Instant Basket feature
+* Security - Update
+* fix Klarna Badge
+* remove curls
+
 ### 5.5.9
 * add selected klarna payment type to order
 
