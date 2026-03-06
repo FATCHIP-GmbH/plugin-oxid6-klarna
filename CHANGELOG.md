@@ -1,3 +1,7 @@
+### 5.8.1
+* remove dead Klarna Instant Basket feature
+* security hardening
+
 ### 5.8.0
 * fix critical SQL injection vulnerability
 
