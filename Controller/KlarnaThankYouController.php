@@ -18,13 +18,11 @@
 namespace TopConcepts\Klarna\Controller;
 
 
-use OxidEsales\EshopCommunity\Application\Controller\FrontendController;
 use TopConcepts\Klarna\Core\KlarnaCheckoutClient;
 use TopConcepts\Klarna\Core\KlarnaUtils;
 use OxidEsales\Eshop\Application\Model\Order;
 use OxidEsales\Eshop\Core\Registry;
 use TopConcepts\Klarna\Core\Exception\KlarnaClientException;
-use TopConcepts\Klarna\Model\KlarnaInstantBasket;
 
 /**
  * Class KlarnaThankYouController
@@ -70,14 +68,6 @@ class KlarnaThankYouController extends KlarnaThankYouController_parent
         KlarnaUtils::fullyResetKlarnaSession();
 
         return $render;
-    }
-
-    /**
-     * @codeCoverageIgnore
-     */
-    protected function getNewKlarnaInstantBasket()
-    {
-        return oxNew(KlarnaInstantBasket::class);
     }
 
     protected function loadClient($oOrder) {

@@ -239,11 +239,13 @@ class KlarnaUser extends KlarnaUser_parent
         $exists = false;
         if ($sEmail) {
             $oDb = DatabaseProvider::getDb();
-            $sQ  = "SELECT `oxid` FROM `oxuser` WHERE `oxusername` = " . $oDb->quote($sEmail);
+            $sQ  = "SELECT `oxid` FROM `oxuser` WHERE `oxusername` = :email";
+            $params = [':email' => $sEmail];
             if (!Registry::getConfig()->getConfigParam('blMallUsers')) {
-                $sQ .= " AND `oxshopid` = " . $oDb->quote(Registry::getConfig()->getShopId());
+                $sQ .= " AND `oxshopid` = :shopid";
+                $params[':shopid'] = Registry::getConfig()->getShopId();
             }
-            $sId    = $oDb->getOne($sQ);
+            $sId    = $oDb->getOne($sQ, $params);
             if ($sId) {
                 $exists = $this->load($sId);
             }

@@ -42,20 +42,6 @@ class KlarnaUserPayment extends KlarnaUserPayment_parent
             return '//cdn.klarna.com/1.0/shared/image/generic/logo/en_gb/basic/logo_black.png';
         }
 
-        $oPayment = oxNew(Payment::class);
-        $oPayment->load($paymentId);
-
-        $from   = '/' . preg_quote('-', '/') . '/';
-        $locale = preg_replace($from, '_', strtolower(KlarnaConsts::getLocale()), 1);
-
-        $name = $oPayment->getPaymentCategoryName();
-        if ($name === 'pay_over_time') {
-            $name = 'slice_it';
-        }
-
-        return sprintf("//cdn.klarna.com/1.0/shared/image/generic/badge/%s/%s/standard/pink.png",
-            $locale,
-            $name
-        );
+        return sprintf("//x.klarnacdn.net/payment-method/assets/badges/generic/klarna.svg");
     }
 }

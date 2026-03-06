@@ -96,11 +96,11 @@
         <div class="well well-sm kp-outer">
             <dl>
                 <dt>
-                    <input class="kp-radio" id="kp-dd" data-payment_id="card" type="radio"
+                    <input class="kp-radio" id="kp-cc" data-payment_id="card" type="radio"
                            name="paymentid"
                            value="[{$sPaymentID}]"
                            [{if $is_checked}]checked[{/if}]>
-                    <label for="kp-dd"><b>[{$oView->removeKlarnaPrefix($paymentmethod->oxpayments__oxdesc->value)}]</b></label>
+                    <label for="kp-cc"><b>[{$oView->removeKlarnaPrefix($paymentmethod->oxpayments__oxdesc->value)}]</b></label>
                     <img src="[{$paymentmethod->getBadgeUrl()}]">
                 </dt>
                 <dt style="font-weight: normal">[{oxmultilang ident="TCKLARNA_PAY_NOW_SUBTITLE"}]</dt>
