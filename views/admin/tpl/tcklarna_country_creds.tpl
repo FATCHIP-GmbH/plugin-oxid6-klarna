@@ -7,7 +7,7 @@
                     <td>
                         <div class="klarna-flag [{$sKey|lower}]"></div>
                         <div class="row-labels">
-                            Merchant ID:
+                            [{oxmultilang ident="TCKLARNA_MERCHANT_ID"}]:
                         </div>
                     </td>
 
@@ -25,13 +25,26 @@
                 <tr>
                     <td>
                         <div class="row-labels password">
-                            Password:
+                            [{oxmultilang ident="TCKLARNA_PASSWORD"}]:
                         </div>
                     </td>
                     <td class="center">
                         <div class="input" style="font-weight: normal;">
                             <input type="password" class="" name="confaarrs[aKlarnaCreds_[{$sKey}]][password]"
                                    value="[{$aValues.password}]">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="row-labels password">
+                            [{oxmultilang ident="TCKLARNA_PORTAL_MERCHANT_ID"}]:
+                        </div>
+                    </td>
+                    <td class="center">
+                        <div class="input">
+                            <input type="text" class="" name="confaarrs[aKlarnaCreds_[{$sKey}]][portalMid]"
+                                   value="[{$aValues.portalMid}]">
                         </div>
                     </td>
                 </tr>

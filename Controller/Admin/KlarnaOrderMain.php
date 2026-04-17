@@ -233,7 +233,7 @@ class KlarnaOrderMain extends KlarnaOrderMain_parent
         $countryISO = KlarnaUtils::getCountryISO($this->getEditObject()->getFieldData('oxbillcountryid'));
         $this->addTplParam('sCountryISO', $countryISO);
         $currentMid = KlarnaUtils::getAPICredentials($this->getViewDataElement('sCountryISO'));
-        $this->addTplParam('currentMid', $currentMid['mid']);
+        $this->addTplParam('currentMid', $currentMid['portalMid']);
 
         if (strstr($this->getViewDataElement('currentMid'), $this->getViewDataElement('sMid'))) {
             return true;

@@ -267,9 +267,9 @@ class KlarnaOrders extends AdminDetailsController
             'sCountryISO',
             KlarnaUtils::getCountryISO($this->getEditObject()->getFieldData('oxbillcountryid'))
         );
-        $this->addTplParam('currentMid', $currentMid['mid']);
+        $this->addTplParam('currentMid', $currentMid['portalMid']);
 
-        if (strstr($currentMid['mid'], $this->getViewDataElement('sMid'))) {
+        if (strstr($currentMid['portalMid'], $this->getViewDataElement('sMid'))) {
             return true;
         }
 
