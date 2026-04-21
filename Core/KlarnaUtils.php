@@ -165,6 +165,16 @@ class KlarnaUtils
                 'mid'      => KlarnaUtils::getShopConfVar('sKlarnaMerchantId'),
                 'password' => KlarnaUtils::getShopConfVar('sKlarnaPassword'),
             );
+
+            if (KlarnaUtils::isKlarnaPaymentsEnabled()) {
+                $aCredentials['portalMid'] = KlarnaUtils::getShopConfVar('sKlarnaPortalMerchantId');
+            }
+        }
+
+        // If merchant id has not been configured or module is in klarna checkout mode, extract portal merchant id from username
+        if (empty($aCredentials['portalMid'])) {
+            preg_match('/(?<mid>^[a-zA-Z0-9]+)/', $aCredentials['mid'], $matches);
+            $aCredentials['portalMid'] = $matches['mid'];
         }
 
         return $aCredentials;

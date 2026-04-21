@@ -103,8 +103,7 @@ class KlarnaOrder extends KlarnaOrder_parent
         $aKlarnaCredentials = KlarnaUtils::getAPICredentials($sCountryISO);
         $test               = KlarnaUtils::getShopConfVar('blIsKlarnaTestMode');
 
-        preg_match('/(?<mid>^[a-zA-Z0-9]+)/', $aKlarnaCredentials['mid'], $matches);
-        $mid        = $matches['mid'];
+        $mid        = $aKlarnaCredentials['portalMid'];
         $serverMode = $test ? 'playground' : 'live';
 
         $this->oxorder__tcklarna_merchantid = new Field($mid, Field::T_RAW);

@@ -121,6 +121,20 @@
                         </span>
                         </td>
                     </tr>
+                    <tr>
+                        <td>[{oxmultilang ident="TCKLARNA_PORTAL_MERCHANT_ID"}]:</td>
+                        <td>
+                            <div class="input">
+                                <input type="text" class="" name="confstrs[sKlarnaPortalMerchantId]"
+                                       value="[{$confstrs.sKlarnaPortalMerchantId}]">
+                            </div>
+                        </td>
+                        <td>
+                        <span class="kl-tooltip" title="[{oxmultilang ident="TCKLARNA_GLOBAL_PORTAL_MERCHANT_ID_TOOLTIP"}]">
+                            <i class="fa fa-question fa-lg" aria-hidden="true"></i>
+                        </span>
+                        </td>
+                    </tr>
                     <tr class="bg-grey [{if !$tcklarna_countryCreds}]hidden[{/if}]" id="ycsc">
                         <td class="center" colspan="3">[{oxmultilang ident="TCKLARNA_YOUR_COUNTRY_SPECIFIC_CREDS"}]</td>
                     </tr>
@@ -192,6 +206,20 @@
                                         <td>
                             <span class="kl-tooltip"
                                   title="[{oxmultilang ident="TCKLARNA_CREDENTIALS_COUNTRY_PASSWORD_TOOLTIP"}]">
+                                <i class="fa fa-question fa-lg" aria-hidden="true"></i>
+                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr class="accFormRow">
+                                        <td>[{oxmultilang ident="TCKLARNA_PORTAL_MERCHANT_ID"}]:</td>
+                                        <td>
+                                            <div class="input">
+                                                <input type="text" class="" name="" value="">
+                                            </div>
+                                        </td>
+                                        <td>
+                            <span class="kl-tooltip"
+                                  title="[{oxmultilang ident="TCKLARNA_CREDENTIALS_COUNTRY_PORTAL_MERCHANT_ID_TOOLTIP"}]">
                                 <i class="fa fa-question fa-lg" aria-hidden="true"></i>
                             </span>
                                         </td>

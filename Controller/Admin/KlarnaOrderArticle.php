@@ -202,7 +202,7 @@ class KlarnaOrderArticle extends KlarnaOrderArticle_parent
         $this->addTplParam('sMid', $this->getEditObject()->getFieldData('tcklarna_merchantid'));
         $this->addTplParam('sCountryISO', KlarnaUtils::getCountryISO($this->getEditObject()->getFieldData('oxbillcountryid')));
         $currentMid = KlarnaUtils::getAPICredentials($this->getViewDataElement('sCountryISO'));
-        $this->addTplParam('currentMid', $currentMid['mid']);
+        $this->addTplParam('currentMid', $currentMid['portalMid']);
 
         if (strstr($this->getViewDataElement('currentMid'), $this->getViewDataElement('sMid'))) {
             return true;

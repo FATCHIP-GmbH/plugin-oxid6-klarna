@@ -253,7 +253,7 @@ class KlarnaOrderOverview extends KlarnaOrderOverview_parent
     {
         $orderMID = $this->getEditObject()->getFieldData('tcklarna_merchantid');
         $orderCountryISO = KlarnaUtils::getCountryISO($this->getEditObject()->getFieldData('oxbillcountryid'));
-        $currentMid = KlarnaUtils::getAPICredentials($orderCountryISO)['mid'];
+        $currentMid = KlarnaUtils::getAPICredentials($orderCountryISO)['portalMid'];
 
         $this->addTplParam('sMid', $orderMID);
         $this->addTplParam('sCountryISO', $orderCountryISO);
