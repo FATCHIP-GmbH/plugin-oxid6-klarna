@@ -3,12 +3,16 @@
 namespace TopConcepts\Klarna\Controller\Admin;
 
 
+use Doctrine\DBAL\Connection;
+use Doctrine\DBAL\Query\QueryBuilder;
+use OxidEsales\Eshop\Application\Model\DeliverySetList;
+use OxidEsales\Eshop\Core\DatabaseProvider;
+use OxidEsales\Eshop\Core\Registry;
 use OxidEsales\Eshop\Core\Request;
+use OxidEsales\EshopCommunity\Internal\Container\ContainerFactory;
+use OxidEsales\EshopCommunity\Internal\Framework\Database\QueryBuilderFactoryInterface;
 use TopConcepts\Klarna\Core\KlarnaConsts;
 use TopConcepts\Klarna\Core\KlarnaUtils;
-use OxidEsales\Eshop\Core\Registry;
-use OxidEsales\Eshop\Core\DatabaseProvider;
-use OxidEsales\Eshop\Application\Model\DeliverySetList;
 
 /**
  * Class Klarna_Config for module configuration in OXID backend
@@ -134,23 +138,25 @@ class KlarnaGeneral extends KlarnaBaseConfig
             return $this->_aKlarnaCountries;
         }
         $sViewName = getViewName('oxcountry', $this->getViewDataElement('adminlang'));
-        if (KlarnaUtils::isKlarnaCheckoutEnabled()){
-            $isoList   = oxNew(KlarnaConsts::class)->getKustomCoreCountries();
+        if (KlarnaUtils::isKlarnaCheckoutEnabled()) {
+            $isoList = oxNew(KlarnaConsts::class)->getKustomCoreCountries();
         } else {
-            $isoList   = oxNew(KlarnaConsts::class)->getKlarnaCoreCountries();
+            $isoList = oxNew(KlarnaConsts::class)->getKlarnaCoreCountries();
         }
 
-        /** @var \OxidEsales\EshopCommunity\Core\Database\Adapter\Doctrine\Database $db */
-        $db  = DatabaseProvider::getDb(DatabaseProvider::FETCH_MODE_ASSOC);
-        $sql = "SELECT oxisoalpha2, oxtitle 
-                FROM {$sViewName} 
-                WHERE oxisoalpha2 IN (:countries) AND oxactive = '1'";
+        /** @var QueryBuilder $qb */
+        $qb = ContainerFactory::getInstance()
+            ->getContainer()
+            ->get(QueryBuilderFactoryInterface::class)
+            ->create();
 
-        /** @var \OxidEsales\EshopCommunity\Core\Database\Adapter\Doctrine\ResultSet $oResult */
-        $oResult = $db->select($sql, [':countries' => $isoList]);
-        foreach($oResult->getIterator() as $aCountry){
-            $this->_aKlarnaCountries[$aCountry['OXISOALPHA2']] = $aCountry['OXTITLE'];
-        }
+        $this->_aKlarnaCountries = $qb->select('oxisoalpha2', 'oxtitle')
+            ->from($sViewName)
+            ->where($qb->expr()->in('oxisoalpha2', ':countries'))
+            ->setParameter(':countries', $isoList, Connection::PARAM_STR_ARRAY)
+            ->andWhere('oxactive = 1')
+            ->execute()
+            ->fetchAllKeyValue();
 
         return $this->_aKlarnaCountries;
     }
