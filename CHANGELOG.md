@@ -1,3 +1,6 @@
+### 5.8.2
+* add config field for Klarna merchant id
+
 ### 5.8.1
 * remove dead Klarna Instant Basket feature
 * security hardening
