@@ -1,3 +1,6 @@
+### 5.8.3
+* fix id not being set during user exists check if user is fake
+
 ### 5.8.2
 * add config field for Klarna merchant id
 
