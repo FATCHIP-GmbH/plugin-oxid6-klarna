@@ -1155,7 +1155,7 @@ class KlarnaOrderController extends KlarnaOrderController_parent
             $this->addTplParam("sLocale", strtolower(oxNew(KlarnaConsts::class)->getLocale()));
         }
 
-        if (!Registry::getRequest()->getRequestParameter("kcoreloaded")) {
+        if (!Registry::getRequest()->getRequestParameter("kcoreloaded") && empty(Registry::getRequest()->getRequestParameter('fnc'))) {
             $queryString = $_SERVER['QUERY_STRING'];
             Registry::getUtils()->redirect(Registry::getConfig()->getShopSecureHomeUrl() . $queryString . "&kcoreloaded=1", false);
         }
