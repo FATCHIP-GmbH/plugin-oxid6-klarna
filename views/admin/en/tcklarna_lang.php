@@ -108,6 +108,7 @@ $aLang = array(
     'TCKLARNA_KEB_SHAPE_pill'          => 'Pill',
     'TCKLARNA_ON_BASKET_PAGE'         => 'On basket page',
     'TCKLARNA_DISPLAY_EXPRESS_BUTTON' => 'Display Klarna Express Checkout Button?',
+    'TCKLARNA_DISPLAY_EXPRESS_BUTTON_HTACCESS' => 'To use Klarna Express to its full extent, location detection via GeoIP is required. To do this, add the following code to your .htaccess file:" &lt;IfModule mod_geoip.c&gt;    GeoIPEnable On&lt;/IfModule&gt;"',
     'TCKLARNA_PAYMENT_DESIGN'         => 'Klarna Payment Design Options',
     'TCKLARNA_CHECKOUT_DESIGN'        => 'Klarna Checkout Design Options',
     'TCKLARNA_COLOR_SETTINGS'         => 'Color settings:',

@@ -196,7 +196,10 @@ class KlarnaUser extends KlarnaUser_parent
         // KP
         if (KlarnaUtils::isKlarnaPaymentsEnabled()) {
             if (!($sCountryId = $this->getFieldData('oxcountryid'))) {
-                $sCountryISO = KlarnaUtils::getShopConfVar('sKlarnaDefaultCountry');
+                $sCountryISO = strtoupper(Registry::getUtilsServer()->getServerVar('GEOIP_COUNTRY_CODE'));  //get UserCountry via GeoIp
+                if (empty($sCountryISO)) {
+                    $sCountryISO = KlarnaUtils::getShopConfVar('sKlarnaDefaultCountry');              //get UserCountry fallback from ShopConfig
+                }
                 $sCountryId  = $oCountry->getIdByCode($sCountryISO);
             }
         }
