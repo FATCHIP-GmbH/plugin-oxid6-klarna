@@ -167,30 +167,30 @@ $aLang = array(
     'TCKLARNA_DEVICE_IMG'                               => 'device.png',
 
 
-    'TCKLARNA_EXTERNAL_PAYMENTS_ADMIN_DESC'             => 'W tym miejscu można skonfigurować zewnętrzne metody płatności i zewnętrzne procesy realizacji transakcji w celu ich zintegrowania z ramką iframe Klarna Checkout. ',
-    'TP11'                                              => 'Szczegółowy opis poszczególnych ustawień można znaleźć w podpowiedziach ',
-    'TP12'                                              => '<i class="fa fa-question-circle-o" aria-hidden="true"></i>, zapoznaj się z <a class="cl-pink" href="https://wiki.fatchip.de/public/faqklarna" target="_blank">instrukcją obsługi</a> ',
-    'TP13'                                              => 'lub skontaktuj się z działem wsparcia technicznego ds. integracji Klarna.',
-    'TCKLARNA_EXTRA_MERCHANT_DATA_ADMIN_DESC'           => 'W tym miejscu można skonfigurować, czy w razie potrzeby dodatkowe dane sprzedawcy mają być przekazywane do Klarna. ',
-    'TP21'                                              => 'Szczegółowy opis poszczególnych ustawień można znaleźć w podpowiedziach ',
-    'TP22'                                              => '<i class="fa fa-question-circle-o" aria-hidden="true"></i>, zapoznaj się z <a class="cl-pink" href="https://wiki.fatchip.de/public/faqklarna" target="_blank">instrukcją obsługi</a> ',
-    'TP23'                                              => 'lub skontaktuj się z działem wsparcia technicznego ds. integracji Klarna.',
-    'TCKLARNA_DESIGN_SETTINGS_ADMIN_DESC'               => 'W tym miejscu można skonfigurować ustawienia wyglądu do wykorzystania z modułem Klarna dla sklepu OXID eShop. ',
-    'TP31'                                              => 'Szczegółowy opis poszczególnych ustawień można znaleźć w podpowiedziach ',
-    'TP32'                                              => '<i class="fa fa-question-circle-o" aria-hidden="true"></i>, zapoznaj się z <a class="cl-pink" href="https://wiki.fatchip.de/public/faqklarna" target="_blank">instrukcją obsługi</a> ',
-    'TP33'                                              => 'lub skontaktuj się z działem wsparcia technicznego ds. integracji Klarna.',
-    'TCKLARNA_GENERAL_SETTINGS_ADMIN_DESC'              => 'W tym miejscu można wybrać między Klarna Checkout a Klarna Payments oraz skonfigurować ustawienia ogólne. ',
-    'TP41'                                              => 'Szczegółowy opis poszczególnych ustawień można znaleźć w podpowiedziach ',
-    'TP42'                                              => '<i class="fa fa-question-circle-o" aria-hidden="true"></i>, zapoznaj się z <a class="cl-pink" href="https://wiki.fatchip.de/public/faqklarna" target="_blank">instrukcją obsługi</a> ',
-    'TP43'                                              => 'lub skontaktuj się z działem wsparcia technicznego ds. integracji Klarna.',
-    'TCKLARNA_CONFIGURATION_KCO_ADMIN_DESC'             => 'Na tej stronie można skonfigurować ustawienia specyficzne dla usługi Klarna Checkout. ',
-    'TP51'                                              => 'Szczegółowy opis poszczególnych ustawień można znaleźć w podpowiedziach ',
-    'TP52'                                              => '<i class="fa fa-question-circle-o" aria-hidden="true"></i>, zapoznaj się z <a class="cl-pink" href="https://wiki.fatchip.de/public/faqklarna" target="_blank">instrukcją obsługi</a> ',
-    'TP53'                                              => 'lub skontaktuj się z działem wsparcia technicznego ds. integracji Klarna.',
-    'TCKLARNA_CONFIGURATION_KP_ADMIN_DESC'              => 'Na tej stronie możesz wybrać, które usługi płatnicze Klarna chcesz oferować. ',
-    'TP61'                                              => 'Szczegółowy opis poszczególnych ustawień można znaleźć w podpowiedziach ',
-    'TP62'                                              => '<i class="fa fa-question-circle-o" aria-hidden="true"></i>, zapoznaj się z <a class="cl-pink" href="https://wiki.fatchip.de/public/faqklarna" target="_blank">instrukcją obsługi</a> ',
-    'TP63'                                              => 'lub skontaktuj się z działem wsparcia technicznego ds. integracji Klarna.',
+    'TCKLARNA_EXTERNAL_PAYMENTS_ADMIN_DESC'             => 'W tym miejscu można skonfigurować zewnętrzne metody płatności i zewnętrzne procesy realizacji transakcji w celu ich zintegrowania z ramką iframe Klarna Checkout. 
+Szczegółowy opis poszczególnych ustawień można znaleźć w podpowiedziach 
+<i class="fa fa-question-circle-o" aria-hidden="true"></i>, zapoznaj się z <a class="cl-pink" href="https://wiki.fatchip.de/public/faqklarna" target="_blank">instrukcją obsługi</a> 
+lub skontaktuj się z działem wsparcia technicznego ds. integracji Klarna.',
+    'TCKLARNA_EXTRA_MERCHANT_DATA_ADMIN_DESC'           => 'W tym miejscu można skonfigurować, czy w razie potrzeby dodatkowe dane sprzedawcy mają być przekazywane do Klarna. 
+Szczegółowy opis poszczególnych ustawień można znaleźć w podpowiedziach 
+<i class="fa fa-question-circle-o" aria-hidden="true"></i>, zapoznaj się z <a class="cl-pink" href="https://wiki.fatchip.de/public/faqklarna" target="_blank">instrukcją obsługi</a> 
+lub skontaktuj się z działem wsparcia technicznego ds. integracji Klarna.',
+    'TCKLARNA_DESIGN_SETTINGS_ADMIN_DESC'               => 'W tym miejscu można skonfigurować ustawienia wyglądu do wykorzystania z modułem Klarna dla sklepu OXID eShop. 
+Szczegółowy opis poszczególnych ustawień można znaleźć w podpowiedziach 
+<i class="fa fa-question-circle-o" aria-hidden="true"></i>, zapoznaj się z <a class="cl-pink" href="https://wiki.fatchip.de/public/faqklarna" target="_blank">instrukcją obsługi</a> 
+lub skontaktuj się z działem wsparcia technicznego ds. integracji Klarna.',
+    'TCKLARNA_GENERAL_SETTINGS_ADMIN_DESC'              => 'W tym miejscu można wybrać między Klarna Checkout a Klarna Payments oraz skonfigurować ustawienia ogólne. 
+Szczegółowy opis poszczególnych ustawień można znaleźć w podpowiedziach 
+<i class="fa fa-question-circle-o" aria-hidden="true"></i>, zapoznaj się z <a class="cl-pink" href="https://wiki.fatchip.de/public/faqklarna" target="_blank">instrukcją obsługi</a> 
+lub skontaktuj się z działem wsparcia technicznego ds. integracji Klarna.',
+    'TCKLARNA_CONFIGURATION_KCO_ADMIN_DESC'             => 'Na tej stronie można skonfigurować ustawienia specyficzne dla usługi Klarna Checkout. 
+Szczegółowy opis poszczególnych ustawień można znaleźć w podpowiedziach 
+<i class="fa fa-question-circle-o" aria-hidden="true"></i>, zapoznaj się z <a class="cl-pink" href="https://wiki.fatchip.de/public/faqklarna" target="_blank">instrukcją obsługi</a> 
+lub skontaktuj się z działem wsparcia technicznego ds. integracji Klarna.',
+    'TCKLARNA_CONFIGURATION_KP_ADMIN_DESC'              => 'Na tej stronie możesz wybrać, które usługi płatnicze Klarna chcesz oferować. 
+Szczegółowy opis poszczególnych ustawień można znaleźć w podpowiedziach 
+<i class="fa fa-question-circle-o" aria-hidden="true"></i>, zapoznaj się z <a class="cl-pink" href="https://wiki.fatchip.de/public/faqklarna" target="_blank">instrukcją obsługi</a> 
+lub skontaktuj się z działem wsparcia technicznego ds. integracji Klarna.',
 
     'TCKLARNA_PAYMENT_METHOD'                           => 'Sposób płatności',
     'TCKLARNA_EXTERNAL_PAYMENT_METHOD'                  => 'Zewnętrzna metoda płatności',
@@ -222,10 +222,10 @@ $aLang = array(
     'TCKLARNA_GLOBAL_MERCHANT_ID_TOOLTIP'               => 'Proszę wprowadzić tutaj dane dostępowe do API Klarna. Otrzymali Państwo je w wiadomości e-mail z powitaniem od Klarna. Ta nazwa użytkownika wraz z hasłem obowiązuje globalnie we wszystkich krajach. Tylko w przypadku, gdy otrzymali Państwo różne dane dostępowe dla poszczególnych krajów, mogą Państwo dodać je poniżej.',
     'TCKLARNA_GLOBAL_PASSWORD_TOOLTIP'                  => 'Wpisz tutaj hasło odpowiadające używanej nazwie użytkownika API. Hasło to otrzymałeś w wiadomości e-mail z powitaniem od firmy Klarna.',
     'TCKLARNA_GLOBAL_PORTAL_MERCHANT_ID_TOOLTIP'        => 'Proszę wpisać tutaj swój identyfikator sprzedawcy Klarna. Otrzymali Państwo go w wiadomości e-mail z powitaniem od firmy Klarna.',
-    'TCKLARNA_CREDENTIALS_COUNTRY_SELECTOR_TOOLTIP'     => 'Z listy po lewej stronie wybierz kraj, dla którego otrzymałeś dane dostępowe do serwisu Klarna przeznaczone dla tego kraju.',
-    'TCKLARNA_CREDENTIALS_COUNTRY_MERCHANT_ID_TOOLTIP'  => 'Proszę wpisać tutaj nazwę użytkownika dla tego kraju.',
-    'TCKLARNA_CREDENTIALS_COUNTRY_PASSWORD_TOOLTIP'     => 'Proszę wpisać tutaj hasło dla tego kraju.',
-    'TCKLARNA_CREDENTIALS_COUNTRY_PORTAL_MERCHANT_ID_TOOLTIP'=> 'Proszę wpisać tutaj identyfikator sprzedawcy (Merchant ID) dla tego kraju.',
+    'TCKLARNA_CREDENTIALS_COUNTRY_SELECTOR_TOOLTIP'             => 'Z listy po lewej stronie wybierz kraj, dla którego otrzymałeś dane dostępowe do serwisu Klarna przeznaczone dla tego kraju.',
+    'TCKLARNA_CREDENTIALS_COUNTRY_MERCHANT_ID_TOOLTIP'          => 'Proszę wpisać tutaj nazwę użytkownika dla tego kraju.',
+    'TCKLARNA_CREDENTIALS_COUNTRY_PASSWORD_TOOLTIP'             => 'Proszę wpisać tutaj hasło dla tego kraju.',
+    'TCKLARNA_CREDENTIALS_COUNTRY_PORTAL_MERCHANT_ID_TOOLTIP'   => 'Proszę wpisać tutaj identyfikator sprzedawcy (Merchant ID) dla tego kraju.',
     'TCKLARNA_DEFAULT_COUNTRY_TOOLTIP'                  => 'Proszę wybrać z listy kraj, dla którego domyślnie ma być ładowana strona Klarna Checkout, dopóki klient nie poda jeszcze swojego kraju.',
     'TCKLARNA_ENABLE_LOGGING_TOOLTIP'                   => 'Włącza funkcję logowania, dzięki czemu cała komunikacja API z Klarną jest rejestrowana w tabeli MySQL o nazwie tcklarna_logs. Może to być przydatne podczas analizy lub wyszukiwania błędów. W środowisku produkcyjnym funkcja ta powinna być wyłączona, ponieważ w przeciwnym razie mogą gromadzić się duże ilości logów i być zapisywane dane wrażliwe.',
     'TCKLARNA_SEND_PRODUCT_URLS_TOOLTIP'                => 'Prosimy o przesłanie do firmy Klarna adresów URL stron szczegółowych produktów znajdujących się w koszykach Państwa klientów, aby firma Klarna mogła później umieścić linki do tych produktów na portalu Klarna.',
@@ -289,7 +289,7 @@ $aLang = array(
     'KLARNA_REFUNDS'                                    => 'Zwroty kosztów',
     'KLARNA_CANCEL_ORDER'                               => 'Anulowanie zamówienia',
     'KLARNA_ORDER_IS_CANCELLED'                         => 'Zamówienie zostało anulowane. ',
-    'KLARNA_SEE_ORDER_IN_PORTAL'                        => '<a href="%s" target="_blank" class="alert-link">Diese Bestellung im Klarna Portal aufrufen</a>',
+    'KLARNA_SEE_ORDER_IN_PORTAL'                        => '<a href="%s" target="_blank" class="alert-link">Zobacz to zamówienie w portalu Klarna</a>',
     'KLARNA_ORDER_NOT_IN_SYNC'                          => '<strong>Uwaga!</strong> Dane dotyczące tego zamówienia różnią się od danych zapisanych w systemie Klarna. ',
     'TCKLARNA_ORDER_UPDATE_CANT_BE_SENT_TO_KLARNA'      => 'Uwaga! Ze względu na aktualny status zamówienia nie można przesłać tej korekty do Klarna. W razie potrzeby należy wprowadzić odpowiednią korektę ręcznie bezpośrednio w portalu Klarna Merchant Portal.',
     'TCKLARNA_ORDER_UPDATE_REJECTED_BY_KLARNA'          => 'Uwaga! Firma Klarna nie mogła przetworzyć ostatnich zmian wprowadzonych w tym zamówieniu (przyczyna: %s). Prosimy o cofnięcie ostatnich zmian w sklepie OXID eShop lub, w razie potrzeby, o ręczne wprowadzenie odpowiednich poprawek w portalu Klarna Merchant Portal.',
@@ -326,7 +326,7 @@ $aLang = array(
     'TCKLARNA_LEARN_MORE_BUTTON'                        => 'Dowiedz się więcej',
 
     'TCKLARNA_CUSTOMER_TYPE'                            => 'Obsługiwane typy klientów',
-    'TCKLARNA_CUSTOMER_TYPE_TOOLTIP'                    => 'Hier können Sie einstellen, ob der Shop ausschließlich B2C Transaktionen (Standard-Einstellung). nur B2B Transaktionen oder sowohl B2C als auch B2B Transaktionen akzeptieren soll. <br> Hinweis: Nach dem Umstellen der Kundenarten muss der Session cache des Browsers gelöscht werden, damit die Bezahlung getestet werden kann.',
+    'TCKLARNA_CUSTOMER_TYPE_TOOLTIP'                    => 'Tutaj możesz skonfigurować, czy sklep ma akceptować tylko transakcje B2C (ustawienie domyślne), tylko transakcje B2B, czy zarówno transakcje B2C, jak i B2B. <br> Uwaga: Po zmianie typu klienta, pamięć podręczna sesji przeglądarki musi zostać wyczyszczona przed przetestowaniem płatności.',
     'TCKLARNA_B2C'                                      => 'Wyłącznie klienci B2C',
     'TCKLARNA_B2B'                                      => 'Wyłącznie klienci B2B',
     'TCKLARNA_B2B_B2C'                                  => 'Głównie klienci z sektora B2B, ale także klienci z sektora B2C',
@@ -351,12 +351,12 @@ $aLang = array(
     'TCKLARNA_FOOTER_PROMOTION_TOOLTIP'                 => 'W tym miejscu proszę wstawić tag Placement, aby wyświetlić dostępne metody płatności Klarna w stopce sklepu',
     'TCKLARNA_BANNER_PROMOTION_TOOLTIP'                 => 'W tym miejscu proszę wstawić tag umieszczenia, aby dodać baner na stronie głównej sklepu',
     'TCKLARNA_ON_SITE_MESSAGING_HEADER_TITLE'           => 'Czym jest komunikacja na stronie?',
-    'TCKLARNA_ON_SITE_MESSAGING_HEADER_DESC'            => 'Klienci nie zawsze zdają sobie sprawę z różnych możliwości kredytowych i finansowych, jakie mają do dyspozycji, zanim dotrą do kasy. Możliwości finansowania dostępne na wczesnym etapie mają wpływ na decyzję o zakupie.',
+    'TCKLARNA_ON_SITE_MESSAGING_HEADER_DESC'            => 'Klienci nie zawsze zdają sobie sprawę z różnych możliwości kredytowych i finansowych, jakie mają do dyspozycji, zanim dotrą do kasy. Możliwości finansowania dostępne na wczesnym etapie mają wpływ na decyzję o zakupie.
 
-    'TCKLARNA_ON_SITE_MESSAGING_HEADER_DESC_TPK0'       => 'Funkcja On-Site Messaging jest łatwa i bezproblemowa w integracji oraz zapewnia dostosowane do potrzeb informacje – od ogólnych banerów, przez promocję współpracy z Klarną i dostępność płatności ratalnej, aż po spersonalizowane oferty kredytowe na stronach produktów lub koszyka.',
-    'TCKLARNA_ON_SITE_MESSAGING_HEADER_DESC_2'          => 'Weitere Informationen zu den ersten Schritten <a class="cl-pink" href="https://docs.klarna.com/conversion-boosters/on-site-messaging/before-you-start/" target="_blank" rel=”noopener”>finden Sie hier</a><br><br>',
-    'TCKLARNA_ON_SITE_MESSAGING_HEADER_DESC_2_TPK1'     => 'Melden Sie sich im <a class="cl-pink" href="https://merchants.klarna.com/" target="_blank">Händlerportal</a> an, um Ihren persönlichen JavaScript- und Placement-Code zu generieren. On-Site-Messaging wird in Ihrem Shop aktiviert, sobald der JavaScript-Code gespeichert und mindestens ein Placement-Code eingegeben wurde.<br>',
-    'TCKLARNA_ON_SITE_MESSAGING_HEADER_DESC_2_TPK2'     => 'Można to w każdej chwili wyłączyć, usuwając te kody.',
+Funkcja On-Site Messaging jest łatwa i bezproblemowa w integracji oraz zapewnia dostosowane do potrzeb informacje – od ogólnych banerów, przez promocję współpracy z Klarną i dostępność płatności ratalnej, aż po spersonalizowane oferty kredytowe na stronach produktów lub koszyka.',
+    'TCKLARNA_ON_SITE_MESSAGING_HEADER_DESC_2'          => 'Więcej informacji na temat pierwszych kroków można znaleźć tutaj: <a class="cl-pink" href="https://docs.klarna.com/conversion-boosters/on-site-messaging/before-you-start/" target="_blank" rel=”noopener”></a><br><br> 
+Zaloguj się do <a class="cl-pink" href="https://merchants.klarna.com/" target="_blank">Portalu Sprzedawcy</a>, aby wygenerować swój osobisty kod JavaScript i kod pozycjonowania. Wiadomości na stronie zostaną aktywowane w Twoim sklepie po zapisaniu kodu JavaScript i wprowadzeniu co najmniej jednego kodu pozycjonowania.<br> 
+Można to w każdej chwili wyłączyć, usuwając te kody.',
     'TCKLARNA_ON_SITE_MESSAGING_MERCHANT_BUTTON'        => 'Portal dla sprzedawców',
 
     'TCKLARNA_IS_ENABLED_HEADLINE'                      => 'Włącz usługę Klarna Instant Shopping',
@@ -375,12 +375,12 @@ $aLang = array(
     'TCKLARNA_IS_BUTTON_PLACEMENT_BASKET'               => 'Wyświetl w podsumowaniu koszyka',
     'TCKLARNA_IS_BUTTON_PLACEMENT_BASKET_TOOLTIP'       => 'Włącz tę funkcję, aby przycisk Klarna Instant Shopping wyświetlał się na stronie podsumowania koszyka w Twoim sklepie.',
     'TCKLARNA_IS_BUTTON_SETTINGS_HEADLINE'              => 'Dodatkowe ustawienia funkcji „Instant Shopping”',
-    'TCKLARNA_IS_SETTING_ALLOW_SEPARATE_SHIPPING_ADDRESS'=> 'Adres dostawy może różnić się od adresu rozliczeniowego',
-    'TCKLARNA_IS_SETTING_ALLOW_SEPARATE_SHIPPING_ADDRESS_TOOLTIP'=> 'Jeśli chcesz umożliwić dostawę na inny adres, zaznacz to pole wyboru.',
-    'TCKLARNA_IS_SETTING_DATE_OF_BIRTH_MANDATORY'       => 'Data urodzenia jako pole obowiązkowe',
-    'TCKLARNA_IS_SETTING_DATE_OF_BIRTH_MANDATORY_TOOLTIP'=> 'Jeśli chcą Państwo, aby podanie daty urodzenia było obowiązkowe, proszę zaznaczyć to pole. Zazwyczaj w systemie Klarna data urodzenia nie jest polem obowiązkowym. Jest ona jednak niezbędna, aby umożliwić zakup na rachunek lub płatność w ratach.',
-    'TCKLARNA_IS_SETTING_NATIONAL_IDENTIFICATION_NUMBER_MANDATORY'=> 'Krajowy numer identyfikacyjny jako pole obowiązkowe',
-    'TCKLARNA_IS_SETTING_NATIONAL_IDENTIFICATION_NUMBER_MANDATORY_TOOLTIP'=> 'Proszę wybrać, czy numer identyfikacyjny powinien być polem obowiązkowym.',
+    'TCKLARNA_IS_SETTING_ALLOW_SEPARATE_SHIPPING_ADDRESS'                   => 'Adres dostawy może różnić się od adresu rozliczeniowego',
+    'TCKLARNA_IS_SETTING_ALLOW_SEPARATE_SHIPPING_ADDRESS_TOOLTIP'           => 'Jeśli chcesz umożliwić dostawę na inny adres, zaznacz to pole wyboru.',
+    'TCKLARNA_IS_SETTING_DATE_OF_BIRTH_MANDATORY'                           => 'Data urodzenia jako pole obowiązkowe',
+    'TCKLARNA_IS_SETTING_DATE_OF_BIRTH_MANDATORY_TOOLTIP'                   => 'Jeśli chcą Państwo, aby podanie daty urodzenia było obowiązkowe, proszę zaznaczyć to pole. Zazwyczaj w systemie Klarna data urodzenia nie jest polem obowiązkowym. Jest ona jednak niezbędna, aby umożliwić zakup na rachunek lub płatność w ratach.',
+    'TCKLARNA_IS_SETTING_NATIONAL_IDENTIFICATION_NUMBER_MANDATORY'          => 'Krajowy numer identyfikacyjny jako pole obowiązkowe',
+    'TCKLARNA_IS_SETTING_NATIONAL_IDENTIFICATION_NUMBER_MANDATORY_TOOLTIP'  => 'Proszę wybrać, czy numer identyfikacyjny powinien być polem obowiązkowym.',
     'TCKLARNA_IS_BUTTON_SETTINGS_VARIATION'             => 'Odmiana',
     'TCKLARNA_IS_BUTTON_SETTINGS_TAGLINE'               => 'Slogan',
     'TCKLARNA_IS_BUTTON_SETTINGS_TYPE'                  => 'Typ',

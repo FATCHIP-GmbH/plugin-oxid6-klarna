@@ -222,7 +222,7 @@ o póngase en contacto con el servicio de asistencia de integración de Klarna.'
     'TCKLARNA_GLOBAL_MERCHANT_ID_TOOLTIP'               => 'Introduzca aquí sus datos de acceso a la API de Klarna. Los habrá recibido en el correo electrónico de bienvenida de Klarna. Este nombre de usuario y contraseña son válidos para todos los países. Solo en caso de que haya recibido datos de acceso diferentes para distintos países, podrá añadirlos más abajo.',
     'TCKLARNA_GLOBAL_PASSWORD_TOOLTIP'                  => 'Introduzca aquí la contraseña correspondiente al nombre de usuario de la API que utilice. Ha recibido esta contraseña en el correo electrónico de bienvenida de Klarna.',
     'TCKLARNA_GLOBAL_PORTAL_MERCHANT_ID_TOOLTIP'        => 'Introduzca aquí su ID de comerciante de Klarna. Lo recibió en el correo electrónico de bienvenida de Klarna.',
-    'TCKLARNA_CREDENTIALS_COUNTRY_SELECTOR_TOOLTIP'             e la izquierda el país para el que haya recibido los datos de acceso específicos de Klarna.',
+    'TCKLARNA_CREDENTIALS_COUNTRY_SELECTOR_TOOLTIP'             => 'Seleccione el país para el que ha recibido datos de acceso específicos de Klarna en la selección de la izquierda.',
     'TCKLARNA_CREDENTIALS_COUNTRY_MERCHANT_ID_TOOLTIP'          => 'Introduzca aquí el nombre de usuario correspondiente a este país.',
     'TCKLARNA_CREDENTIALS_COUNTRY_PASSWORD_TOOLTIP'             => 'Introduzca aquí la contraseña correspondiente a este país.',
     'TCKLARNA_CREDENTIALS_COUNTRY_PORTAL_MERCHANT_ID_TOOLTIP'   => 'Introduzca aquí el ID de comerciante correspondiente a este país.',

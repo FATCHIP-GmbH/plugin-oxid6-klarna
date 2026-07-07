@@ -24,7 +24,7 @@ $aLang = array(
 
     'TCKLARNA_KLARNAMAINMENU'                           => 'Klarna',
     'TCKLARNA_START'                                    => 'Démarrer',
-    'TCKLARNA_GENERAL_SETTINGS'                         => 'Généralités',
+    'TCKLARNA_GENERAL_SETTINGS'                         => 'Paramètres généraux',
     'TCKLARNA_CONFIGURATION'                            => 'Configuration',
     'TCKLARNA_CONFIGURATION_KCO'                        => 'Configuration de Klarna Checkout',
     'TCKLARNA_CONFIGURATION_KP'                         => 'Configuration pour les paiements Klarna',
@@ -99,8 +99,8 @@ $aLang = array(
     'TCKLARNA_KEB_SHIPPINGMETHOD'                       => 'Livraison avec Klarna Express Checkout',
     'TCKLARNA_KEB_THEME'                                => 'Thème du bouton « Klarna Express Checkout »',
     'TCKLARNA_KEB_THEME_default'                        => 'Standard (foncé)',
-    'TCKLARNA_KEB_THEME_light'                          => 'Bon',
-    'TCKLARNA_KEB_THEME_outlined'                       => 'En bref',
+    'TCKLARNA_KEB_THEME_light'                          => 'Clair',
+    'TCKLARNA_KEB_THEME_outlined'                       => 'Esquissé',
     'TCKLARNA_KEB_SHAPE'                                => 'Formulaire du bouton « Klarna Express Checkout »',
     'TCKLARNA_KEB_SHAPE_default'                        => 'Standard',
     'TCKLARNA_KEB_SHAPE_rect'                           => 'Rectangulaire',
@@ -143,7 +143,7 @@ $aLang = array(
     'TCKLARNA_ORDER_VALIDATION'                         => 'Validation de la commande',
 
     'TCKLARNA_CHOOSE_KP_OPTIONS'                        => 'Veuillez sélectionner les options de paiement Klarna que vous souhaitez proposer à vos clients :',
-    'TCKLARNA_PAY_LATER'                                => 'facture',
+    'TCKLARNA_PAY_LATER'                                => 'Facture',
     'TCKLARNA_PAY_LATER.'                               => 'Facture.',
     'TCKLARNA_PAY_LATER_START'                          => 'Pour les clients qui souhaitent acheter maintenant et payer plus tard. En toute simplicité, dans un délai de 30 jours, selon le marché.',
     'TCKLARNA_PAY_LATER_TEXT'                           => 'L\'option « Facture » permet aux clients d\'effectuer leur paiement facilement et rapidement, sans avoir à saisir de données personnelles ni de numéros compliqués. Le client a le choix entre la facture et le paiement au mois X.',
@@ -167,30 +167,30 @@ $aLang = array(
     'TCKLARNA_DEVICE_IMG'                               => 'device.png',
 
 
-    'TCKLARNA_EXTERNAL_PAYMENTS_ADMIN_DESC'             => 'Vous pouvez ici configurer les modes de paiement externes et les processus de paiement externes à intégrer dans l\'iframe de Klarna Checkout. ',
-    'TP11'                                              => 'Pour une description détaillée des différents paramètres, veuillez consulter les infobulles ',
-    'TP12'                                              => '<i class="fa fa-question-circle-o" aria-hidden="true"></i>, consultez le <a class="cl-pink" href="https://wiki.fatchip.de/public/faqklarna" target="_blank">manuel</a> ',
-    'TP13'                                              => 'ou contactez le service d\'assistance à l\'intégration de Klarna.',
-    'TCKLARNA_EXTRA_MERCHANT_DATA_ADMIN_DESC'           => 'Vous pouvez ici configurer si des données supplémentaires relatives au commerçant doivent être transmises à Klarna, le cas échéant. ',
-    'TP21'                                              => 'Pour une description détaillée des différents paramètres, veuillez consulter les infobulles ',
-    'TP22'                                              => '<i class="fa fa-question-circle-o" aria-hidden="true"></i>, consultez le <a class="cl-pink" href="https://wiki.fatchip.de/public/faqklarna" target="_blank">manuel</a> ',
-    'TP23'                                              => 'ou contactez le service d\'assistance à l\'intégration de Klarna.',
-    'TCKLARNA_DESIGN_SETTINGS_ADMIN_DESC'               => 'Vous pouvez ici configurer les paramètres de mise en page à utiliser avec le module Klarna pour la boutique en ligne OXID. ',
-    'TP31'                                              => 'Pour une description détaillée des différents paramètres, veuillez consulter les infobulles ',
-    'TP32'                                              => '<i class="fa fa-question-circle-o" aria-hidden="true"></i>, consultez le <a class="cl-pink" href="https://wiki.fatchip.de/public/faqklarna" target="_blank">manuel</a> ',
-    'TP33'                                              => 'ou contactez le service d\'assistance à l\'intégration de Klarna.',
-    'TCKLARNA_GENERAL_SETTINGS_ADMIN_DESC'              => 'Vous pouvez ici choisir entre Klarna Checkout et Klarna Payments, et définir des paramètres généraux. ',
-    'TP41'                                              => 'Pour une description détaillée des différents paramètres, veuillez consulter les infobulles ',
-    'TP42'                                              => '<i class="fa fa-question-circle-o" aria-hidden="true"></i>, consultez le <a class="cl-pink" href="https://wiki.fatchip.de/public/faqklarna" target="_blank">manuel</a> ',
-    'TP43'                                              => 'ou contactez le service d\'assistance à l\'intégration de Klarna.',
-    'TCKLARNA_CONFIGURATION_KCO_ADMIN_DESC'             => 'Sur cette page, vous pouvez configurer les paramètres spécifiques à Klarna Checkout. ',
-    'TP51'                                              => 'Pour une description détaillée des différents paramètres, veuillez consulter les infobulles ',
-    'TP52'                                              => '<i class="fa fa-question-circle-o" aria-hidden="true"></i>, consultez le <a class="cl-pink" href="https://wiki.fatchip.de/public/faqklarna" target="_blank">manuel</a> ',
-    'TP53'                                              => 'ou contactez le service d\'assistance à l\'intégration de Klarna.',
-    'TCKLARNA_CONFIGURATION_KP_ADMIN_DESC'              => 'Sur cette page, vous pouvez choisir les modes de paiement Klarna que vous souhaitez proposer. ',
-    'TP61'                                              => 'Pour une description détaillée des différents paramètres, veuillez consulter les infobulles ',
-    'TP62'                                              => '<i class="fa fa-question-circle-o" aria-hidden="true"></i>, consultez le <a class="cl-pink" href="https://wiki.fatchip.de/public/faqklarna" target="_blank">manuel</a> ',
-    'TP63'                                              => 'ou contactez le service d\'assistance à l\'intégration de Klarna.',
+    'TCKLARNA_EXTERNAL_PAYMENTS_ADMIN_DESC'             => 'Vous pouvez ici configurer les modes de paiement externes et les processus de paiement externes à intégrer dans l\'iframe de Klarna Checkout. 
+Pour une description détaillée des différents paramètres, veuillez consulter les infobulles 
+<i class="fa fa-question-circle-o" aria-hidden="true"></i>, consultez le <a class="cl-pink" href="https://wiki.fatchip.de/public/faqklarna" target="_blank">manuel</a> 
+ou contactez le service d\'assistance à l\'intégration de Klarna.',
+    'TCKLARNA_EXTRA_MERCHANT_DATA_ADMIN_DESC'           => 'Vous pouvez ici configurer si des données supplémentaires relatives au commerçant doivent être transmises à Klarna, le cas échéant. 
+Pour une description détaillée des différents paramètres, veuillez consulter les infobulles 
+<i class="fa fa-question-circle-o" aria-hidden="true"></i>, consultez le <a class="cl-pink" href="https://wiki.fatchip.de/public/faqklarna" target="_blank">manuel</a> 
+ou contactez le service d\'assistance à l\'intégration de Klarna.',
+    'TCKLARNA_DESIGN_SETTINGS_ADMIN_DESC'               => 'Vous pouvez ici configurer les paramètres de mise en page à utiliser avec le module Klarna pour la boutique en ligne OXID. 
+Pour une description détaillée des différents paramètres, veuillez consulter les infobulles 
+<i class="fa fa-question-circle-o" aria-hidden="true"></i>, consultez le <a class="cl-pink" href="https://wiki.fatchip.de/public/faqklarna" target="_blank">manuel</a> 
+ou contactez le service d\'assistance à l\'intégration de Klarna.',
+    'TCKLARNA_GENERAL_SETTINGS_ADMIN_DESC'              => 'Vous pouvez ici choisir entre Klarna Checkout et Klarna Payments, et définir des paramètres généraux. 
+Pour une description détaillée des différents paramètres, veuillez consulter les infobulles 
+<i class="fa fa-question-circle-o" aria-hidden="true"></i>, consultez le <a class="cl-pink" href="https://wiki.fatchip.de/public/faqklarna" target="_blank">manuel</a> 
+ou contactez le service d\'assistance à l\'intégration de Klarna.',
+    'TCKLARNA_CONFIGURATION_KCO_ADMIN_DESC'             => 'Sur cette page, vous pouvez configurer les paramètres spécifiques à Klarna Checkout. 
+Pour une description détaillée des différents paramètres, veuillez consulter les infobulles 
+<i class="fa fa-question-circle-o" aria-hidden="true"></i>, consultez le <a class="cl-pink" href="https://wiki.fatchip.de/public/faqklarna" target="_blank">manuel</a> 
+ou contactez le service d\'assistance à l\'intégration de Klarna.',
+    'TCKLARNA_CONFIGURATION_KP_ADMIN_DESC'              => 'Sur cette page, vous pouvez choisir les modes de paiement Klarna que vous souhaitez proposer. 
+Pour une description détaillée des différents paramètres, veuillez consulter les infobulles 
+<i class="fa fa-question-circle-o" aria-hidden="true"></i>, consultez le <a class="cl-pink" href="https://wiki.fatchip.de/public/faqklarna" target="_blank">manuel</a> 
+ou contactez le service d\'assistance à l\'intégration de Klarna.',
 
     'TCKLARNA_PAYMENT_METHOD'                           => 'Mode de paiement',
     'TCKLARNA_EXTERNAL_PAYMENT_METHOD'                  => 'Mode de paiement externe',
@@ -214,7 +214,7 @@ $aLang = array(
     'TCKLARNA_EMD_ORDER_HISTORY_ALL'                    => 'Considérer toutes les commandes comme payées, quelle que soit la date d\'oxpaid',
     'TCKLARNA_EMD_ORDER_HISTORY_PAID'                   => 'Ne transmettre que les commandes pour lesquelles une date « oxpaid » a été définie ; ignorer les commandes non payées',
     'TCKLARNA_EMD_ORDER_HISTORY_NONE'                   => 'Ignorer toutes les commandes effectuées avec ce mode de paiement',
-    'TCKLARNA_OTHER_PAYMENT'                            => 'Autre mode de paiement',
+    'TCKLARNA_OTHER_PAYMENT'                            => 'Autre modes de paiement',
     'TCKLARNA_DIRECT_BANKING'                           => 'Virement instantané',
     'TCKLARNA_CARD'                                     => 'Carte',
 
@@ -222,10 +222,10 @@ $aLang = array(
     'TCKLARNA_GLOBAL_MERCHANT_ID_TOOLTIP'               => 'Veuillez saisir ici vos identifiants d\'accès à l\'API Klarna. Vous les avez reçus dans l\'e-mail de bienvenue envoyé par Klarna. Ce nom d\'utilisateur et ce mot de passe sont valables dans tous les pays. Si vous avez reçu des identifiants différents pour certains pays, vous pouvez les ajouter ci-dessous.',
     'TCKLARNA_GLOBAL_PASSWORD_TOOLTIP'                  => 'Saisissez ici le mot de passe correspondant au nom d\'utilisateur API que vous utilisez. Ce mot de passe vous a été communiqué dans l\'e-mail de bienvenue envoyé par Klarna.',
     'TCKLARNA_GLOBAL_PORTAL_MERCHANT_ID_TOOLTIP'        => 'Veuillez saisir ici votre identifiant de commerçant Klarna. Vous l\'avez reçu dans l\'e-mail de bienvenue envoyé par Klarna.',
-    'TCKLARNA_CREDENTIALS_COUNTRY_SELECTOR_TOOLTIP'     => 'Dans la liste de gauche, sélectionnez le pays pour lequel vous avez reçu les identifiants d\'accès spécifiques à ce pays de la part de Klarna.',
-    'TCKLARNA_CREDENTIALS_COUNTRY_MERCHANT_ID_TOOLTIP'  => 'Veuillez saisir ici le nom d\'utilisateur correspondant à ce pays.',
-    'TCKLARNA_CREDENTIALS_COUNTRY_PASSWORD_TOOLTIP'     => 'Veuillez saisir ici le mot de passe correspondant à ce pays.',
-    'TCKLARNA_CREDENTIALS_COUNTRY_PORTAL_MERCHANT_ID_TOOLTIP'=> 'Veuillez saisir ici l\'identifiant de commerçant correspondant à ce pays.',
+    'TCKLARNA_CREDENTIALS_COUNTRY_SELECTOR_TOOLTIP'             => 'Dans la liste de gauche, sélectionnez le pays pour lequel vous avez reçu les identifiants d\'accès spécifiques à ce pays de la part de Klarna.',
+    'TCKLARNA_CREDENTIALS_COUNTRY_MERCHANT_ID_TOOLTIP'          => 'Veuillez saisir ici le nom d\'utilisateur correspondant à ce pays.',
+    'TCKLARNA_CREDENTIALS_COUNTRY_PASSWORD_TOOLTIP'             => 'Veuillez saisir ici le mot de passe correspondant à ce pays.',
+    'TCKLARNA_CREDENTIALS_COUNTRY_PORTAL_MERCHANT_ID_TOOLTIP'   => 'Veuillez saisir ici l\'identifiant de commerçant correspondant à ce pays.',
     'TCKLARNA_DEFAULT_COUNTRY_TOOLTIP'                  => 'Veuillez sélectionner dans la liste le pays pour lequel le module Klarna Checkout doit s\'afficher par défaut tant que le client n\'a pas encore indiqué son pays.',
     'TCKLARNA_ENABLE_LOGGING_TOOLTIP'                   => 'Active la fonction de journalisation afin que toutes les communications API avec Klarna soient enregistrées dans la table MySQL « tcklarna_logs ». Cela peut s\'avérer utile pour l\'analyse ou le dépannage. En environnement de production, cette fonction doit être désactivée, car sinon, des volumes importants de journaux risquent de s\'accumuler et des données sensibles pourraient être enregistrées.',
     'TCKLARNA_SEND_PRODUCT_URLS_TOOLTIP'                => 'Envoyez à Klarna les URL des pages de détail des produits qui se trouvent dans le panier de vos clients, afin que Klarna puisse ensuite créer des liens vers vos articles depuis le portail Klarna.',
@@ -277,7 +277,7 @@ $aLang = array(
     'TCKLARNA_BORDER_RADIUS_TOOLTIP'                    => 'Ce paramètre vous permet de définir le degré d\'arrondi du cadre qui s\'affiche dans l\'interface client de la boutique après la sélection du mode de paiement Klarna, en fonction des différentes sous-options disponibles.',
 
     'KLARNA_ONLY_FOR_KLARNA_PAYMENT'                    => 'Cet onglet concerne uniquement les commandes passées via Klarna',
-    'KLARNA_CAPTURE_FULL_ORDER'                         => 'Enregistrer la commande complète',
+    'KLARNA_CAPTURE_FULL_ORDER'                         => 'Prélever la commande complète',
     'KLARNA_CAPTURE_ID'                                 => 'Référence du prélèvement',
     'KLARNA_CAPTURE_REFERENCE'                          => 'Référence Klarna',
     'KLARNA_CAPTURE_AMOUNT'                             => 'Montant du prélèvement',
@@ -289,7 +289,7 @@ $aLang = array(
     'KLARNA_REFUNDS'                                    => 'Remboursements',
     'KLARNA_CANCEL_ORDER'                               => 'Annuler la commande',
     'KLARNA_ORDER_IS_CANCELLED'                         => 'La commande a été annulée. ',
-    'KLARNA_SEE_ORDER_IN_PORTAL'                        => '<a href="%s" target="_blank" class="alert-link">Diese Bestellung im Klarna Portal aufrufen</a>',
+    'KLARNA_SEE_ORDER_IN_PORTAL'                        => '<a href="%s" target="_blank" class="alert-link">Consultez cette commande sur le portail Klarna.</a>',
     'KLARNA_ORDER_NOT_IN_SYNC'                          => '<strong>Attention !</strong> Les informations relatives à cette commande diffèrent de celles enregistrées chez Klarna. ',
     'TCKLARNA_ORDER_UPDATE_CANT_BE_SENT_TO_KLARNA'      => 'Attention ! En raison du statut actuel de la commande, cette modification ne peut pas être transmise à Klarna. Si nécessaire, effectuez cette modification manuellement directement dans le portail Klarna Merchant.',
     'TCKLARNA_ORDER_UPDATE_REJECTED_BY_KLARNA'          => 'Attention ! Klarna n\'a pas pu traiter vos dernières modifications apportées à cette commande (motif : %s). Veuillez annuler vos modifications récentes dans la boutique en ligne OXID ou, si nécessaire, effectuer manuellement les modifications correspondantes dans le portail commerçant Klarna.',
@@ -326,7 +326,7 @@ $aLang = array(
     'TCKLARNA_LEARN_MORE_BUTTON'                        => 'En savoir plus',
 
     'TCKLARNA_CUSTOMER_TYPE'                            => 'Types de clients pris en charge',
-    'TCKLARNA_CUSTOMER_TYPE_TOOLTIP'                    => 'Hier können Sie einstellen, ob der Shop ausschließlich B2C Transaktionen (Standard-Einstellung). nur B2B Transaktionen oder sowohl B2C als auch B2B Transaktionen akzeptieren soll. <br> Hinweis: Nach dem Umstellen der Kundenarten muss der Session cache des Browsers gelöscht werden, damit die Bezahlung getestet werden kann.',
+    'TCKLARNA_CUSTOMER_TYPE_TOOLTIP'                    => 'Ici, vous pouvez configurer si la boutique accepte uniquement les transactions B2C (paramètre par défaut), uniquement les transactions B2B, ou les deux. <br> Remarque : après avoir modifié le type de client, le cache de session du navigateur doit être vidé avant de pouvoir tester le paiement.',
     'TCKLARNA_B2C'                                      => 'Uniquement les clients B2C',
     'TCKLARNA_B2B'                                      => 'Clients B2B uniquement',
     'TCKLARNA_B2B_B2C'                                  => 'Principalement des clients B2B, mais aussi des clients B2C',
@@ -351,18 +351,18 @@ $aLang = array(
     'TCKLARNA_FOOTER_PROMOTION_TOOLTIP'                 => 'Veuillez insérer ici la balise de placement afin d\'afficher les modes de paiement Klarna disponibles dans le pied de page de la boutique',
     'TCKLARNA_BANNER_PROMOTION_TOOLTIP'                 => 'Veuillez insérer ici la balise de placement pour ajouter une bannière sur la page d\'accueil de votre boutique',
     'TCKLARNA_ON_SITE_MESSAGING_HEADER_TITLE'           => 'Qu\'est-ce que la messagerie sur site ?',
-    'TCKLARNA_ON_SITE_MESSAGING_HEADER_DESC'            => 'Les clients ne sont pas toujours conscients des différentes possibilités de crédit et de financement qui s\'offrent à eux avant d\'arriver à la caisse. Les options de financement proposées dès le début influencent la décision d\'achat.',
+    'TCKLARNA_ON_SITE_MESSAGING_HEADER_DESC'            => 'Les clients ne sont pas toujours conscients des différentes possibilités de crédit et de financement qui s\'offrent à eux avant d\'arriver à la caisse. Les options de financement proposées dès le début influencent la décision d\'achat.
 
-    'TCKLARNA_ON_SITE_MESSAGING_HEADER_DESC_TPK0'       => 'La messagerie sur site est simple et facile à intégrer ; elle propose des informations sur mesure, allant des bannières générales mettant en avant votre partenariat avec Klarna et la possibilité de payer en plusieurs fois, jusqu’aux offres de crédit personnalisées sur les pages de produits ou de panier.',
-    'TCKLARNA_ON_SITE_MESSAGING_HEADER_DESC_2'          => 'Weitere Informationen zu den ersten Schritten <a class="cl-pink" href="https://docs.klarna.com/conversion-boosters/on-site-messaging/before-you-start/" target="_blank" rel=”noopener”>finden Sie hier</a><br><br>',
-    'TCKLARNA_ON_SITE_MESSAGING_HEADER_DESC_2_TPK1'     => 'Melden Sie sich im <a class="cl-pink" href="https://merchants.klarna.com/" target="_blank">Händlerportal</a> an, um Ihren persönlichen JavaScript- und Placement-Code zu generieren. On-Site-Messaging wird in Ihrem Shop aktiviert, sobald der JavaScript-Code gespeichert und mindestens ein Placement-Code eingegeben wurde.<br>',
-    'TCKLARNA_ON_SITE_MESSAGING_HEADER_DESC_2_TPK2'     => 'Vous pouvez le désactiver à tout moment en supprimant les codes.',
+La messagerie sur site est simple et facile à intégrer ; elle propose des informations sur mesure, allant des bannières générales mettant en avant votre partenariat avec Klarna et la possibilité de payer en plusieurs fois, jusqu’aux offres de crédit personnalisées sur les pages de produits ou de panier.',
+    'TCKLARNA_ON_SITE_MESSAGING_HEADER_DESC_2'          => 'Vous trouverez plus d'informations sur les premières étapes ici : <a class="cl-pink" href="https://docs.klarna.com/conversion-boosters/on-site-messaging/before-you-start/" target="_blank" rel="noopener"></a><br><br> 
+Connectez-vous au <a class="cl-pink" href="https://merchants.klarna.com/" target="_blank">Portail Marchand</a> pour générer votre code JavaScript et votre code d'insertion personnalisés. La messagerie intégrée sera activée dans votre boutique une fois le code JavaScript enregistré et au moins un code d'insertion saisi.<br> 
+Vous pouvez le désactiver à tout moment en supprimant les codes.',
     'TCKLARNA_ON_SITE_MESSAGING_MERCHANT_BUTTON'        => 'Portail des revendeurs',
 
     'TCKLARNA_IS_ENABLED_HEADLINE'                      => 'Activer Klarna Instant Shopping',
     'TCKLARNA_IS_ENABLED'                               => 'Actif',
-    'TCKLARNA_IS_BUTTON_REPLACE'                        => 'Remplacer la touche « Button »',
-    'TCKLARNA_IS_REPLACE'                               => 'Créer un nouveau bouton « Key »',
+    'TCKLARNA_IS_BUTTON_REPLACE'                        => 'Remplacer le bouton « Clé »',
+    'TCKLARNA_IS_REPLACE'                               => 'Créer un nouveau bouton « Clé »',
     'TCKLARNA_IS_BUTTON_REPLACE_TOOLTIP'                => 'Vous pouvez mettre à jour la clé du bouton si des données de configuration ou d\'identification nécessitent une modification de la part de Klarna. En règle générale, une fois générée, la clé du bouton peut être utilisée aussi longtemps que vous le souhaitez.',
     'TCKLARNA_IS_ENABLED_TOOLTIP'                       => 'Activez ici Klarna Instant Shopping. Cela génère automatiquement un bouton à intégrer dans l\'interface publique de votre boutique.',
     'TCKLARNA_IS_BUTTON_APEARANCE_HEADLINE'             => 'Paramètres de personnalisation des boutons',
@@ -375,12 +375,12 @@ $aLang = array(
     'TCKLARNA_IS_BUTTON_PLACEMENT_BASKET'               => 'Afficher dans le récapitulatif du panier',
     'TCKLARNA_IS_BUTTON_PLACEMENT_BASKET_TOOLTIP'       => 'Activez cette fonctionnalité pour que le bouton « Klarna Instant Shopping » s\'affiche dans la page récapitulative du panier de votre boutique.',
     'TCKLARNA_IS_BUTTON_SETTINGS_HEADLINE'              => 'Autres paramètres d\'Instant Shopping',
-    'TCKLARNA_IS_SETTING_ALLOW_SEPARATE_SHIPPING_ADDRESS'=> 'L\'adresse de livraison peut être différente de l\'adresse de facturation',
-    'TCKLARNA_IS_SETTING_ALLOW_SEPARATE_SHIPPING_ADDRESS_TOOLTIP'=> 'Si vous souhaitez autoriser la livraison à une autre adresse, cochez cette case.',
-    'TCKLARNA_IS_SETTING_DATE_OF_BIRTH_MANDATORY'       => 'La date de naissance est un champ obligatoire',
-    'TCKLARNA_IS_SETTING_DATE_OF_BIRTH_MANDATORY_TOOLTIP'=> 'Si vous souhaitez rendre obligatoire la saisie de la date de naissance, cochez cette case. En règle générale, la date de naissance n\'est pas un champ obligatoire pour Klarna. Elle est toutefois nécessaire pour permettre l\'achat sur facture ou le paiement échelonné.',
-    'TCKLARNA_IS_SETTING_NATIONAL_IDENTIFICATION_NUMBER_MANDATORY'=> 'Le numéro d\'identification national est un champ obligatoire',
-    'TCKLARNA_IS_SETTING_NATIONAL_IDENTIFICATION_NUMBER_MANDATORY_TOOLTIP'=> 'Veuillez indiquer si le numéro d\'identification national doit être un champ obligatoire.',
+    'TCKLARNA_IS_SETTING_ALLOW_SEPARATE_SHIPPING_ADDRESS'                   => 'L\'adresse de livraison peut être différente de l\'adresse de facturation',
+    'TCKLARNA_IS_SETTING_ALLOW_SEPARATE_SHIPPING_ADDRESS_TOOLTIP'           => 'Si vous souhaitez autoriser la livraison à une autre adresse, cochez cette case.',
+    'TCKLARNA_IS_SETTING_DATE_OF_BIRTH_MANDATORY'                           => 'La date de naissance est un champ obligatoire',
+    'TCKLARNA_IS_SETTING_DATE_OF_BIRTH_MANDATORY_TOOLTIP'                   => 'Si vous souhaitez rendre obligatoire la saisie de la date de naissance, cochez cette case. En règle générale, la date de naissance n\'est pas un champ obligatoire pour Klarna. Elle est toutefois nécessaire pour permettre l\'achat sur facture ou le paiement échelonné.',
+    'TCKLARNA_IS_SETTING_NATIONAL_IDENTIFICATION_NUMBER_MANDATORY'          => 'Le numéro d\'identification national est un champ obligatoire',
+    'TCKLARNA_IS_SETTING_NATIONAL_IDENTIFICATION_NUMBER_MANDATORY_TOOLTIP'  => 'Veuillez indiquer si le numéro d\'identification national doit être un champ obligatoire.',
     'TCKLARNA_IS_BUTTON_SETTINGS_VARIATION'             => 'Variation',
     'TCKLARNA_IS_BUTTON_SETTINGS_TAGLINE'               => 'Slogan',
     'TCKLARNA_IS_BUTTON_SETTINGS_TYPE'                  => 'Type',
@@ -397,16 +397,16 @@ $aLang = array(
 
     'TCKLARNA_AUTHPAYMENTMETHOD'                        => 'Mode de paiement utilisé : ',
     'TCKLARNA_AUTHPAYMENTMETHOD_unknown'                => 'Klarna',
-    'TCKLARNA_AUTHPAYMENTMETHOD_direct_debit'           => 'prélèvement automatique',
+    'TCKLARNA_AUTHPAYMENTMETHOD_direct_debit'           => 'Prélèvement automatique',
     'TCKLARNA_AUTHPAYMENTMETHOD_direct_bank_transfer'   => 'Virement instantané',
     'TCKLARNA_AUTHPAYMENTMETHOD_slice_it_by_card'       => '3 versements sans intérêts',
     'TCKLARNA_AUTHPAYMENTMETHOD_fixed_sum_credit'       => 'Financement',
     'TCKLARNA_AUTHPAYMENTMETHOD_b2b_invoice'            => 'Facture B2B (Billie)',
     'TCKLARNA_AUTHPAYMENTMETHOD_pay_later_by_card'      => 'Paiement par carte dans un délai de 30 jours',
-    'TCKLARNA_AUTHPAYMENTMETHOD_invoice'                => 'facture',
-    'TCKLARNA_AUTHPAYMENTMETHOD_pay_by_card'            => 'carte de crédit',
+    'TCKLARNA_AUTHPAYMENTMETHOD_invoice'                => 'Facture',
+    'TCKLARNA_AUTHPAYMENTMETHOD_pay_by_card'            => 'Carte de crédit',
     'TCKLARNA_AUTHPAYMENTMETHOD_bank_transfer'          => 'Virement bancaire',
-    'TCKLARNA_AUTHPAYMENTMETHOD_card'                   => 'carte de crédit',
+    'TCKLARNA_AUTHPAYMENTMETHOD_card'                   => 'Carte de crédit',
     'TCKLARNA_AUTHPAYMENTMETHOD_fixed_amount'           => 'Financement',
     'TCKLARNA_AUTHPAYMENTMETHOD_invoice_business'       => 'Facture B2B (Billie)',
     'TCKLARNA_AUTHPAYMENTMETHOD_mobilepay'              => 'MobilePay',

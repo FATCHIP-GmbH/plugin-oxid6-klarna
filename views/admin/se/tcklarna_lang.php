@@ -167,30 +167,30 @@ $aLang = array(
     'TCKLARNA_DEVICE_IMG'                               => 'enhet.png',
 
 
-    'TCKLARNA_EXTERNAL_PAYMENTS_ADMIN_DESC'             => 'Här kan du konfigurera externa betalningssätt och externa kassar för integrering i Klarna Checkout-iframe. ',
-    'TP11'                                              => 'För en detaljerad beskrivning av de olika inställningarna, se verktygstipsen ',
-    'TP12'                                              => '<i class="fa fa-question-circle-o" aria-hidden="true"></i>, läs bruksanvisningen ',
-    'TP13'                                              => 'eller kontakta Klarnas integrationssupport.',
-    'TCKLARNA_EXTRA_MERCHANT_DATA_ADMIN_DESC'           => 'Här kan du ställa in om eventuella extra säljardata ska överföras till Klarna. ',
-    'TP21'                                              => 'För en detaljerad beskrivning av de olika inställningarna, se verktygstipsen ',
-    'TP22'                                              => '<i class="fa fa-question-circle-o" aria-hidden="true"></i>, läs bruksanvisningen ',
-    'TP23'                                              => 'eller kontakta Klarnas integrationssupport.',
-    'TCKLARNA_DESIGN_SETTINGS_ADMIN_DESC'               => 'Här kan du konfigurera designinställningarna för användning med Klarna-modulen för OXID eShop. ',
-    'TP31'                                              => 'För en detaljerad beskrivning av de olika inställningarna, se verktygstipsen ',
-    'TP32'                                              => '<i class="fa fa-question-circle-o" aria-hidden="true"></i>, läs bruksanvisningen ',
-    'TP33'                                              => 'eller kontakta Klarnas integrationssupport.',
-    'TCKLARNA_GENERAL_SETTINGS_ADMIN_DESC'              => 'Här kan du välja mellan Klarna Checkout och Klarna Payments samt göra övergripande inställningar. ',
-    'TP41'                                              => 'För en detaljerad beskrivning av de olika inställningarna, se verktygstipsen ',
-    'TP42'                                              => '<i class="fa fa-question-circle-o" aria-hidden="true"></i>, läs bruksanvisningen ',
-    'TP43'                                              => 'eller kontakta Klarnas integrationssupport.',
-    'TCKLARNA_CONFIGURATION_KCO_ADMIN_DESC'             => 'På den här sidan kan du konfigurera de inställningar som gäller specifikt för Klarna Checkout. ',
-    'TP51'                                              => 'För en detaljerad beskrivning av de olika inställningarna, se verktygstipsen ',
-    'TP52'                                              => '<i class="fa fa-question-circle-o" aria-hidden="true"></i>, läs bruksanvisningen ',
-    'TP53'                                              => 'eller kontakta Klarnas integrationssupport.',
-    'TCKLARNA_CONFIGURATION_KP_ADMIN_DESC'              => 'På den här sidan väljer du vilka Klarna-betalningsalternativ du vill erbjuda. ',
-    'TP61'                                              => 'För en detaljerad beskrivning av de olika inställningarna, se verktygstipsen ',
-    'TP62'                                              => '<i class="fa fa-question-circle-o" aria-hidden="true"></i>, läs bruksanvisningen ',
-    'TP63'                                              => 'eller kontakta Klarnas integrationssupport.',
+    'TCKLARNA_EXTERNAL_PAYMENTS_ADMIN_DESC'             => 'Här kan du konfigurera externa betalningssätt och externa kassar för integrering i Klarna Checkout-iframe. 
+För en detaljerad beskrivning av de olika inställningarna, se verktygstipsen 
+<i class="fa fa-question-circle-o" aria-hidden="true"></i>, läs bruksanvisningen 
+eller kontakta Klarnas integrationssupport.',
+    'TCKLARNA_EXTRA_MERCHANT_DATA_ADMIN_DESC'           => 'Här kan du ställa in om eventuella extra säljardata ska överföras till Klarna. 
+För en detaljerad beskrivning av de olika inställningarna, se verktygstipsen 
+<i class="fa fa-question-circle-o" aria-hidden="true"></i>, läs bruksanvisningen 
+eller kontakta Klarnas integrationssupport.',
+    'TCKLARNA_DESIGN_SETTINGS_ADMIN_DESC'               => 'Här kan du konfigurera designinställningarna för användning med Klarna-modulen för OXID eShop. 
+För en detaljerad beskrivning av de olika inställningarna, se verktygstipsen 
+<i class="fa fa-question-circle-o" aria-hidden="true"></i>, läs bruksanvisningen 
+eller kontakta Klarnas integrationssupport.',
+    'TCKLARNA_GENERAL_SETTINGS_ADMIN_DESC'              => 'Här kan du välja mellan Klarna Checkout och Klarna Payments samt göra övergripande inställningar. 
+För en detaljerad beskrivning av de olika inställningarna, se verktygstipsen 
+<i class="fa fa-question-circle-o" aria-hidden="true"></i>, läs bruksanvisningen 
+eller kontakta Klarnas integrationssupport.',
+    'TCKLARNA_CONFIGURATION_KCO_ADMIN_DESC'             => 'På den här sidan kan du konfigurera de inställningar som gäller specifikt för Klarna Checkout. 
+För en detaljerad beskrivning av de olika inställningarna, se verktygstipsen 
+<i class="fa fa-question-circle-o" aria-hidden="true"></i>, läs bruksanvisningen 
+eller kontakta Klarnas integrationssupport.',
+    'TCKLARNA_CONFIGURATION_KP_ADMIN_DESC'              => 'På den här sidan väljer du vilka Klarna-betalningsalternativ du vill erbjuda. 
+För en detaljerad beskrivning av de olika inställningarna, se verktygstipsen 
+<i class="fa fa-question-circle-o" aria-hidden="true"></i>, läs bruksanvisningen 
+eller kontakta Klarnas integrationssupport.',
 
     'TCKLARNA_PAYMENT_METHOD'                           => 'Betalningssätt',
     'TCKLARNA_EXTERNAL_PAYMENT_METHOD'                  => 'Extern betalningsmetod',
@@ -222,10 +222,10 @@ $aLang = array(
     'TCKLARNA_GLOBAL_MERCHANT_ID_TOOLTIP'               => 'Ange här dina inloggningsuppgifter för Klarnas API. Du har fått dessa i välkomstmejlet från Klarna. Användarnamnet och lösenordet gäller globalt för alla länder. Endast om du har fått olika inloggningsuppgifter för olika länder kan du lägga till dessa längre ner.',
     'TCKLARNA_GLOBAL_PASSWORD_TOOLTIP'                  => 'Ange här ditt lösenord som hör till det API-användarnamn du använder. Du har fått detta lösenord i välkomstmejlet från Klarna.',
     'TCKLARNA_GLOBAL_PORTAL_MERCHANT_ID_TOOLTIP'        => 'Ange här ditt Klarna-handlar-ID. Du har fått detta i välkomstmejlet från Klarna.',
-    'TCKLARNA_CREDENTIALS_COUNTRY_SELECTOR_TOOLTIP'     => 'Välj det land i listan till vänster för vilket du har fått landspecifika inloggningsuppgifter från Klarna.',
-    'TCKLARNA_CREDENTIALS_COUNTRY_MERCHANT_ID_TOOLTIP'  => 'Ange här det användarnamn som gäller för detta land.',
-    'TCKLARNA_CREDENTIALS_COUNTRY_PASSWORD_TOOLTIP'     => 'Ange här lösenordet för detta land.',
-    'TCKLARNA_CREDENTIALS_COUNTRY_PORTAL_MERCHANT_ID_TOOLTIP'=> 'Ange här det tillhörande Merchant ID för detta land.',
+    'TCKLARNA_CREDENTIALS_COUNTRY_SELECTOR_TOOLTIP'             => 'Välj det land i listan till vänster för vilket du har fått landspecifika inloggningsuppgifter från Klarna.',
+    'TCKLARNA_CREDENTIALS_COUNTRY_MERCHANT_ID_TOOLTIP'          => 'Ange här det användarnamn som gäller för detta land.',
+    'TCKLARNA_CREDENTIALS_COUNTRY_PASSWORD_TOOLTIP'             => 'Ange här lösenordet för detta land.',
+    'TCKLARNA_CREDENTIALS_COUNTRY_PORTAL_MERCHANT_ID_TOOLTIP'   => 'Ange här det tillhörande Merchant ID för detta land.',
     'TCKLARNA_DEFAULT_COUNTRY_TOOLTIP'                  => 'Välj från listan vilket land som ska laddas som standard i Klarna Checkout så länge kunden ännu inte har angett sitt land.',
     'TCKLARNA_ENABLE_LOGGING_TOOLTIP'                   => 'Aktiverar loggningsfunktionen så att all API-kommunikation med Klarna loggas i MySQL-tabellen tcklarna_logs. Detta kan vara användbart vid analys eller felsökning. I produktiv drift bör funktionen vara avstängd, eftersom det annars kan leda till att stora mängder loggdata ackumuleras och att känslig information lagras.',
     'TCKLARNA_SEND_PRODUCT_URLS_TOOLTIP'                => 'Skicka URL-adresserna till produktdetaljsidorna för de produkter som finns i dina kunders varukorg till Klarna, så att Klarna senare kan länka till dina produkter från Klarna-portalen.',
@@ -289,7 +289,7 @@ $aLang = array(
     'KLARNA_REFUNDS'                                    => 'Återbetalningar',
     'KLARNA_CANCEL_ORDER'                               => 'Avboka beställning',
     'KLARNA_ORDER_IS_CANCELLED'                         => 'Beställningen har annullerats. ',
-    'KLARNA_SEE_ORDER_IN_PORTAL'                        => '<a href="%s" target="_blank" class="alert-link">Diese Bestellung im Klarna Portal aufrufen</a>',
+    'KLARNA_SEE_ORDER_IN_PORTAL'                        => '<a href="%s" target="_blank" class="alert-link">Visa denna beställning i Klarna-portalen</a>',
     'KLARNA_ORDER_NOT_IN_SYNC'                          => '<strong>Obs!</strong> Uppgifterna för denna beställning skiljer sig från de uppgifter som finns lagrade hos Klarna. ',
     'TCKLARNA_ORDER_UPDATE_CANT_BE_SENT_TO_KLARNA'      => 'Obs! På grund av den aktuella beställningsstatusen kan denna justering inte överföras till Klarna. Gör vid behov justeringen manuellt direkt i Klarnas Merchant Portal.',
     'TCKLARNA_ORDER_UPDATE_REJECTED_BY_KLARNA'          => 'Obs! Dina senaste ändringar av denna beställning kunde inte behandlas av Klarna (orsak: %s). Vänligen ångra dina senaste ändringar i OXID eShop eller gör den nödvändiga justeringen manuellt i Klarna Merchant Portal om så krävs.',
@@ -326,7 +326,7 @@ $aLang = array(
     'TCKLARNA_LEARN_MORE_BUTTON'                        => 'Läs mer',
 
     'TCKLARNA_CUSTOMER_TYPE'                            => 'Typer av kunder som stöds',
-    'TCKLARNA_CUSTOMER_TYPE_TOOLTIP'                    => 'Hier können Sie einstellen, ob der Shop ausschließlich B2C Transaktionen (Standard-Einstellung). nur B2B Transaktionen oder sowohl B2C als auch B2B Transaktionen akzeptieren soll. <br> Hinweis: Nach dem Umstellen der Kundenarten muss der Session cache des Browsers gelöscht werden, damit die Bezahlung getestet werden kann.',
+    'TCKLARNA_CUSTOMER_TYPE_TOOLTIP'                    => 'Här kan du konfigurera om butiken endast ska acceptera B2C-transaktioner (standardinställning), endast B2B-transaktioner eller både B2C- och B2B-transaktioner. <br> Obs: Efter att kundtypen har ändrats måste webbläsarens sessionscache rensas innan betalningen kan testas.',
     'TCKLARNA_B2C'                                      => 'Endast B2C-kunder',
     'TCKLARNA_B2B'                                      => 'Endast B2B-kunder',
     'TCKLARNA_B2B_B2C'                                  => 'Främst B2B-kunder, men även B2C-kunder',
@@ -351,12 +351,12 @@ $aLang = array(
     'TCKLARNA_FOOTER_PROMOTION_TOOLTIP'                 => 'Vänligen infoga placeringskoden här för att visa dina tillgängliga Klarna-betalningsalternativ i webbutikens sidfot',
     'TCKLARNA_BANNER_PROMOTION_TOOLTIP'                 => 'Vänligen infoga placeringskoden här för att lägga in en banner på din butiks startsida',
     'TCKLARNA_ON_SITE_MESSAGING_HEADER_TITLE'           => 'Vad är On-Site Messaging?',
-    'TCKLARNA_ON_SITE_MESSAGING_HEADER_DESC'            => 'Kunderna är inte alltid medvetna om de olika kredit- och finansieringsmöjligheter som står till deras förfogande innan de kommer till kassan. Finansieringsmöjligheter som presenteras i ett tidigt skede påverkar köpbeslutet.',
+    'TCKLARNA_ON_SITE_MESSAGING_HEADER_DESC'            => 'Kunderna är inte alltid medvetna om de olika kredit- och finansieringsmöjligheter som står till deras förfogande innan de kommer till kassan. Finansieringsmöjligheter som presenteras i ett tidigt skede påverkar köpbeslutet.
 
-    'TCKLARNA_ON_SITE_MESSAGING_HEADER_DESC_TPK0'       => 'On-Site Messaging är enkelt och smidigt att integrera och erbjuder skräddarsydd information – allt från allmänna banners som lyfter fram ditt samarbete med Klarna och möjligheten till delbetalning till personliga krediterbjudanden på produkt- eller varukorgssidor.',
-    'TCKLARNA_ON_SITE_MESSAGING_HEADER_DESC_2'          => 'Weitere Informationen zu den ersten Schritten <a class="cl-pink" href="https://docs.klarna.com/conversion-boosters/on-site-messaging/before-you-start/" target="_blank" rel=”noopener”>finden Sie hier</a><br><br>',
-    'TCKLARNA_ON_SITE_MESSAGING_HEADER_DESC_2_TPK1'     => 'Melden Sie sich im <a class="cl-pink" href="https://merchants.klarna.com/" target="_blank">Händlerportal</a> an, um Ihren persönlichen JavaScript- und Placement-Code zu generieren. On-Site-Messaging wird in Ihrem Shop aktiviert, sobald der JavaScript-Code gespeichert und mindestens ein Placement-Code eingegeben wurde.<br>',
-    'TCKLARNA_ON_SITE_MESSAGING_HEADER_DESC_2_TPK2'     => 'Du kan inaktivera den när som helst genom att ta bort koderna igen.',
+On-Site Messaging är enkelt och smidigt att integrera och erbjuder skräddarsydd information – allt från allmänna banners som lyfter fram ditt samarbete med Klarna och möjligheten till delbetalning till personliga krediterbjudanden på produkt- eller varukorgssidor.',
+    'TCKLARNA_ON_SITE_MESSAGING_HEADER_DESC_2'          => 'Mer information om de första stegen finns här: <a class="cl-pink" href="https://docs.klarna.com/conversion-boosters/on-site-messaging/before-you-start/" target="_blank" rel="noopener"></a><br><br> 
+Logga in på <a class="cl-pink" href="https://merchants.klarna.com/" target="_blank">Handlarportalen</a> för att generera din personliga JavaScript-kod och placeringskod. Meddelanden på webbplatsen aktiveras i din butik när JavaScript-koden har sparats och minst en placeringskod har angetts.<br> 
+Du kan inaktivera den när som helst genom att ta bort koderna igen.',
     'TCKLARNA_ON_SITE_MESSAGING_MERCHANT_BUTTON'        => 'Återförsäljarportalen',
 
     'TCKLARNA_IS_ENABLED_HEADLINE'                      => 'Aktivera Klarna Instant Shopping',
@@ -375,12 +375,12 @@ $aLang = array(
     'TCKLARNA_IS_BUTTON_PLACEMENT_BASKET'               => 'Visa i varukorgsöversikten',
     'TCKLARNA_IS_BUTTON_PLACEMENT_BASKET_TOOLTIP'       => 'Aktivera den här funktionen så att Klarna Instant Shopping-knappen visas i varukorgsöversikten i din webbutik.',
     'TCKLARNA_IS_BUTTON_SETTINGS_HEADLINE'              => 'Ytterligare inställningar för Instant Shopping',
-    'TCKLARNA_IS_SETTING_ALLOW_SEPARATE_SHIPPING_ADDRESS'=> 'Leveransadressen får skilja sig från fakturaadressen',
-    'TCKLARNA_IS_SETTING_ALLOW_SEPARATE_SHIPPING_ADDRESS_TOOLTIP'=> 'Om leverans till en annan leveransadress ska vara möjlig, aktivera den här knappen.',
-    'TCKLARNA_IS_SETTING_DATE_OF_BIRTH_MANDATORY'       => 'Födelsedatum är ett obligatoriskt fält',
-    'TCKLARNA_IS_SETTING_DATE_OF_BIRTH_MANDATORY_TOOLTIP'=> 'Om ni vill göra det obligatoriskt att ange födelsedatum, aktivera den här knappen. Normalt sett är födelsedatumet inte ett obligatoriskt fält hos Klarna. Uppgiften är dock nödvändig för att möjliggöra köp på faktura eller delbetalning.',
-    'TCKLARNA_IS_SETTING_NATIONAL_IDENTIFICATION_NUMBER_MANDATORY'=> 'Nationellt ID-nummer är ett obligatoriskt fält',
-    'TCKLARNA_IS_SETTING_NATIONAL_IDENTIFICATION_NUMBER_MANDATORY_TOOLTIP'=> 'Välj om det nationella identifikationsnumret ska vara ett obligatoriskt fält.',
+    'TCKLARNA_IS_SETTING_ALLOW_SEPARATE_SHIPPING_ADDRESS'                   => 'Leveransadressen får skilja sig från fakturaadressen',
+    'TCKLARNA_IS_SETTING_ALLOW_SEPARATE_SHIPPING_ADDRESS_TOOLTIP'           => 'Om leverans till en annan leveransadress ska vara möjlig, aktivera den här knappen.',
+    'TCKLARNA_IS_SETTING_DATE_OF_BIRTH_MANDATORY'                           => 'Födelsedatum är ett obligatoriskt fält',
+    'TCKLARNA_IS_SETTING_DATE_OF_BIRTH_MANDATORY_TOOLTIP'                   => 'Om ni vill göra det obligatoriskt att ange födelsedatum, aktivera den här knappen. Normalt sett är födelsedatumet inte ett obligatoriskt fält hos Klarna. Uppgiften är dock nödvändig för att möjliggöra köp på faktura eller delbetalning.',
+    'TCKLARNA_IS_SETTING_NATIONAL_IDENTIFICATION_NUMBER_MANDATORY'          => 'Nationellt ID-nummer är ett obligatoriskt fält',
+    'TCKLARNA_IS_SETTING_NATIONAL_IDENTIFICATION_NUMBER_MANDATORY_TOOLTIP'  => 'Välj om det nationella identifikationsnumret ska vara ett obligatoriskt fält.',
     'TCKLARNA_IS_BUTTON_SETTINGS_VARIATION'             => 'Variation',
     'TCKLARNA_IS_BUTTON_SETTINGS_TAGLINE'               => 'Slogan',
     'TCKLARNA_IS_BUTTON_SETTINGS_TYPE'                  => 'Typ',

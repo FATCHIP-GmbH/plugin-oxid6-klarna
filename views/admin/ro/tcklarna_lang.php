@@ -167,30 +167,30 @@ $aLang = array(
     'TCKLARNA_DEVICE_IMG'                               => 'device.png',
 
 
-    'TCKLARNA_EXTERNAL_PAYMENTS_ADMIN_DESC'             => 'Aici puteți configura metodele de plată externe și procesele de plată externe pentru a le integra în cadrul iframe-ului Klarna Checkout. ',
-    'TP11'                                              => 'Pentru o descriere detaliată a diferitelor setări, vă rugăm să consultați informațiile afișate la trecerea cursorului peste elemente ',
-    'TP12'                                              => '<i class="fa fa-question-circle-o" aria-hidden="true"></i>, citiți manualul ',
-    'TP13'                                              => 'sau contactați serviciul de asistență pentru integrarea Klarna.',
-    'TCKLARNA_EXTRA_MERCHANT_DATA_ADMIN_DESC'           => 'Aici puteți configura dacă, eventual, datele suplimentare ale comerciantului trebuie transmise către Klarna. ',
-    'TP21'                                              => 'Pentru o descriere detaliată a diferitelor setări, vă rugăm să consultați informațiile afișate la trecerea cursorului peste elemente ',
-    'TP22'                                              => '<i class="fa fa-question-circle-o" aria-hidden="true"></i>, citiți manualul ',
-    'TP23'                                              => 'sau contactați serviciul de asistență pentru integrarea Klarna.',
-    'TCKLARNA_DESIGN_SETTINGS_ADMIN_DESC'               => 'Aici puteți configura setările de design pentru utilizarea modulului Klarna în magazinul online OXID. ',
-    'TP31'                                              => 'Pentru o descriere detaliată a diferitelor setări, vă rugăm să consultați informațiile afișate la trecerea cursorului peste elemente ',
-    'TP32'                                              => '<i class="fa fa-question-circle-o" aria-hidden="true"></i>, citiți manualul ',
-    'TP33'                                              => 'sau contactați serviciul de asistență pentru integrarea Klarna.',
-    'TCKLARNA_GENERAL_SETTINGS_ADMIN_DESC'              => 'Alegeți aici între Klarna Checkout și Klarna Payments și configurați setările generale. ',
-    'TP41'                                              => 'Pentru o descriere detaliată a diferitelor setări, vă rugăm să consultați informațiile afișate la trecerea cursorului peste elemente ',
-    'TP42'                                              => '<i class="fa fa-question-circle-o" aria-hidden="true"></i>, citiți manualul ',
-    'TP43'                                              => 'sau contactați serviciul de asistență pentru integrarea Klarna.',
-    'TCKLARNA_CONFIGURATION_KCO_ADMIN_DESC'             => 'Pe această pagină puteți configura setările specifice pentru Klarna Checkout. ',
-    'TP51'                                              => 'Pentru o descriere detaliată a diferitelor setări, vă rugăm să consultați informațiile afișate la trecerea cursorului peste elemente ',
-    'TP52'                                              => '<i class="fa fa-question-circle-o" aria-hidden="true"></i>, citiți manualul ',
-    'TP53'                                              => 'sau contactați serviciul de asistență pentru integrarea Klarna.',
-    'TCKLARNA_CONFIGURATION_KP_ADMIN_DESC'              => 'Pe această pagină puteți alege ce metode de plată Klarna doriți să oferiți. ',
-    'TP61'                                              => 'Pentru o descriere detaliată a diferitelor setări, vă rugăm să consultați informațiile afișate la trecerea cursorului peste elemente ',
-    'TP62'                                              => '<i class="fa fa-question-circle-o" aria-hidden="true"></i>, citiți manualul ',
-    'TP63'                                              => 'sau contactați serviciul de asistență pentru integrarea Klarna.',
+    'TCKLARNA_EXTERNAL_PAYMENTS_ADMIN_DESC'             => 'Aici puteți configura metodele de plată externe și procesele de plată externe pentru a le integra în cadrul iframe-ului Klarna Checkout. 
+Pentru o descriere detaliată a diferitelor setări, vă rugăm să consultați informațiile afișate la trecerea cursorului peste elemente 
+<i class="fa fa-question-circle-o" aria-hidden="true"></i>, citiți manualul 
+sau contactați serviciul de asistență pentru integrarea Klarna.',
+    'TCKLARNA_EXTRA_MERCHANT_DATA_ADMIN_DESC'           => 'Aici puteți configura dacă, eventual, datele suplimentare ale comerciantului trebuie transmise către Klarna. 
+Pentru o descriere detaliată a diferitelor setări, vă rugăm să consultați informațiile afișate la trecerea cursorului peste elemente 
+<i class="fa fa-question-circle-o" aria-hidden="true"></i>, citiți manualul 
+sau contactați serviciul de asistență pentru integrarea Klarna.',
+    'TCKLARNA_DESIGN_SETTINGS_ADMIN_DESC'               => 'Aici puteți configura setările de design pentru utilizarea modulului Klarna în magazinul online OXID. 
+Pentru o descriere detaliată a diferitelor setări, vă rugăm să consultați informațiile afișate la trecerea cursorului peste elemente 
+<i class="fa fa-question-circle-o" aria-hidden="true"></i>, citiți manualul 
+sau contactați serviciul de asistență pentru integrarea Klarna.',
+    'TCKLARNA_GENERAL_SETTINGS_ADMIN_DESC'              => 'Alegeți aici între Klarna Checkout și Klarna Payments și configurați setările generale. 
+Pentru o descriere detaliată a diferitelor setări, vă rugăm să consultați informațiile afișate la trecerea cursorului peste elemente 
+<i class="fa fa-question-circle-o" aria-hidden="true"></i>, citiți manualul 
+sau contactați serviciul de asistență pentru integrarea Klarna.',
+    'TCKLARNA_CONFIGURATION_KCO_ADMIN_DESC'             => 'Pe această pagină puteți configura setările specifice pentru Klarna Checkout. 
+Pentru o descriere detaliată a diferitelor setări, vă rugăm să consultați informațiile afișate la trecerea cursorului peste elemente 
+<i class="fa fa-question-circle-o" aria-hidden="true"></i>, citiți manualul 
+sau contactați serviciul de asistență pentru integrarea Klarna.',
+    'TCKLARNA_CONFIGURATION_KP_ADMIN_DESC'              => 'Pe această pagină puteți alege ce metode de plată Klarna doriți să oferiți. 
+Pentru o descriere detaliată a diferitelor setări, vă rugăm să consultați informațiile afișate la trecerea cursorului peste elemente 
+<i class="fa fa-question-circle-o" aria-hidden="true"></i>, citiți manualul 
+sau contactați serviciul de asistență pentru integrarea Klarna.',
 
     'TCKLARNA_PAYMENT_METHOD'                           => 'Modalitatea de plată',
     'TCKLARNA_EXTERNAL_PAYMENT_METHOD'                  => 'Modalitate de plată externă',
@@ -222,10 +222,10 @@ $aLang = array(
     'TCKLARNA_GLOBAL_MERCHANT_ID_TOOLTIP'               => 'Vă rugăm să introduceți aici datele de acces la API-ul Klarna. Le-ați primit în e-mailul de bun venit de la Klarna. Acest nume de utilizator și această parolă sunt valabile la nivel global pentru toate țările. Doar în cazul în care ați primit date de acces diferite pentru țări diferite, le puteți adăuga mai jos.',
     'TCKLARNA_GLOBAL_PASSWORD_TOOLTIP'                  => 'Introduceți aici parola corespunzătoare numelui de utilizator API folosit. Ați primit această parolă în e-mailul de bun venit de la Klarna.',
     'TCKLARNA_GLOBAL_PORTAL_MERCHANT_ID_TOOLTIP'        => 'Vă rugăm să introduceți aici ID-ul dvs. de comerciant Klarna. L-ați primit în e-mailul de bun venit de la Klarna.',
-    'TCKLARNA_CREDENTIALS_COUNTRY_SELECTOR_TOOLTIP'     => 'Selectați din lista din stânga țara pentru care ați primit datele de acces specifice de la Klarna.',
-    'TCKLARNA_CREDENTIALS_COUNTRY_MERCHANT_ID_TOOLTIP'  => 'Vă rugăm să introduceți aici numele de utilizator corespunzător pentru această țară.',
-    'TCKLARNA_CREDENTIALS_COUNTRY_PASSWORD_TOOLTIP'     => 'Vă rugăm să introduceți aici parola corespunzătoare pentru această țară.',
-    'TCKLARNA_CREDENTIALS_COUNTRY_PORTAL_MERCHANT_ID_TOOLTIP'=> 'Vă rugăm să introduceți aici ID-ul comerciantului corespunzător pentru această țară.',
+    'TCKLARNA_CREDENTIALS_COUNTRY_SELECTOR_TOOLTIP'             => 'Selectați din lista din stânga țara pentru care ați primit datele de acces specifice de la Klarna.',
+    'TCKLARNA_CREDENTIALS_COUNTRY_MERCHANT_ID_TOOLTIP'          => 'Vă rugăm să introduceți aici numele de utilizator corespunzător pentru această țară.',
+    'TCKLARNA_CREDENTIALS_COUNTRY_PASSWORD_TOOLTIP'             => 'Vă rugăm să introduceți aici parola corespunzătoare pentru această țară.',
+    'TCKLARNA_CREDENTIALS_COUNTRY_PORTAL_MERCHANT_ID_TOOLTIP'   => 'Vă rugăm să introduceți aici ID-ul comerciantului corespunzător pentru această țară.',
     'TCKLARNA_DEFAULT_COUNTRY_TOOLTIP'                  => 'Vă rugăm să selectați din listă țara pentru care să se încarce în mod implicit Klarna Checkout, atât timp cât clientul nu și-a specificat încă țara.',
     'TCKLARNA_ENABLE_LOGGING_TOOLTIP'                   => 'Activează funcția de jurnalizare, astfel încât toată comunicarea prin API cu Klarna să fie înregistrată în tabelul MySQL tcklarna_logs. Acest lucru poate fi util în cazul analizării sau depanării. În mediul de producție, funcția ar trebui să fie dezactivată, deoarece, în caz contrar, s-ar putea acumula volume mari de jurnale și s-ar stoca date sensibile.',
     'TCKLARNA_SEND_PRODUCT_URLS_TOOLTIP'                => 'Trimiteți către Klarna adresele URL ale paginilor cu detalii despre produsele aflate în coșul de cumpărături al clienților dumneavoastră, astfel încât Klarna să poată crea ulterior linkuri către produsele dumneavoastră din portalul Klarna.',
@@ -289,7 +289,7 @@ $aLang = array(
     'KLARNA_REFUNDS'                                    => 'Rambursări',
     'KLARNA_CANCEL_ORDER'                               => 'Anularea comenzii',
     'KLARNA_ORDER_IS_CANCELLED'                         => 'Comanda a fost anulată. ',
-    'KLARNA_SEE_ORDER_IN_PORTAL'                        => '<a href="%s" target="_blank" class="alert-link">Diese Bestellung im Klarna Portal aufrufen</a>',
+    'KLARNA_SEE_ORDER_IN_PORTAL'                        => '<a href="%s" target="_blank" class="alert-link">Vizualizați această comandă în portalul Klarna</a>',
     'KLARNA_ORDER_NOT_IN_SYNC'                          => '<strong>Atenție!</strong> Datele acestei comenzi diferă de cele înregistrate la Klarna. ',
     'TCKLARNA_ORDER_UPDATE_CANT_BE_SENT_TO_KLARNA'      => 'Atenție! Având în vedere starea actuală a comenzii, această modificare nu poate fi transmisă către Klarna. Dacă este necesar, efectuați manual modificarea corespunzătoare direct în portalul Klarna Merchant.',
     'TCKLARNA_ORDER_UPDATE_REJECTED_BY_KLARNA'          => 'Atenție! Ultimele modificări aduse acestei comenzi nu au putut fi procesate de Klarna (motiv: %s). Vă rugăm să anulați modificările recente efectuate în OXID eShop sau, dacă este necesar, să efectuați manual modificările corespunzătoare în Portalul comercianților Klarna.',
@@ -326,7 +326,7 @@ $aLang = array(
     'TCKLARNA_LEARN_MORE_BUTTON'                        => 'Află mai multe',
 
     'TCKLARNA_CUSTOMER_TYPE'                            => 'Tipuri de clienți acceptați',
-    'TCKLARNA_CUSTOMER_TYPE_TOOLTIP'                    => 'Hier können Sie einstellen, ob der Shop ausschließlich B2C Transaktionen (Standard-Einstellung). nur B2B Transaktionen oder sowohl B2C als auch B2B Transaktionen akzeptieren soll. <br> Hinweis: Nach dem Umstellen der Kundenarten muss der Session cache des Browsers gelöscht werden, damit die Bezahlung getestet werden kann.',
+    'TCKLARNA_CUSTOMER_TYPE_TOOLTIP'                    => 'Aici puteți configura dacă magazinul să accepte doar tranzacții B2C (setare implicită), doar tranzacții B2B sau atât tranzacții B2C, cât și B2B. <br> Notă: După schimbarea tipului de client, memoria cache a sesiunii browserului trebuie ștearsă înainte de a putea testa plata.',
     'TCKLARNA_B2C'                                      => 'Numai clienți B2C',
     'TCKLARNA_B2B'                                      => 'Numai clienți B2B',
     'TCKLARNA_B2B_B2C'                                  => 'În principal clienți B2B, dar și clienți B2C',
@@ -351,12 +351,12 @@ $aLang = array(
     'TCKLARNA_FOOTER_PROMOTION_TOOLTIP'                 => 'Vă rugăm să inserați aici eticheta de plasare pentru a afișa metodele de plată Klarna disponibile în subsolul magazinului',
     'TCKLARNA_BANNER_PROMOTION_TOOLTIP'                 => 'Vă rugăm să inserați aici eticheta de plasare pentru a adăuga un banner pe pagina principală a magazinului dumneavoastră',
     'TCKLARNA_ON_SITE_MESSAGING_HEADER_TITLE'           => 'Ce este mesageria on-site?',
-    'TCKLARNA_ON_SITE_MESSAGING_HEADER_DESC'            => 'Clienții nu sunt întotdeauna conștienți de diversele opțiuni de creditare și finanțare care le stau la dispoziție înainte de a ajunge la casă. Opțiunile de finanțare disponibile din timp influențează decizia de cumpărare.',
+    'TCKLARNA_ON_SITE_MESSAGING_HEADER_DESC'            => 'Clienții nu sunt întotdeauna conștienți de diversele opțiuni de creditare și finanțare care le stau la dispoziție înainte de a ajunge la casă. Opțiunile de finanțare disponibile din timp influențează decizia de cumpărare.
 
-    'TCKLARNA_ON_SITE_MESSAGING_HEADER_DESC_TPK0'       => 'Funcția „On-Site Messaging” se integrează ușor și fără probleme și oferă informații personalizate, de la bannere generale care promovează parteneriatul dvs. cu Klarna și disponibilitatea plății în rate, până la oferte de credit personalizate pe paginile de produse sau din coșul de cumpărături.',
-    'TCKLARNA_ON_SITE_MESSAGING_HEADER_DESC_2'          => 'Weitere Informationen zu den ersten Schritten <a class="cl-pink" href="https://docs.klarna.com/conversion-boosters/on-site-messaging/before-you-start/" target="_blank" rel=”noopener”>finden Sie hier</a><br><br>',
-    'TCKLARNA_ON_SITE_MESSAGING_HEADER_DESC_2_TPK1'     => 'Melden Sie sich im <a class="cl-pink" href="https://merchants.klarna.com/" target="_blank">Händlerportal</a> an, um Ihren persönlichen JavaScript- und Placement-Code zu generieren. On-Site-Messaging wird in Ihrem Shop aktiviert, sobald der JavaScript-Code gespeichert und mindestens ein Placement-Code eingegeben wurde.<br>',
-    'TCKLARNA_ON_SITE_MESSAGING_HEADER_DESC_2_TPK2'     => 'Îl puteți dezactiva oricând, eliminând din nou codurile.',
+Funcția „On-Site Messaging” se integrează ușor și fără probleme și oferă informații personalizate, de la bannere generale care promovează parteneriatul dvs. cu Klarna și disponibilitatea plății în rate, până la oferte de credit personalizate pe paginile de produse sau din coșul de cumpărături.',
+    'TCKLARNA_ON_SITE_MESSAGING_HEADER_DESC_2'          => 'Informații suplimentare despre primii pași pot fi găsite aici: <a class="cl-pink" href="https://docs.klarna.com/conversion-boosters/on-site-messaging/before-you-start/" target="_blank" rel=”noopener”></a><br><br> 
+Conectați-vă la <a class="cl-pink" href="https://merchants.klarna.com/" target="_blank">Portalul Comercianților</a> pentru a genera codul JavaScript personal și codul de plasare. Mesageria pe site va fi activată în magazinul dvs. după ce codul JavaScript a fost salvat și cel puțin un cod de plasare a fost introdus.<br> 
+Îl puteți dezactiva oricând, eliminând din nou codurile.',
     'TCKLARNA_ON_SITE_MESSAGING_MERCHANT_BUTTON'        => 'Portalul comercianților',
 
     'TCKLARNA_IS_ENABLED_HEADLINE'                      => 'Activarea funcției Klarna Instant Shopping',
@@ -375,12 +375,12 @@ $aLang = array(
     'TCKLARNA_IS_BUTTON_PLACEMENT_BASKET'               => 'Afișare în pagina de prezentare a coșului de cumpărături',
     'TCKLARNA_IS_BUTTON_PLACEMENT_BASKET_TOOLTIP'       => 'Activați această funcție pentru ca butonul Klarna Instant Shopping să apară în pagina de prezentare a coșului de cumpărături din magazinul dvs.',
     'TCKLARNA_IS_BUTTON_SETTINGS_HEADLINE'              => 'Alte setări pentru Instant Shopping',
-    'TCKLARNA_IS_SETTING_ALLOW_SEPARATE_SHIPPING_ADDRESS'=> 'Adresa de livrare poate fi diferită de adresa de facturare',
-    'TCKLARNA_IS_SETTING_ALLOW_SEPARATE_SHIPPING_ADDRESS_TOOLTIP'=> 'Dacă doriți să permiteți livrarea la o altă adresă de livrare, bifați această casetă.',
-    'TCKLARNA_IS_SETTING_DATE_OF_BIRTH_MANDATORY'       => 'Data nașterii este un câmp obligatoriu',
-    'TCKLARNA_IS_SETTING_DATE_OF_BIRTH_MANDATORY_TOOLTIP'=> 'Dacă doriți să faceți obligatorie introducerea datei de naștere, bifați această casetă. În mod normal, pentru Klarna, data de naștere nu este un câmp obligatoriu. Cu toate acestea, introducerea acesteia este necesară pentru a permite achiziția pe factură sau plata în rate.',
-    'TCKLARNA_IS_SETTING_NATIONAL_IDENTIFICATION_NUMBER_MANDATORY'=> 'Numărul de identificare național este un câmp obligatoriu',
-    'TCKLARNA_IS_SETTING_NATIONAL_IDENTIFICATION_NUMBER_MANDATORY_TOOLTIP'=> 'Vă rugăm să selectați dacă numărul național de identificare trebuie să fie un câmp obligatoriu.',
+    'TCKLARNA_IS_SETTING_ALLOW_SEPARATE_SHIPPING_ADDRESS'                   => 'Adresa de livrare poate fi diferită de adresa de facturare',
+    'TCKLARNA_IS_SETTING_ALLOW_SEPARATE_SHIPPING_ADDRESS_TOOLTIP'           => 'Dacă doriți să permiteți livrarea la o altă adresă de livrare, bifați această casetă.',
+    'TCKLARNA_IS_SETTING_DATE_OF_BIRTH_MANDATORY'                           => 'Data nașterii este un câmp obligatoriu',
+    'TCKLARNA_IS_SETTING_DATE_OF_BIRTH_MANDATORY_TOOLTIP'                   => 'Dacă doriți să faceți obligatorie introducerea datei de naștere, bifați această casetă. În mod normal, pentru Klarna, data de naștere nu este un câmp obligatoriu. Cu toate acestea, introducerea acesteia este necesară pentru a permite achiziția pe factură sau plata în rate.',
+    'TCKLARNA_IS_SETTING_NATIONAL_IDENTIFICATION_NUMBER_MANDATORY'          => 'Numărul de identificare național este un câmp obligatoriu',
+    'TCKLARNA_IS_SETTING_NATIONAL_IDENTIFICATION_NUMBER_MANDATORY_TOOLTIP'  => 'Vă rugăm să selectați dacă numărul național de identificare trebuie să fie un câmp obligatoriu.',
     'TCKLARNA_IS_BUTTON_SETTINGS_VARIATION'             => 'Variație',
     'TCKLARNA_IS_BUTTON_SETTINGS_TAGLINE'               => 'Slogan',
     'TCKLARNA_IS_BUTTON_SETTINGS_TYPE'                  => 'Tip',

@@ -167,30 +167,30 @@ $aLang = array(
     'TCKLARNA_DEVICE_IMG'                               => 'laite.png',
 
 
-    'TCKLARNA_EXTERNAL_PAYMENTS_ADMIN_DESC'             => 'Täällä voit määrittää ulkoiset maksutavat ja ulkoiset kassaprosessit integroitavaksi Klarna Checkout -iframeen. ',
-    'TP11'                                              => 'Katso yksityiskohtainen kuvaus eri asetuksista työkaluvinkkeistä ',
-    'TP12'                                              => '<i class="fa fa-question-circle-o" aria-hidden="true"></i>, lue käyttöopas ',
-    'TP13'                                              => 'tai ota yhteyttä Klarnan integraatiotukeen.',
-    'TCKLARNA_EXTRA_MERCHANT_DATA_ADMIN_DESC'           => 'Täällä voit määrittää, siirretäänkö Klarnalle mahdollisia ylimääräisiä kauppiaan tietoja. ',
-    'TP21'                                              => 'Katso yksityiskohtainen kuvaus eri asetuksista työkaluvinkkeistä ',
-    'TP22'                                              => '<i class="fa fa-question-circle-o" aria-hidden="true"></i>, lue käyttöopas ',
-    'TP23'                                              => 'tai ota yhteyttä Klarnan integraatiotukeen.',
-    'TCKLARNA_DESIGN_SETTINGS_ADMIN_DESC'               => 'Täällä voit määrittää OXID eShopin Klarna-moduulin käyttöä koskevat ulkoasuasetukset. ',
-    'TP31'                                              => 'Katso yksityiskohtainen kuvaus eri asetuksista työkaluvinkkeistä ',
-    'TP32'                                              => '<i class="fa fa-question-circle-o" aria-hidden="true"></i>, lue käyttöopas ',
-    'TP33'                                              => 'tai ota yhteyttä Klarnan integraatiotukeen.',
-    'TCKLARNA_GENERAL_SETTINGS_ADMIN_DESC'              => 'Valitse tässä joko Klarna Checkout tai Klarna Payments ja määritä yleiset asetukset. ',
-    'TP41'                                              => 'Katso yksityiskohtainen kuvaus eri asetuksista työkaluvinkkeistä ',
-    'TP42'                                              => '<i class="fa fa-question-circle-o" aria-hidden="true"></i>, lue käyttöopas ',
-    'TP43'                                              => 'tai ota yhteyttä Klarnan integraatiotukeen.',
-    'TCKLARNA_CONFIGURATION_KCO_ADMIN_DESC'             => 'Tällä sivulla voit määrittää Klarna Checkout -palvelua koskevat asetukset. ',
-    'TP51'                                              => 'Katso yksityiskohtainen kuvaus eri asetuksista työkaluvinkkeistä ',
-    'TP52'                                              => '<i class="fa fa-question-circle-o" aria-hidden="true"></i>, lue käyttöopas ',
-    'TP53'                                              => 'tai ota yhteyttä Klarnan integraatiotukeen.',
-    'TCKLARNA_CONFIGURATION_KP_ADMIN_DESC'              => 'Tällä sivulla voit valita, mitä Klarna-maksutapoja haluat tarjota. ',
-    'TP61'                                              => 'Katso yksityiskohtainen kuvaus eri asetuksista työkaluvinkkeistä ',
-    'TP62'                                              => '<i class="fa fa-question-circle-o" aria-hidden="true"></i>, lue käyttöopas ',
-    'TP63'                                              => 'tai ota yhteyttä Klarnan integraatiotukeen.',
+    'TCKLARNA_EXTERNAL_PAYMENTS_ADMIN_DESC'             => 'Täällä voit määrittää ulkoiset maksutavat ja ulkoiset kassaprosessit integroitavaksi Klarna Checkout -iframeen. 
+Katso yksityiskohtainen kuvaus eri asetuksista työkaluvinkkeistä 
+<i class="fa fa-question-circle-o" aria-hidden="true"></i>, lue käyttöopas 
+tai ota yhteyttä Klarnan integraatiotukeen.',
+    'TCKLARNA_EXTRA_MERCHANT_DATA_ADMIN_DESC'           => 'Täällä voit määrittää, siirretäänkö Klarnalle mahdollisia ylimääräisiä kauppiaan tietoja. 
+Katso yksityiskohtainen kuvaus eri asetuksista työkaluvinkkeistä 
+<i class="fa fa-question-circle-o" aria-hidden="true"></i>, lue käyttöopas 
+tai ota yhteyttä Klarnan integraatiotukeen.',
+    'TCKLARNA_DESIGN_SETTINGS_ADMIN_DESC'               => 'Täällä voit määrittää OXID eShopin Klarna-moduulin käyttöä koskevat ulkoasuasetukset. 
+Katso yksityiskohtainen kuvaus eri asetuksista työkaluvinkkeistä 
+<i class="fa fa-question-circle-o" aria-hidden="true"></i>, lue käyttöopas 
+tai ota yhteyttä Klarnan integraatiotukeen.',
+    'TCKLARNA_GENERAL_SETTINGS_ADMIN_DESC'              => 'Valitse tässä joko Klarna Checkout tai Klarna Payments ja määritä yleiset asetukset. 
+Katso yksityiskohtainen kuvaus eri asetuksista työkaluvinkkeistä 
+<i class="fa fa-question-circle-o" aria-hidden="true"></i>, lue käyttöopas 
+tai ota yhteyttä Klarnan integraatiotukeen.',
+    'TCKLARNA_CONFIGURATION_KCO_ADMIN_DESC'             => 'Tällä sivulla voit määrittää Klarna Checkout -palvelua koskevat asetukset. 
+Katso yksityiskohtainen kuvaus eri asetuksista työkaluvinkkeistä 
+<i class="fa fa-question-circle-o" aria-hidden="true"></i>, lue käyttöopas 
+tai ota yhteyttä Klarnan integraatiotukeen.',
+    'TCKLARNA_CONFIGURATION_KP_ADMIN_DESC'              => 'Tällä sivulla voit valita, mitä Klarna-maksutapoja haluat tarjota. 
+Katso yksityiskohtainen kuvaus eri asetuksista työkaluvinkkeistä 
+<i class="fa fa-question-circle-o" aria-hidden="true"></i>, lue käyttöopas 
+tai ota yhteyttä Klarnan integraatiotukeen.',
 
     'TCKLARNA_PAYMENT_METHOD'                           => 'Maksutapa',
     'TCKLARNA_EXTERNAL_PAYMENT_METHOD'                  => 'Ulkoinen maksutapa',
@@ -222,10 +222,10 @@ $aLang = array(
     'TCKLARNA_GLOBAL_MERCHANT_ID_TOOLTIP'               => 'Syötä tähän Klarna API -käyttäjätunnuksesi. Olet saanut ne Klarnan tervetuloviestissä. Tämä käyttäjätunnus ja salasana ovat voimassa kaikissa maissa. Vain jos olet saanut eri käyttäjätunnukset eri maille, voit lisätä ne alla olevaan kenttään.',
     'TCKLARNA_GLOBAL_PASSWORD_TOOLTIP'                  => 'Syötä tähän salasana, joka vastaa käyttämääsi API-käyttäjätunnusta. Olet saanut tämän salasanan Klarnan tervetuloviestissä.',
     'TCKLARNA_GLOBAL_PORTAL_MERCHANT_ID_TOOLTIP'        => 'Syötä tähän Klarna-kauppias-tunnuksesi. Olet saanut sen Klarnan tervetuloviestissä.',
-    'TCKLARNA_CREDENTIALS_COUNTRY_SELECTOR_TOOLTIP'     => 'Valitse vasemmalla olevasta valikosta se maa, jolle olet saanut Klarnalta maakohtaiset kirjautumistiedot.',
-    'TCKLARNA_CREDENTIALS_COUNTRY_MERCHANT_ID_TOOLTIP'  => 'Syötä tähän kyseisen maan käyttäjätunnus.',
-    'TCKLARNA_CREDENTIALS_COUNTRY_PASSWORD_TOOLTIP'     => 'Syötä tähän kyseisen maan salasana.',
-    'TCKLARNA_CREDENTIALS_COUNTRY_PORTAL_MERCHANT_ID_TOOLTIP'=> 'Syötä tähän kyseisen maan kauppias-ID.',
+    'TCKLARNA_CREDENTIALS_COUNTRY_SELECTOR_TOOLTIP'             => 'Valitse vasemmalla olevasta valikosta se maa, jolle olet saanut Klarnalta maakohtaiset kirjautumistiedot.',
+    'TCKLARNA_CREDENTIALS_COUNTRY_MERCHANT_ID_TOOLTIP'          => 'Syötä tähän kyseisen maan käyttäjätunnus.',
+    'TCKLARNA_CREDENTIALS_COUNTRY_PASSWORD_TOOLTIP'             => 'Syötä tähän kyseisen maan salasana.',
+    'TCKLARNA_CREDENTIALS_COUNTRY_PORTAL_MERCHANT_ID_TOOLTIP'   => 'Syötä tähän kyseisen maan kauppias-ID.',
     'TCKLARNA_DEFAULT_COUNTRY_TOOLTIP'                  => 'Valitse luettelosta, minkä maan asetukset Klarna Checkout -palvelu lataa oletuksena, kun asiakas ei ole vielä ilmoittanut maataan.',
     'TCKLARNA_ENABLE_LOGGING_TOOLTIP'                   => 'Ottaa lokitoiminnon käyttöön, jolloin kaikki Klarnan kanssa tapahtuva API-viestintä tallennetaan mysql-taulukkoon tcklarna_logs. Tästä voi olla hyötyä analysoinnissa tai vianetsinnässä. Tuotantokäytössä toiminto tulisi poistaa käytöstä, sillä muuten lokitiedostoihin voi kertyä suuria määriä tietoa ja niihin saatetaan tallentaa arkaluonteisia tietoja.',
     'TCKLARNA_SEND_PRODUCT_URLS_TOOLTIP'                => 'Lähetä Klarnalle niiden tuotteiden tuotetietosivujen URL-osoitteet, jotka ovat asiakkaidesi ostoskorissa, jotta Klarna voi myöhemmin linkittää tuotteisiisi Klarna-portaalista.',
@@ -289,7 +289,7 @@ $aLang = array(
     'KLARNA_REFUNDS'                                    => 'Hyvitykset',
     'KLARNA_CANCEL_ORDER'                               => 'Peruuta tilaus',
     'KLARNA_ORDER_IS_CANCELLED'                         => 'Tilaus on peruutettu. ',
-    'KLARNA_SEE_ORDER_IN_PORTAL'                        => '<a href="%s" target="_blank" class="alert-link">Diese Bestellung im Klarna Portal aufrufen</a>',
+    'KLARNA_SEE_ORDER_IN_PORTAL'                        => '<a href="%s" target="_blank" class="alert-link">Näytä tämä tilaus Klarna-portaalissa</a>',
     'KLARNA_ORDER_NOT_IN_SYNC'                          => '<strong>Huomio!</strong> Tämän tilauksen tiedot poikkeavat Klarnassa tallennetuista tiedoista. ',
     'TCKLARNA_ORDER_UPDATE_CANT_BE_SENT_TO_KLARNA'      => 'Huomio! Nykyisen tilausstatuksen vuoksi tätä muutosta ei voida välittää Klarnalle. Tee tarvittava muutos tarvittaessa manuaalisesti suoraan Klarnan kauppiasportaalissa.',
     'TCKLARNA_ORDER_UPDATE_REJECTED_BY_KLARNA'          => 'Huomio! Klarna ei pystynyt käsittelemään viimeisimpiä muutoksia, jotka olet tehnyt tähän tilaukseen (syy: %s). Peruuta viimeisimmät muutokset OXID eShopissa tai tee tarvittavat muutokset manuaalisesti Klarna Merchant Portalissa, jos se on tarpeen.',
@@ -326,7 +326,7 @@ $aLang = array(
     'TCKLARNA_LEARN_MORE_BUTTON'                        => 'Lue lisää',
 
     'TCKLARNA_CUSTOMER_TYPE'                            => 'Tuetut asiakastyypit',
-    'TCKLARNA_CUSTOMER_TYPE_TOOLTIP'                    => 'Hier können Sie einstellen, ob der Shop ausschließlich B2C Transaktionen (Standard-Einstellung). nur B2B Transaktionen oder sowohl B2C als auch B2B Transaktionen akzeptieren soll. <br> Hinweis: Nach dem Umstellen der Kundenarten muss der Session cache des Browsers gelöscht werden, damit die Bezahlung getestet werden kann.',
+    'TCKLARNA_CUSTOMER_TYPE_TOOLTIP'                    => 'Tässä voit määrittää, hyväksyykö kauppa vain B2C-tapahtumat (oletusasetus), vain B2B-tapahtumat vai sekä B2C- että B2B-tapahtumat. <br> Huomautus: Asiakastyypin muuttamisen jälkeen selaimen istuntovälimuisti on tyhjennettävä ennen kuin maksua voidaan testata.',
     'TCKLARNA_B2C'                                      => 'Vain B2C-asiakkaat',
     'TCKLARNA_B2B'                                      => 'Vain B2B-asiakkaat',
     'TCKLARNA_B2B_B2C'                                  => 'Pääasiassa B2B-asiakkaita, mutta myös B2C-asiakkaita',
@@ -351,12 +351,12 @@ $aLang = array(
     'TCKLARNA_FOOTER_PROMOTION_TOOLTIP'                 => 'Lisää tähän sijoitustagi, jotta käytettävissä olevat Klarna-maksutavat näkyvät verkkokaupan alatunnisteessa',
     'TCKLARNA_BANNER_PROMOTION_TOOLTIP'                 => 'Lisää tähän sijoitustagi, jotta voit lisätä bannerin verkkokauppasi etusivulle',
     'TCKLARNA_ON_SITE_MESSAGING_HEADER_TITLE'           => 'Mitä on On-Site Messaging?',
-    'TCKLARNA_ON_SITE_MESSAGING_HEADER_DESC'            => 'Asiakkaat eivät aina ole tietoisia heille tarjolla olevista erilaisista luotto- ja rahoitusvaihtoehdoista ennen kuin he pääsevät kassalle. Varhaisessa vaiheessa tarjolla olevat rahoitusvaihtoehdot vaikuttavat ostopäätökseen.',
+    'TCKLARNA_ON_SITE_MESSAGING_HEADER_DESC'            => 'Asiakkaat eivät aina ole tietoisia heille tarjolla olevista erilaisista luotto- ja rahoitusvaihtoehdoista ennen kuin he pääsevät kassalle. Varhaisessa vaiheessa tarjolla olevat rahoitusvaihtoehdot vaikuttavat ostopäätökseen.
 
-    'TCKLARNA_ON_SITE_MESSAGING_HEADER_DESC_TPK0'       => 'On-Site Messaging on helppo ja vaivaton integroida, ja se tarjoaa räätälöityä tietoa, joka ulottuu yleisistä bannereista Klarnan kanssa solmitun kumppanuuden mainostamiseen ja osamaksumahdollisuuksien esittelyyn aina tuote- tai ostoskorisivuilla näkyviin henkilökohtaisiin luottokampanjoihin asti.',
-    'TCKLARNA_ON_SITE_MESSAGING_HEADER_DESC_2'          => 'Weitere Informationen zu den ersten Schritten <a class="cl-pink" href="https://docs.klarna.com/conversion-boosters/on-site-messaging/before-you-start/" target="_blank" rel=”noopener”>finden Sie hier</a><br><br>',
-    'TCKLARNA_ON_SITE_MESSAGING_HEADER_DESC_2_TPK1'     => 'Melden Sie sich im <a class="cl-pink" href="https://merchants.klarna.com/" target="_blank">Händlerportal</a> an, um Ihren persönlichen JavaScript- und Placement-Code zu generieren. On-Site-Messaging wird in Ihrem Shop aktiviert, sobald der JavaScript-Code gespeichert und mindestens ein Placement-Code eingegeben wurde.<br>',
-    'TCKLARNA_ON_SITE_MESSAGING_HEADER_DESC_2_TPK2'     => 'Voit poistaa sen käytöstä milloin tahansa poistamalla koodit.',
+On-Site Messaging on helppo ja vaivaton integroida, ja se tarjoaa räätälöityä tietoa, joka ulottuu yleisistä bannereista Klarnan kanssa solmitun kumppanuuden mainostamiseen ja osamaksumahdollisuuksien esittelyyn aina tuote- tai ostoskorisivuilla näkyviin henkilökohtaisiin luottokampanjoihin asti.',
+    'TCKLARNA_ON_SITE_MESSAGING_HEADER_DESC_2'          => 'Lisätietoja ensimmäisistä vaiheista löytyy täältä: <a class="cl-pink" href="https://docs.klarna.com/conversion-boosters/on-site-messaging/before-you-start/" target="_blank" rel="noopener”></a><br><br> 
+Kirjaudu sisään <a class="cl-pink" href="https://merchants.klarna.com/" target="_blank">Kauppiasportaaliin</a> luodaksesi henkilökohtaisen JavaScript- ja sijoittelukoodisi. Sivuston viestit aktivoidaan kaupassasi, kun JavaScript-koodi on tallennettu ja vähintään yksi sijoittelukoodi on syötetty.<br> 
+Voit poistaa sen käytöstä milloin tahansa poistamalla koodit.',
     'TCKLARNA_ON_SITE_MESSAGING_MERCHANT_BUTTON'        => 'Jälleenmyyjäportaali',
 
     'TCKLARNA_IS_ENABLED_HEADLINE'                      => 'Klarna Instant Shoppingin käyttöönotto',
@@ -375,12 +375,12 @@ $aLang = array(
     'TCKLARNA_IS_BUTTON_PLACEMENT_BASKET'               => 'Näytä ostoskorin yhteenveto',
     'TCKLARNA_IS_BUTTON_PLACEMENT_BASKET_TOOLTIP'       => 'Ota tämä toiminto käyttöön, jotta Klarna Instant Shopping -painike näkyy verkkokauppasi ostoskorin yhteenvetosivulla.',
     'TCKLARNA_IS_BUTTON_SETTINGS_HEADLINE'              => 'Muita Instant Shopping -asetuksia',
-    'TCKLARNA_IS_SETTING_ALLOW_SEPARATE_SHIPPING_ADDRESS'=> 'Toimitusosoite voi poiketa laskutusosoitteesta',
-    'TCKLARNA_IS_SETTING_ALLOW_SEPARATE_SHIPPING_ADDRESS_TOOLTIP'=> 'Jos toimitus halutaan mahdollistaa eri toimitusosoitteeseen, aktivoi tämä valintakytkin.',
-    'TCKLARNA_IS_SETTING_DATE_OF_BIRTH_MANDATORY'       => 'Syntymäaika on pakollinen kenttä',
-    'TCKLARNA_IS_SETTING_DATE_OF_BIRTH_MANDATORY_TOOLTIP'=> 'Jos haluatte, että syntymäpäivän ilmoittaminen on pakollista, aktivoikaa tämä valintakytkin. Normaalisti syntymäpäivä ei ole pakollinen kenttä Klarnassa. Sen ilmoittaminen on kuitenkin välttämätöntä, jotta ostos voidaan maksaa laskulla tai osamaksulla.',
-    'TCKLARNA_IS_SETTING_NATIONAL_IDENTIFICATION_NUMBER_MANDATORY'=> 'Kansallinen henkilötunnus on pakollinen kenttä',
-    'TCKLARNA_IS_SETTING_NATIONAL_IDENTIFICATION_NUMBER_MANDATORY_TOOLTIP'=> 'Valitse, onko kansallinen henkilötunnus pakollinen kenttä.',
+    'TCKLARNA_IS_SETTING_ALLOW_SEPARATE_SHIPPING_ADDRESS'                   => 'Toimitusosoite voi poiketa laskutusosoitteesta',
+    'TCKLARNA_IS_SETTING_ALLOW_SEPARATE_SHIPPING_ADDRESS_TOOLTIP'           => 'Jos toimitus halutaan mahdollistaa eri toimitusosoitteeseen, aktivoi tämä valintakytkin.',
+    'TCKLARNA_IS_SETTING_DATE_OF_BIRTH_MANDATORY'                           => 'Syntymäaika on pakollinen kenttä',
+    'TCKLARNA_IS_SETTING_DATE_OF_BIRTH_MANDATORY_TOOLTIP'                   => 'Jos haluatte, että syntymäpäivän ilmoittaminen on pakollista, aktivoikaa tämä valintakytkin. Normaalisti syntymäpäivä ei ole pakollinen kenttä Klarnassa. Sen ilmoittaminen on kuitenkin välttämätöntä, jotta ostos voidaan maksaa laskulla tai osamaksulla.',
+    'TCKLARNA_IS_SETTING_NATIONAL_IDENTIFICATION_NUMBER_MANDATORY'          => 'Kansallinen henkilötunnus on pakollinen kenttä',
+    'TCKLARNA_IS_SETTING_NATIONAL_IDENTIFICATION_NUMBER_MANDATORY_TOOLTIP'  => 'Valitse, onko kansallinen henkilötunnus pakollinen kenttä.',
     'TCKLARNA_IS_BUTTON_SETTINGS_VARIATION'             => 'Vaihtelu',
     'TCKLARNA_IS_BUTTON_SETTINGS_TAGLINE'               => 'Slogan',
     'TCKLARNA_IS_BUTTON_SETTINGS_TYPE'                  => 'Tyyppi',

@@ -167,30 +167,30 @@ $aLang = array(
     'TCKLARNA_DEVICE_IMG'                               => 'device.png',
 
 
-    'TCKLARNA_EXTERNAL_PAYMENTS_ADMIN_DESC'             => 'Itt konfigurálhatja a külső fizetési módokat és a külső fizetési folyamatokat, amelyeket a Klarna Checkout iframe-be szeretne integrálni. ',
-    'TP11'                                              => 'A különböző beállítások részletes leírását illetően kérjük, olvassa el a segítő szövegeket ',
-    'TP12'                                              => '<i class="fa fa-question-circle-o" aria-hidden="true"></i>, olvassa el a <a class="cl-pink" href="https://wiki.fatchip.de/public/faqklarna" target="_blank">használati útmutatót</a> ',
-    'TP13'                                              => 'vagy vegye fel a kapcsolatot a Klarna integrációs ügyfélszolgálatával.',
-    'TCKLARNA_EXTRA_MERCHANT_DATA_ADMIN_DESC'           => 'Itt beállíthatja, hogy szükség esetén további kereskedői adatokat továbbítson-e a Klarna felé. ',
-    'TP21'                                              => 'A különböző beállítások részletes leírását illetően kérjük, olvassa el a segítő szövegeket ',
-    'TP22'                                              => '<i class="fa fa-question-circle-o" aria-hidden="true"></i>, olvassa el a <a class="cl-pink" href="https://wiki.fatchip.de/public/faqklarna" target="_blank">használati útmutatót</a> ',
-    'TP23'                                              => 'vagy vegye fel a kapcsolatot a Klarna integrációs ügyfélszolgálatával.',
-    'TCKLARNA_DESIGN_SETTINGS_ADMIN_DESC'               => 'Itt konfigurálhatja a Klarna modulhoz tartozó tervezési beállításokat az OXID eShophoz. ',
-    'TP31'                                              => 'A különböző beállítások részletes leírását illetően kérjük, olvassa el a segítő szövegeket ',
-    'TP32'                                              => '<i class="fa fa-question-circle-o" aria-hidden="true"></i>, olvassa el a <a class="cl-pink" href="https://wiki.fatchip.de/public/faqklarna" target="_blank">használati útmutatót</a> ',
-    'TP33'                                              => 'vagy vegye fel a kapcsolatot a Klarna integrációs ügyfélszolgálatával.',
-    'TCKLARNA_GENERAL_SETTINGS_ADMIN_DESC'              => 'Itt válasszon a Klarna Checkout és a Klarna Payments között, és végezze el az általános beállításokat. ',
-    'TP41'                                              => 'A különböző beállítások részletes leírását illetően kérjük, olvassa el a segítő szövegeket ',
-    'TP42'                                              => '<i class="fa fa-question-circle-o" aria-hidden="true"></i>, olvassa el a <a class="cl-pink" href="https://wiki.fatchip.de/public/faqklarna" target="_blank">használati útmutatót</a> ',
-    'TP43'                                              => 'vagy vegye fel a kapcsolatot a Klarna integrációs ügyfélszolgálatával.',
-    'TCKLARNA_CONFIGURATION_KCO_ADMIN_DESC'             => 'Ezen az oldalon beállíthatja a Klarna Checkout-ra vonatkozó beállításokat. ',
-    'TP51'                                              => 'A különböző beállítások részletes leírását illetően kérjük, olvassa el a segítő szövegeket ',
-    'TP52'                                              => '<i class="fa fa-question-circle-o" aria-hidden="true"></i>, olvassa el a <a class="cl-pink" href="https://wiki.fatchip.de/public/faqklarna" target="_blank">használati útmutatót</a> ',
-    'TP53'                                              => 'vagy vegye fel a kapcsolatot a Klarna integrációs ügyfélszolgálatával.',
-    'TCKLARNA_CONFIGURATION_KP_ADMIN_DESC'              => 'Ezen az oldalon kiválaszthatja, mely Klarna-fizetési módokat kívánja kínálni. ',
-    'TP61'                                              => 'A különböző beállítások részletes leírását illetően kérjük, olvassa el a segítő szövegeket ',
-    'TP62'                                              => '<i class="fa fa-question-circle-o" aria-hidden="true"></i>, olvassa el a <a class="cl-pink" href="https://wiki.fatchip.de/public/faqklarna" target="_blank">használati útmutatót</a> ',
-    'TP63'                                              => 'vagy vegye fel a kapcsolatot a Klarna integrációs ügyfélszolgálatával.',
+    'TCKLARNA_EXTERNAL_PAYMENTS_ADMIN_DESC'             => 'Itt konfigurálhatja a külső fizetési módokat és a külső fizetési folyamatokat, amelyeket a Klarna Checkout iframe-be szeretne integrálni. 
+A különböző beállítások részletes leírását illetően kérjük, olvassa el a segítő szövegeket 
+<i class="fa fa-question-circle-o" aria-hidden="true"></i>, olvassa el a <a class="cl-pink" href="https://wiki.fatchip.de/public/faqklarna" target="_blank">használati útmutatót</a> 
+vagy vegye fel a kapcsolatot a Klarna integrációs ügyfélszolgálatával.', 
+    'TCKLARNA_EXTRA_MERCHANT_DATA_ADMIN_DESC'           => 'Itt beállíthatja, hogy szükség esetén további kereskedői adatokat továbbítson-e a Klarna felé. 
+A különböző beállítások részletes leírását illetően kérjük, olvassa el a segítő szövegeket 
+<i class="fa fa-question-circle-o" aria-hidden="true"></i>, olvassa el a <a class="cl-pink" href="https://wiki.fatchip.de/public/faqklarna" target="_blank">használati útmutatót</a> 
+vagy vegye fel a kapcsolatot a Klarna integrációs ügyfélszolgálatával.',
+    'TCKLARNA_DESIGN_SETTINGS_ADMIN_DESC'               => 'Itt konfigurálhatja a Klarna modulhoz tartozó tervezési beállításokat az OXID eShophoz. 
+A különböző beállítások részletes leírását illetően kérjük, olvassa el a segítő szövegeket 
+<i class="fa fa-question-circle-o" aria-hidden="true"></i>, olvassa el a <a class="cl-pink" href="https://wiki.fatchip.de/public/faqklarna" target="_blank">használati útmutatót</a> 
+vagy vegye fel a kapcsolatot a Klarna integrációs ügyfélszolgálatával.',
+    'TCKLARNA_GENERAL_SETTINGS_ADMIN_DESC'              => 'Itt válasszon a Klarna Checkout és a Klarna Payments között, és végezze el az általános beállításokat. 
+A különböző beállítások részletes leírását illetően kérjük, olvassa el a segítő szövegeket 
+<i class="fa fa-question-circle-o" aria-hidden="true"></i>, olvassa el a <a class="cl-pink" href="https://wiki.fatchip.de/public/faqklarna" target="_blank">használati útmutatót</a> 
+vagy vegye fel a kapcsolatot a Klarna integrációs ügyfélszolgálatával.',
+    'TCKLARNA_CONFIGURATION_KCO_ADMIN_DESC'             => 'Ezen az oldalon beállíthatja a Klarna Checkout-ra vonatkozó beállításokat. 
+A különböző beállítások részletes leírását illetően kérjük, olvassa el a segítő szövegeket 
+<i class="fa fa-question-circle-o" aria-hidden="true"></i>, olvassa el a <a class="cl-pink" href="https://wiki.fatchip.de/public/faqklarna" target="_blank">használati útmutatót</a> 
+vagy vegye fel a kapcsolatot a Klarna integrációs ügyfélszolgálatával.',
+    'TCKLARNA_CONFIGURATION_KP_ADMIN_DESC'              => 'Ezen az oldalon kiválaszthatja, mely Klarna-fizetési módokat kívánja kínálni. 
+A különböző beállítások részletes leírását illetően kérjük, olvassa el a segítő szövegeket 
+<i class="fa fa-question-circle-o" aria-hidden="true"></i>, olvassa el a <a class="cl-pink" href="https://wiki.fatchip.de/public/faqklarna" target="_blank">használati útmutatót</a> 
+vagy vegye fel a kapcsolatot a Klarna integrációs ügyfélszolgálatával.',
 
     'TCKLARNA_PAYMENT_METHOD'                           => 'Fizetési mód',
     'TCKLARNA_EXTERNAL_PAYMENT_METHOD'                  => 'Külső fizetési mód',
@@ -222,10 +222,10 @@ $aLang = array(
     'TCKLARNA_GLOBAL_MERCHANT_ID_TOOLTIP'               => 'Kérjük, adja meg itt a Klarna API-hozzáférési adatait. Ezeket a Klarna üdvözlő e-mailjében kapta meg. Ez a felhasználónév és jelszó globálisan érvényes minden országra. Csak abban az esetben adhatja hozzá az alábbiakban a különböző országokra vonatkozó hozzáférési adatokat, ha azokat külön kapta meg.',
     'TCKLARNA_GLOBAL_PASSWORD_TOOLTIP'                  => 'Írja be ide a használt API-felhasználónévhez tartozó jelszavát. Ezt a jelszót a Klarna üdvözlő e-mailjében kapta meg.',
     'TCKLARNA_GLOBAL_PORTAL_MERCHANT_ID_TOOLTIP'        => 'Kérjük, adja meg itt a Klarna kereskedői azonosítóját. Ezt a Klarna üdvözlő e-mailjében kapta meg.',
-    'TCKLARNA_CREDENTIALS_COUNTRY_SELECTOR_TOOLTIP'     => 'Válassza ki a bal oldali listából azt az országot, amelyre vonatkozóan országspecifikus hozzáférési adatokat kapott a Klarnától.',
-    'TCKLARNA_CREDENTIALS_COUNTRY_MERCHANT_ID_TOOLTIP'  => 'Kérjük, írja be ide az adott országhoz tartozó felhasználónevet.',
-    'TCKLARNA_CREDENTIALS_COUNTRY_PASSWORD_TOOLTIP'     => 'Kérjük, írja be ide az adott országhoz tartozó jelszót.',
-    'TCKLARNA_CREDENTIALS_COUNTRY_PORTAL_MERCHANT_ID_TOOLTIP'=> 'Kérjük, írja be ide az adott országhoz tartozó kereskedői azonosítót.',
+    'TCKLARNA_CREDENTIALS_COUNTRY_SELECTOR_TOOLTIP'     		=> 'Válassza ki a bal oldali listából azt az országot, amelyre vonatkozóan országspecifikus hozzáférési adatokat kapott a Klarnától.',
+    'TCKLARNA_CREDENTIALS_COUNTRY_MERCHANT_ID_TOOLTIP'  		=> 'Kérjük, írja be ide az adott országhoz tartozó felhasználónevet.',
+    'TCKLARNA_CREDENTIALS_COUNTRY_PASSWORD_TOOLTIP'     		=> 'Kérjük, írja be ide az adott országhoz tartozó jelszót.',
+    'TCKLARNA_CREDENTIALS_COUNTRY_PORTAL_MERCHANT_ID_TOOLTIP'	=> 'Kérjük, írja be ide az adott országhoz tartozó kereskedői azonosítót.',
     'TCKLARNA_DEFAULT_COUNTRY_TOOLTIP'                  => 'Kérjük, válassza ki a listából, hogy melyik országra vonatkozóan töltődjön be alapértelmezésként a Klarna Checkout, amíg az ügyfél még nem adta meg az országát.',
     'TCKLARNA_ENABLE_LOGGING_TOOLTIP'                   => 'Aktiválja a naplózási funkciót, hogy a Klarnával folytatott összes API-kommunikációt a mysql adatbázis tcklarna_logs táblájában rögzítsék. Ez hasznos lehet elemzés vagy hibaelhárítás során. Éles üzemmódban a funkciót ki kell kapcsolni, mivel ellenkező esetben nagy mennyiségű naplóadat halmozódhat fel, és érzékeny adatok is tárolódhatnak.',
     'TCKLARNA_SEND_PRODUCT_URLS_TOOLTIP'                => 'Küldje el a Klarnának azoknak a termékeknek a cikk-részletoldalainak URL-jeit, amelyek az ügyfelei kosarában találhatók, hogy a Klarna később a Klarna portálról hivatkozhasson az Ön termékeire.',
@@ -289,7 +289,7 @@ $aLang = array(
     'KLARNA_REFUNDS'                                    => 'Visszatérítések',
     'KLARNA_CANCEL_ORDER'                               => 'Megrendelés törlése',
     'KLARNA_ORDER_IS_CANCELLED'                         => 'A megrendelést törölték. ',
-    'KLARNA_SEE_ORDER_IN_PORTAL'                        => '<a href="%s" target="_blank" class="alert-link">Diese Bestellung im Klarna Portal aufrufen</a>',
+    'KLARNA_SEE_ORDER_IN_PORTAL'                        => '<a href="%s" target="_blank" class="alert-link">Tekintse meg ezt a rendelést a Klarna portálon</a>',
     'KLARNA_ORDER_NOT_IN_SYNC'                          => '<strong>Figyelem!</strong> A megrendelés adatai eltérnek a Klarna rendszerében tárolt adatoktól. ',
     'TCKLARNA_ORDER_UPDATE_CANT_BE_SENT_TO_KLARNA'      => 'Figyelem! A megrendelés jelenlegi állapota miatt ez a módosítás nem továbbítható a Klarna felé. Szükség esetén kérjük, végezze el a megfelelő módosítást kézzel közvetlenül a Klarna Merchant Portálon.',
     'TCKLARNA_ORDER_UPDATE_REJECTED_BY_KLARNA'          => 'Figyelem! A Klarna nem tudta feldolgozni a megrendelésen végzett legutóbbi módosításait (ok: %s). Kérjük, vonja vissza a legutóbbi módosításokat az OXID eShopban, vagy szükség esetén végezze el a megfelelő módosítást manuálisan a Klarna Merchant Portálon.',
@@ -326,7 +326,7 @@ $aLang = array(
     'TCKLARNA_LEARN_MORE_BUTTON'                        => 'További információk',
 
     'TCKLARNA_CUSTOMER_TYPE'                            => 'Támogatott ügyféltípusok',
-    'TCKLARNA_CUSTOMER_TYPE_TOOLTIP'                    => 'Hier können Sie einstellen, ob der Shop ausschließlich B2C Transaktionen (Standard-Einstellung). nur B2B Transaktionen oder sowohl B2C als auch B2B Transaktionen akzeptieren soll. <br> Hinweis: Nach dem Umstellen der Kundenarten muss der Session cache des Browsers gelöscht werden, damit die Bezahlung getestet werden kann.',
+    'TCKLARNA_CUSTOMER_TYPE_TOOLTIP'                    => 'Itt beállíthatja, hogy az üzlet csak B2C tranzakciókat fogadjon-e el (alapértelmezett beállítás), csak B2B tranzakciókat, vagy mind B2C, mind B2B tranzakciókat. <br> Megjegyzés: Az ügyféltípus módosítása után a böngésző munkamenet-gyorsítótárát törölni kell a fizetés tesztelése előtt.',
     'TCKLARNA_B2C'                                      => 'Kizárólag B2C-ügyfelek',
     'TCKLARNA_B2B'                                      => 'Kizárólag B2B-ügyfelek',
     'TCKLARNA_B2B_B2C'                                  => 'Főként B2B-ügyfelek, de B2C-ügyfelek is',
@@ -351,12 +351,12 @@ $aLang = array(
     'TCKLARNA_FOOTER_PROMOTION_TOOLTIP'                 => 'Kérjük, illessze be ide a Placement-címkét, hogy az áruház láblécében megjelenjenek a rendelkezésre álló Klarna fizetési módok',
     'TCKLARNA_BANNER_PROMOTION_TOOLTIP'                 => 'Kérjük, illessze be ide a Placement-címkét, hogy egy banner jelenjen meg az online áruház kezdőlapján',
     'TCKLARNA_ON_SITE_MESSAGING_HEADER_TITLE'           => 'Mi az az on-site üzenetküldés?',
-    'TCKLARNA_ON_SITE_MESSAGING_HEADER_DESC'            => 'Az ügyfelek nem mindig ismerik a számukra rendelkezésre álló különböző hitel- és finanszírozási lehetőségeket, mielőtt a pénztárhoz érnek. A vásárlás előtt időben felkínált finanszírozási lehetőségek befolyásolják a vásárlási döntést.',
+    'TCKLARNA_ON_SITE_MESSAGING_HEADER_DESC'            => 'Az ügyfelek nem mindig ismerik a számukra rendelkezésre álló különböző hitel- és finanszírozási lehetőségeket, mielőtt a pénztárhoz érnek. A vásárlás előtt időben felkínált finanszírozási lehetőségek befolyásolják a vásárlási döntést.
 
-    'TCKLARNA_ON_SITE_MESSAGING_HEADER_DESC_TPK0'       => 'Az On-Site Messaging egyszerűen és problémamentesen integrálható, és személyre szabott információkat nyújt, amelyek az általános szalagcímektől kezdve a Klarnával való partnerségének népszerűsítésén és a részletfizetési lehetőség elérhetőségén át egészen a termék- vagy kosároldalakon megjelenő személyre szabott hitelakciókig terjednek.',
-    'TCKLARNA_ON_SITE_MESSAGING_HEADER_DESC_2'          => 'Weitere Informationen zu den ersten Schritten <a class="cl-pink" href="https://docs.klarna.com/conversion-boosters/on-site-messaging/before-you-start/" target="_blank" rel=”noopener”>finden Sie hier</a><br><br>',
-    'TCKLARNA_ON_SITE_MESSAGING_HEADER_DESC_2_TPK1'     => 'Melden Sie sich im <a class="cl-pink" href="https://merchants.klarna.com/" target="_blank">Händlerportal</a> an, um Ihren persönlichen JavaScript- und Placement-Code zu generieren. On-Site-Messaging wird in Ihrem Shop aktiviert, sobald der JavaScript-Code gespeichert und mindestens ein Placement-Code eingegeben wurde.<br>',
-    'TCKLARNA_ON_SITE_MESSAGING_HEADER_DESC_2_TPK2'     => 'Bármikor kikapcsolhatja, ha eltávolítja a kódokat.',
+Az On-Site Messaging egyszerűen és problémamentesen integrálható, és személyre szabott információkat nyújt, amelyek az általános szalagcímektől kezdve a Klarnával való partnerségének népszerűsítésén és a részletfizetési lehetőség elérhetőségén át egészen a termék- vagy kosároldalakon megjelenő személyre szabott hitelakciókig terjednek.',
+    'TCKLARNA_ON_SITE_MESSAGING_HEADER_DESC_2'          => 'További információ az első lépésekről itt található: <a class="cl-pink" href="https://docs.klarna.com/conversion-boosters/on-site-messaging/before-you-start/" target="_blank" rel=”noopener”></a><br><br> 
+Jelentkezzen be a <a class="cl-pink" href="https://merchants.klarna.com/" target="_blank">Kereskedői Portálra</a>, hogy létrehozza személyes JavaScript és elhelyezési kódját. A webhelyen belüli üzenetküldés akkor aktiválódik az üzletében, miután mentette a JavaScript kódot, és legalább egy elhelyezési kódot megadott.<br> 
+Bármikor kikapcsolhatja, ha eltávolítja a kódokat.',
     'TCKLARNA_ON_SITE_MESSAGING_MERCHANT_BUTTON'        => 'Kereskedői portál',
 
     'TCKLARNA_IS_ENABLED_HEADLINE'                      => 'A Klarna Instant Shopping aktiválása',
@@ -375,12 +375,12 @@ $aLang = array(
     'TCKLARNA_IS_BUTTON_PLACEMENT_BASKET'               => 'Megjelenítés a kosár áttekintésén',
     'TCKLARNA_IS_BUTTON_PLACEMENT_BASKET_TOOLTIP'       => 'Kapcsolja be ezt a funkciót, hogy a Klarna Instant Shopping gomb megjelenjen az Ön webáruházának kosáráttekintő oldalán.',
     'TCKLARNA_IS_BUTTON_SETTINGS_HEADLINE'              => 'További „Instant Shopping” beállítások',
-    'TCKLARNA_IS_SETTING_ALLOW_SEPARATE_SHIPPING_ADDRESS'=> 'A szállítási cím eltérhet a számlázási címtől',
-    'TCKLARNA_IS_SETTING_ALLOW_SEPARATE_SHIPPING_ADDRESS_TOOLTIP'=> 'Ha a szállítást egy másik szállítási címre is lehetővé kívánja tenni, jelölje be ezt a jelölőnégyzetet.',
-    'TCKLARNA_IS_SETTING_DATE_OF_BIRTH_MANDATORY'       => 'A születési dátum kötelező mező',
-    'TCKLARNA_IS_SETTING_DATE_OF_BIRTH_MANDATORY_TOOLTIP'=> 'Ha feltétlenül megköveteli a születési dátum megadását, jelölje be ezt a jelölőnégyzetet. Általában a Klarna esetében a születési dátum nem kötelező mező. Ugyanakkor a megadására szükség van ahhoz, hogy számlás vásárlás vagy részletfizetés lehetséges legyen.',
-    'TCKLARNA_IS_SETTING_NATIONAL_IDENTIFICATION_NUMBER_MANDATORY'=> 'A nemzeti azonosítószám kötelező mező',
-    'TCKLARNA_IS_SETTING_NATIONAL_IDENTIFICATION_NUMBER_MANDATORY_TOOLTIP'=> 'Kérjük, válassza ki, hogy a nemzeti azonosítószám kötelező mező legyen-e.',
+    'TCKLARNA_IS_SETTING_ALLOW_SEPARATE_SHIPPING_ADDRESS'					=> 'A szállítási cím eltérhet a számlázási címtől',
+    'TCKLARNA_IS_SETTING_ALLOW_SEPARATE_SHIPPING_ADDRESS_TOOLTIP'			=> 'Ha a szállítást egy másik szállítási címre is lehetővé kívánja tenni, jelölje be ezt a jelölőnégyzetet.',
+    'TCKLARNA_IS_SETTING_DATE_OF_BIRTH_MANDATORY'       					=> 'A születési dátum kötelező mező',
+    'TCKLARNA_IS_SETTING_DATE_OF_BIRTH_MANDATORY_TOOLTIP'					=> 'Ha feltétlenül megköveteli a születési dátum megadását, jelölje be ezt a jelölőnégyzetet. Általában a Klarna esetében a születési dátum nem kötelező mező. Ugyanakkor a megadására szükség van ahhoz, hogy számlás vásárlás vagy részletfizetés lehetséges legyen.',
+    'TCKLARNA_IS_SETTING_NATIONAL_IDENTIFICATION_NUMBER_MANDATORY'			=> 'A nemzeti azonosítószám kötelező mező',
+    'TCKLARNA_IS_SETTING_NATIONAL_IDENTIFICATION_NUMBER_MANDATORY_TOOLTIP'	=> 'Kérjük, válassza ki, hogy a nemzeti azonosítószám kötelező mező legyen-e.',
     'TCKLARNA_IS_BUTTON_SETTINGS_VARIATION'             => 'Változat',
     'TCKLARNA_IS_BUTTON_SETTINGS_TAGLINE'               => 'Szlogen',
     'TCKLARNA_IS_BUTTON_SETTINGS_TYPE'                  => 'Típus',

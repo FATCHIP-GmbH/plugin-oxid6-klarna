@@ -162,35 +162,35 @@ $aLang = array(
     'TCKLARNA_RB_HOW_TO_ACTIVATE_LIST_ONE'              => 'V administrátorskom rozhraní OXID kliknite na novú položku menu „Klarna“, potom na podkategóriu „Všeobecné“ a následne vyberte požadovaný produkt Klarna. Môžete si vybrať medzi službami „Klarna Payments“ a „Klarna Checkout“.',
     'TCKLARNA_RB_HOW_TO_ACTIVATE_LIST_TWO'              => 'Zadajte svoje prihlasovacie údaje (užívateľské meno a heslo) a v časti Nastavenia obchodu &gt; Spôsoby platby a &gt; Spôsoby doručenia nastavte typické priradenia spôsobov platby pre systém OXID.',
     'TCKLARNA_RB_HOW_TO_ACTIVATE_LIST_THREE'            => 'Uložte zmeny.',
-    'TCKLARNA_RB_HOW_TO_ACTIVATE_LIST_FOUR'             => 'Sie sind jetzt online und können anfangen, mit Klarna zu verkaufen.',
-    'TCKLARNA_RB_MERCHANT_SUPPORT'                      => 'Merchant Support',
+    'TCKLARNA_RB_HOW_TO_ACTIVATE_LIST_FOUR'             => 'Teraz ste online a môžete začať predávať s Klarnou.',
+    'TCKLARNA_RB_MERCHANT_SUPPORT'                      => 'Podpora obchodníkov',
     'TCKLARNA_DEVICE_IMG'                               => 'device.png',
 
 
-    'TCKLARNA_EXTERNAL_PAYMENTS_ADMIN_DESC'             => 'Tu môžete nakonfigurovať externé spôsoby platby a externé platobné brány na integráciu do rámca Klarna Checkout. ',
-    'TP11'                                              => 'Podrobný popis jednotlivých nastavení nájdete v nápovedách ',
-    'TP12'                                              => '<i class="fa fa-question-circle-o" aria-hidden="true"></i>, prečítajte si <a class="cl-pink" href="https://wiki.fatchip.de/public/faqklarna" target="_blank">príručku</a> ',
-    'TP13'                                              => 'alebo sa obráťte na podporu pre integráciu Klarna.',
-    'TCKLARNA_EXTRA_MERCHANT_DATA_ADMIN_DESC'           => 'Tu môžete nastaviť, či sa majú prípadné dodatočné údaje o obchodníkovi odoslať spoločnosti Klarna. ',
-    'TP21'                                              => 'Podrobný popis jednotlivých nastavení nájdete v nápovedách ',
-    'TP22'                                              => '<i class="fa fa-question-circle-o" aria-hidden="true"></i>, prečítajte si <a class="cl-pink" href="https://wiki.fatchip.de/public/faqklarna" target="_blank">príručku</a> ',
-    'TP23'                                              => 'alebo sa obráťte na podporu pre integráciu Klarna.',
-    'TCKLARNA_DESIGN_SETTINGS_ADMIN_DESC'               => 'Tu môžete nakonfigurovať nastavenia dizajnu pre použitie s modulom Klarna pre e-shop OXID. ',
-    'TP31'                                              => 'Podrobný popis jednotlivých nastavení nájdete v nápovedách k nástrojom ',
-    'TP32'                                              => '<i class="fa fa-question-circle-o" aria-hidden="true"></i>, prečítajte si <a class="cl-pink" href="https://wiki.fatchip.de/public/faqklarna" target="_blank">príručku</a> ',
-    'TP33'                                              => 'alebo sa obráťte na podporu pre integráciu Klarna.',
-    'TCKLARNA_GENERAL_SETTINGS_ADMIN_DESC'              => 'Tu si môžete vybrať medzi službami Klarna Checkout a Klarna Payments a nastaviť všeobecné nastavenia. ',
-    'TP41'                                              => 'Podrobný popis jednotlivých nastavení nájdete v nápovedách ',
-    'TP42'                                              => '<i class="fa fa-question-circle-o" aria-hidden="true"></i>, prečítajte si <a class="cl-pink" href="https://wiki.fatchip.de/public/faqklarna" target="_blank">príručku</a> ',
-    'TP43'                                              => 'alebo sa obráťte na podporu pre integráciu Klarna.',
-    'TCKLARNA_CONFIGURATION_KCO_ADMIN_DESC'             => 'Na tejto stránke môžete nakonfigurovať nastavenia špecifické pre službu Klarna Checkout. ',
-    'TP51'                                              => 'Podrobný popis jednotlivých nastavení nájdete v nápovedách ',
-    'TP52'                                              => '<i class="fa fa-question-circle-o" aria-hidden="true"></i>, prečítajte si <a class="cl-pink" href="https://wiki.fatchip.de/public/faqklarna" target="_blank">príručku</a> ',
-    'TP53'                                              => 'alebo sa obráťte na podporu pre integráciu Klarna.',
-    'TCKLARNA_CONFIGURATION_KP_ADMIN_DESC'              => 'Na tejto stránke si vyberiete, ktoré platobné metódy Klarna chcete ponúkať. ',
-    'TP61'                                              => 'Podrobný popis jednotlivých nastavení nájdete v nápovedách ',
-    'TP62'                                              => '<i class="fa fa-question-circle-o" aria-hidden="true"></i>, prečítajte si <a class="cl-pink" href="https://wiki.fatchip.de/public/faqklarna" target="_blank">príručku</a> ',
-    'TP63'                                              => 'alebo sa obráťte na podporu pre integráciu Klarna.',
+    'TCKLARNA_EXTERNAL_PAYMENTS_ADMIN_DESC'             => 'Tu môžete nakonfigurovať externé spôsoby platby a externé platobné brány na integráciu do rámca Klarna Checkout. 
+Podrobný popis jednotlivých nastavení nájdete v nápovedách 
+<i class="fa fa-question-circle-o" aria-hidden="true"></i>, prečítajte si <a class="cl-pink" href="https://wiki.fatchip.de/public/faqklarna" target="_blank">príručku</a> 
+alebo sa obráťte na podporu pre integráciu Klarna.',
+    'TCKLARNA_EXTRA_MERCHANT_DATA_ADMIN_DESC'           => 'Tu môžete nastaviť, či sa majú prípadné dodatočné údaje o obchodníkovi odoslať spoločnosti Klarna. 
+Podrobný popis jednotlivých nastavení nájdete v nápovedách 
+<i class="fa fa-question-circle-o" aria-hidden="true"></i>, prečítajte si <a class="cl-pink" href="https://wiki.fatchip.de/public/faqklarna" target="_blank">príručku</a> 
+alebo sa obráťte na podporu pre integráciu Klarna.',
+    'TCKLARNA_DESIGN_SETTINGS_ADMIN_DESC'               => 'Tu môžete nakonfigurovať nastavenia dizajnu pre použitie s modulom Klarna pre e-shop OXID. 
+Podrobný popis jednotlivých nastavení nájdete v nápovedách k nástrojom 
+<i class="fa fa-question-circle-o" aria-hidden="true"></i>, prečítajte si <a class="cl-pink" href="https://wiki.fatchip.de/public/faqklarna" target="_blank">príručku</a> 
+alebo sa obráťte na podporu pre integráciu Klarna.',
+    'TCKLARNA_GENERAL_SETTINGS_ADMIN_DESC'              => 'Tu si môžete vybrať medzi službami Klarna Checkout a Klarna Payments a nastaviť všeobecné nastavenia. 
+Podrobný popis jednotlivých nastavení nájdete v nápovedách 
+<i class="fa fa-question-circle-o" aria-hidden="true"></i>, prečítajte si <a class="cl-pink" href="https://wiki.fatchip.de/public/faqklarna" target="_blank">príručku</a> 
+alebo sa obráťte na podporu pre integráciu Klarna.',
+    'TCKLARNA_CONFIGURATION_KCO_ADMIN_DESC'             => 'Na tejto stránke môžete nakonfigurovať nastavenia špecifické pre službu Klarna Checkout. 
+Podrobný popis jednotlivých nastavení nájdete v nápovedách 
+<i class="fa fa-question-circle-o" aria-hidden="true"></i>, prečítajte si <a class="cl-pink" href="https://wiki.fatchip.de/public/faqklarna" target="_blank">príručku</a> 
+alebo sa obráťte na podporu pre integráciu Klarna.',
+    'TCKLARNA_CONFIGURATION_KP_ADMIN_DESC'              => 'Na tejto stránke si vyberiete, ktoré platobné metódy Klarna chcete ponúkať. 
+Podrobný popis jednotlivých nastavení nájdete v nápovedách 
+<i class="fa fa-question-circle-o" aria-hidden="true"></i>, prečítajte si <a class="cl-pink" href="https://wiki.fatchip.de/public/faqklarna" target="_blank">príručku</a> 
+alebo sa obráťte na podporu pre integráciu Klarna.',
 
     'TCKLARNA_PAYMENT_METHOD'                           => 'Spôsob platby',
     'TCKLARNA_EXTERNAL_PAYMENT_METHOD'                  => 'Externý spôsob platby',
@@ -222,10 +222,10 @@ $aLang = array(
     'TCKLARNA_GLOBAL_MERCHANT_ID_TOOLTIP'               => 'Zadajte sem, prosím, svoje prihlasovacie údaje do API služby Klarna. Tieto údaje ste dostali v uvítacom e-maile od spoločnosti Klarna. Toto používateľské meno a heslo platia globálne pre všetky krajiny. Iba v prípade, že ste dostali odlišné prihlasovacie údaje pre rôzne krajiny, môžete ich pridať nižšie.',
     'TCKLARNA_GLOBAL_PASSWORD_TOOLTIP'                  => 'Zadajte sem heslo, ktoré zodpovedá použitému používateľskému menu API. Toto heslo ste dostali v uvítacom e-maile od spoločnosti Klarna.',
     'TCKLARNA_GLOBAL_PORTAL_MERCHANT_ID_TOOLTIP'        => 'Zadajte sem, prosím, svoje identifikačné číslo obchodníka Klarna. Toto číslo ste dostali v uvítacom e-maile od spoločnosti Klarna.',
-    'TCKLARNA_CREDENTIALS_COUNTRY_SELECTOR_TOOLTIP'     => 'Z ponuky vľavo vyberte krajinu, pre ktorú ste od spoločnosti Klarna dostali prístupové údaje platné pre danú krajinu.',
-    'TCKLARNA_CREDENTIALS_COUNTRY_MERCHANT_ID_TOOLTIP'  => 'Zadajte sem príslušné používateľské meno pre túto krajinu.',
-    'TCKLARNA_CREDENTIALS_COUNTRY_PASSWORD_TOOLTIP'     => 'Zadajte tu príslušné heslo pre túto krajinu.',
-    'TCKLARNA_CREDENTIALS_COUNTRY_PORTAL_MERCHANT_ID_TOOLTIP'=> 'Zadajte sem príslušné identifikačné číslo obchodníka pre túto krajinu.',
+    'TCKLARNA_CREDENTIALS_COUNTRY_SELECTOR_TOOLTIP'             => 'Z ponuky vľavo vyberte krajinu, pre ktorú ste od spoločnosti Klarna dostali prístupové údaje platné pre danú krajinu.',
+    'TCKLARNA_CREDENTIALS_COUNTRY_MERCHANT_ID_TOOLTIP'          => 'Zadajte sem príslušné používateľské meno pre túto krajinu.',
+    'TCKLARNA_CREDENTIALS_COUNTRY_PASSWORD_TOOLTIP'             => 'Zadajte tu príslušné heslo pre túto krajinu.',
+    'TCKLARNA_CREDENTIALS_COUNTRY_PORTAL_MERCHANT_ID_TOOLTIP'   => 'Zadajte sem príslušné identifikačné číslo obchodníka pre túto krajinu.',
     'TCKLARNA_DEFAULT_COUNTRY_TOOLTIP'                  => 'Zoznamu prosím vyberte krajinu, pre ktorú sa má štandardne načítať Klarna Checkout, pokiaľ zákazník ešte neuviedol svoju krajinu.',
     'TCKLARNA_ENABLE_LOGGING_TOOLTIP'                   => 'Aktivuje funkciu protokolovania, aby sa všetka komunikácia cez API so spoločnosťou Klarna zaznamenávala do tabuľky tcklarna_logs v databáze MySQL. To môže byť užitočné pri analýze alebo hľadaní chýb. V produkčnom prostredí by mala byť táto funkcia vypnutá, pretože inak by sa mohli nahromadiť veľké množstvá protokolov a ukladať citlivé údaje.',
     'TCKLARNA_SEND_PRODUCT_URLS_TOOLTIP'                => 'Pošlite spoločnosti Klarna URL adresy stránok s podrobnými informáciami o produktoch, ktoré sa nachádzajú v nákupnom košíku vašich zákazníkov, aby mohla Klarna neskôr z portálu Klarna odkazovať na vaše produkty.',
@@ -289,7 +289,7 @@ $aLang = array(
     'KLARNA_REFUNDS'                                    => 'Vrátenie peňazí',
     'KLARNA_CANCEL_ORDER'                               => 'Zrušiť objednávku',
     'KLARNA_ORDER_IS_CANCELLED'                         => 'Objednávka bola zrušená. ',
-    'KLARNA_SEE_ORDER_IN_PORTAL'                        => '<a href="%s" target="_blank" class="alert-link">Diese Bestellung im Klarna Portal aufrufen</a>',
+    'KLARNA_SEE_ORDER_IN_PORTAL'                        => '<a href="%s" target="_blank" class="alert-link">Zobraziť túto objednávku na portáli Klarna</a>',
     'KLARNA_ORDER_NOT_IN_SYNC'                          => '<strong>Pozor!</strong> Údaje v tejto objednávke sa líšia od údajov uložených v systéme Klarna. ',
     'TCKLARNA_ORDER_UPDATE_CANT_BE_SENT_TO_KLARNA'      => 'Pozor! Vzhľadom na aktuálny stav objednávky nie je možné túto úpravu odoslať spoločnosti Klarna. V prípade potreby vykonajte príslušnú úpravu ručne priamo v portáli Klarna Merchant Portal.',
     'TCKLARNA_ORDER_UPDATE_REJECTED_BY_KLARNA'          => 'Pozor! Spoločnosť Klarna nemohla spracovať vaše posledné zmeny v tejto objednávke (dôvod: %s). Prosím, zrušte svoje nedávne zmeny v e-shope OXID alebo v prípade potreby vykonajte príslušnú úpravu ručne v portáli Klarna Merchant Portal.',
@@ -326,7 +326,7 @@ $aLang = array(
     'TCKLARNA_LEARN_MORE_BUTTON'                        => 'Zistiť viac',
 
     'TCKLARNA_CUSTOMER_TYPE'                            => 'Podporované typy zákazníkov',
-    'TCKLARNA_CUSTOMER_TYPE_TOOLTIP'                    => 'Hier können Sie einstellen, ob der Shop ausschließlich B2C Transaktionen (Standard-Einstellung). nur B2B Transaktionen oder sowohl B2C als auch B2B Transaktionen akzeptieren soll. <br> Hinweis: Nach dem Umstellen der Kundenarten muss der Session cache des Browsers gelöscht werden, damit die Bezahlung getestet werden kann.',
+    'TCKLARNA_CUSTOMER_TYPE_TOOLTIP'                    => 'Tu môžete nakonfigurovať, či má obchod akceptovať iba transakcie B2C (predvolené nastavenie), iba transakcie B2B alebo transakcie B2C aj B2B. <br> Poznámka: Po zmene typu zákazníka je potrebné pred testovaním platby vymazať vyrovnávaciu pamäť relácie prehliadača.',
     'TCKLARNA_B2C'                                      => 'Iba zákazníci v segmente B2C',
     'TCKLARNA_B2B'                                      => 'Iba zákazníci z segmentu B2B',
     'TCKLARNA_B2B_B2C'                                  => 'Predovšetkým zákazníci z oblasti B2B, ale aj zákazníci z oblasti B2C',
@@ -351,12 +351,12 @@ $aLang = array(
     'TCKLARNA_FOOTER_PROMOTION_TOOLTIP'                 => 'Prosím, vložte sem umiestňovací tag, aby sa v pätičke obchodu zobrazili dostupné spôsoby platby Klarna',
     'TCKLARNA_BANNER_PROMOTION_TOOLTIP'                 => 'Sem prosím vložte umiestňovací tag, aby ste mohli na úvodnú stránku svojho obchodu vložiť banner',
     'TCKLARNA_ON_SITE_MESSAGING_HEADER_TITLE'           => 'Čo je to On-Site Messaging?',
-    'TCKLARNA_ON_SITE_MESSAGING_HEADER_DESC'            => 'Zákazníci si nie vždy uvedomujú rôzne možnosti úverov a financovania, ktoré majú k dispozícii, ešte predtým, ako prídu k pokladni. Možnosti financovania dostupné v dostatočnom predstihu ovplyvňujú rozhodnutie o nákupe.',
+    'TCKLARNA_ON_SITE_MESSAGING_HEADER_DESC'            => 'Zákazníci si nie vždy uvedomujú rôzne možnosti úverov a financovania, ktoré majú k dispozícii, ešte predtým, ako prídu k pokladni. Možnosti financovania dostupné v dostatočnom predstihu ovplyvňujú rozhodnutie o nákupe.
 
-    'TCKLARNA_ON_SITE_MESSAGING_HEADER_DESC_TPK0'       => 'Funkcia On-Site Messaging sa dá integrovať jednoducho a bez problémov a ponúka informácie na mieru, ktoré siahajú od všeobecných bannerov cez propagáciu vášho partnerstva so spoločnosťou Klarna a informácie o možnosti splátok až po personalizované úverové akcie na stránkach produktov alebo v košíku.',
-    'TCKLARNA_ON_SITE_MESSAGING_HEADER_DESC_2'          => 'Weitere Informationen zu den ersten Schritten <a class="cl-pink" href="https://docs.klarna.com/conversion-boosters/on-site-messaging/before-you-start/" target="_blank" rel=”noopener”>finden Sie hier</a><br><br>',
-    'TCKLARNA_ON_SITE_MESSAGING_HEADER_DESC_2_TPK1'     => 'Melden Sie sich im <a class="cl-pink" href="https://merchants.klarna.com/" target="_blank">Händlerportal</a> an, um Ihren persönlichen JavaScript- und Placement-Code zu generieren. On-Site-Messaging wird in Ihrem Shop aktiviert, sobald der JavaScript-Code gespeichert und mindestens ein Placement-Code eingegeben wurde.<br>',
-    'TCKLARNA_ON_SITE_MESSAGING_HEADER_DESC_2_TPK2'     => 'Kedykoľvek to môžete deaktivovať tak, že kódy opäť odstránite.',
+Funkcia On-Site Messaging sa dá integrovať jednoducho a bez problémov a ponúka informácie na mieru, ktoré siahajú od všeobecných bannerov cez propagáciu vášho partnerstva so spoločnosťou Klarna a informácie o možnosti splátok až po personalizované úverové akcie na stránkach produktov alebo v košíku.',
+    'TCKLARNA_ON_SITE_MESSAGING_HEADER_DESC_2'          => 'Ďalšie informácie o prvých krokoch nájdete tu: <a class="cl-pink" href="https://docs.klarna.com/conversion-boosters/on-site-messaging/before-you-start/" target="_blank" rel="noopener"></a><br><br> 
+Prihláste sa na <a class="cl-pink" href="https://merchants.klarna.com/" target="_blank">Obchodný portál</a> a vygenerujte si svoj osobný JavaScript a umiestnecí kód. Po uložení JavaScriptového kódu a zadaní aspoň jedného umiestnecieho kódu sa vo vašom obchode aktivujú správy na mieste.<br> 
+Kedykoľvek to môžete deaktivovať tak, že kódy opäť odstránite.',
     'TCKLARNA_ON_SITE_MESSAGING_MERCHANT_BUTTON'        => 'Portál pre predajcov',
 
     'TCKLARNA_IS_ENABLED_HEADLINE'                      => 'Aktivovať službu Klarna Instant Shopping',
@@ -375,12 +375,12 @@ $aLang = array(
     'TCKLARNA_IS_BUTTON_PLACEMENT_BASKET'               => 'Zobraziť v prehľade nákupného košíka',
     'TCKLARNA_IS_BUTTON_PLACEMENT_BASKET_TOOLTIP'       => 'Aktivujte túto funkciu, aby sa v prehľade nákupného košíka vo vašom obchode zobrazil tlačidlo Klarna Instant Shopping.',
     'TCKLARNA_IS_BUTTON_SETTINGS_HEADLINE'              => 'Ďalšie nastavenia funkcie Instant Shopping',
-    'TCKLARNA_IS_SETTING_ALLOW_SEPARATE_SHIPPING_ADDRESS'=> 'Doručovacia adresa sa môže líšiť od fakturačnej adresy',
-    'TCKLARNA_IS_SETTING_ALLOW_SEPARATE_SHIPPING_ADDRESS_TOOLTIP'=> 'Ak chcete umožniť doručenie na inú doručovaciu adresu, aktivujte toto políčko.',
-    'TCKLARNA_IS_SETTING_DATE_OF_BIRTH_MANDATORY'       => 'Dátum narodenia ako povinné pole',
-    'TCKLARNA_IS_SETTING_DATE_OF_BIRTH_MANDATORY_TOOLTIP'=> 'Ak chcete, aby bolo zadanie dátumu narodenia povinné, aktivujte tento prepínač. V bežnom prípade nie je dátum narodenia pre Klarnu povinným poľom. Jeho zadanie je však nevyhnutné na to, aby bolo možné uskutočniť nákup na faktúru alebo splátkový nákup.',
-    'TCKLARNA_IS_SETTING_NATIONAL_IDENTIFICATION_NUMBER_MANDATORY'=> 'Národné identifikačné číslo ako povinné pole',
-    'TCKLARNA_IS_SETTING_NATIONAL_IDENTIFICATION_NUMBER_MANDATORY_TOOLTIP'=> 'Prosím, vyberte, či má byť národné identifikačné číslo povinným poľom.',
+    'TCKLARNA_IS_SETTING_ALLOW_SEPARATE_SHIPPING_ADDRESS'                   => 'Doručovacia adresa sa môže líšiť od fakturačnej adresy',
+    'TCKLARNA_IS_SETTING_ALLOW_SEPARATE_SHIPPING_ADDRESS_TOOLTIP'           => 'Ak chcete umožniť doručenie na inú doručovaciu adresu, aktivujte toto políčko.',
+    'TCKLARNA_IS_SETTING_DATE_OF_BIRTH_MANDATORY'                           => 'Dátum narodenia ako povinné pole',
+    'TCKLARNA_IS_SETTING_DATE_OF_BIRTH_MANDATORY_TOOLTIP'                   => 'Ak chcete, aby bolo zadanie dátumu narodenia povinné, aktivujte tento prepínač. V bežnom prípade nie je dátum narodenia pre Klarnu povinným poľom. Jeho zadanie je však nevyhnutné na to, aby bolo možné uskutočniť nákup na faktúru alebo splátkový nákup.',
+    'TCKLARNA_IS_SETTING_NATIONAL_IDENTIFICATION_NUMBER_MANDATORY'          => 'Národné identifikačné číslo ako povinné pole',
+    'TCKLARNA_IS_SETTING_NATIONAL_IDENTIFICATION_NUMBER_MANDATORY_TOOLTIP'  => 'Prosím, vyberte, či má byť národné identifikačné číslo povinným poľom.',
     'TCKLARNA_IS_BUTTON_SETTINGS_VARIATION'             => 'Variácia',
     'TCKLARNA_IS_BUTTON_SETTINGS_TAGLINE'               => 'Slogan',
     'TCKLARNA_IS_BUTTON_SETTINGS_TYPE'                  => 'Typ',
