@@ -168,30 +168,30 @@ $aLang = array(
     'TCKLARNA_DEVICE_IMG'                               => 'device.png',
 
 
-    'TCKLARNA_EXTERNAL_PAYMENTS_ADMIN_DESC'             => 'Hier können Sie externe Bezahlarten und externe Checkouts zur Einbindung innerhalb des Klarna Checkout Iframes konfigurieren. ',
-    'TP11'                                               => 'Für eine detaillierte Beschreibung der verschiedenen Einstellungen beachten Sie bitte die Tooltips ',
-    'TP12'                                               => '<i class="fa fa-question-circle-o" aria-hidden="true"></i>, lesen Sie das <a class="cl-pink" href="https://wiki.fatchip.de/public/faqklarna" target="_blank">Handbuch</a> ',
-    'TP13'                                               => 'oder wenden Sie sich an den Klarna Integration Support.',
-    'TCKLARNA_EXTRA_MERCHANT_DATA_ADMIN_DESC'           => 'Hier können Sie konfigurieren, ob ggf. Extra Merchant Data an Klarna übertragen werden soll. ',
-    'TP21'                                               => 'Für eine detaillierte Beschreibung der verschiedenen Einstellungen beachten Sie bitte die Tooltips ',
-    'TP22'                                               => '<i class="fa fa-question-circle-o" aria-hidden="true"></i>, lesen Sie das <a class="cl-pink" href="https://wiki.fatchip.de/public/faqklarna" target="_blank">Handbuch</a> ',
-    'TP23'                                               => 'oder wenden Sie sich an den Klarna Integration Support.',
-    'TCKLARNA_DESIGN_SETTINGS_ADMIN_DESC'               => 'Hier können Sie die Design Einstellungen zur Verwendung mit dem Klarna Modul für den OXID eShop konfigurieren. ',
-    'TP31'                                               => 'Für eine detaillierte Beschreibung der verschiedenen Einstellungen beachten Sie bitte die Tooltips ',
-    'TP32'                                               => '<i class="fa fa-question-circle-o" aria-hidden="true"></i>, lesen Sie das <a class="cl-pink" href="https://wiki.fatchip.de/public/faqklarna" target="_blank">Handbuch</a> ',
-    'TP33'                                               => 'oder wenden Sie sich an den Klarna Integration Support.',
-    'TCKLARNA_GENERAL_SETTINGS_ADMIN_DESC'              => 'Treffen Sie hier die Auswahl zwischen Klarna Checkout und Klarna Payments, und nehmen Sie übergreifende Einstellungen vor. ',
-    'TP41'                                               => 'Für eine detaillierte Beschreibung der verschiedenen Einstellungen beachten Sie bitte die Tooltips ',
-    'TP42'                                               => '<i class="fa fa-question-circle-o" aria-hidden="true"></i>, lesen Sie das <a class="cl-pink" href="https://wiki.fatchip.de/public/faqklarna" target="_blank">Handbuch</a> ',
-    'TP43'                                               => 'oder wenden Sie sich an den Klarna Integration Support.',
-    'TCKLARNA_CONFIGURATION_KCO_ADMIN_DESC'             => 'Auf dieser Seite können Sie die Klarna Checkout spezifischen Einstellungen konfigurieren. ',
-    'TP51'                                               => 'Für eine detaillierte Beschreibung der verschiedenen Einstellungen beachten Sie bitte die Tooltips ',
-    'TP52'                                               => '<i class="fa fa-question-circle-o" aria-hidden="true"></i>, lesen Sie das <a class="cl-pink" href="https://wiki.fatchip.de/public/faqklarna" target="_blank">Handbuch</a> ',
-    'TP53'                                               => 'oder wenden Sie sich an den Klarna Integration Support.',
-    'TCKLARNA_CONFIGURATION_KP_ADMIN_DESC'              => 'Auf dieser Seite wählen Sie, welche Klarna Payments Sie anbieten möchten. ',
-    'TP61'                                               => 'Für eine detaillierte Beschreibung der verschiedenen Einstellungen beachten Sie bitte die Tooltips ',
-    'TP62'                                               => '<i class="fa fa-question-circle-o" aria-hidden="true"></i>, lesen Sie das <a class="cl-pink" href="https://wiki.fatchip.de/public/faqklarna" target="_blank">Handbuch</a> ',
-    'TP63'                                               => 'oder wenden Sie sich an den Klarna Integration Support.',
+    'TCKLARNA_EXTERNAL_PAYMENTS_ADMIN_DESC'             => 'Hier können Sie externe Bezahlarten und externe Checkouts zur Einbindung innerhalb des Klarna Checkout Iframes konfigurieren. 
+Für eine detaillierte Beschreibung der verschiedenen Einstellungen beachten Sie bitte die Tooltips 
+<i class="fa fa-question-circle-o" aria-hidden="true"></i>, lesen Sie das <a class="cl-pink" href="https://wiki.fatchip.de/public/faqklarna" target="_blank">Handbuch</a> 
+oder wenden Sie sich an den Klarna Integration Support.',
+    'TCKLARNA_EXTRA_MERCHANT_DATA_ADMIN_DESC'           => 'Hier können Sie konfigurieren, ob ggf. Extra Merchant Data an Klarna übertragen werden soll. 
+Für eine detaillierte Beschreibung der verschiedenen Einstellungen beachten Sie bitte die Tooltips 
+<i class="fa fa-question-circle-o" aria-hidden="true"></i>, lesen Sie das <a class="cl-pink" href="https://wiki.fatchip.de/public/faqklarna" target="_blank">Handbuch</a> 
+oder wenden Sie sich an den Klarna Integration Support.',
+    'TCKLARNA_DESIGN_SETTINGS_ADMIN_DESC'               => 'Hier können Sie die Design Einstellungen zur Verwendung mit dem Klarna Modul für den OXID eShop konfigurieren. 
+Für eine detaillierte Beschreibung der verschiedenen Einstellungen beachten Sie bitte die Tooltips 
+<i class="fa fa-question-circle-o" aria-hidden="true"></i>, lesen Sie das <a class="cl-pink" href="https://wiki.fatchip.de/public/faqklarna" target="_blank">Handbuch</a> 
+oder wenden Sie sich an den Klarna Integration Support.',
+    'TCKLARNA_GENERAL_SETTINGS_ADMIN_DESC'              => 'Treffen Sie hier die Auswahl zwischen Klarna Checkout und Klarna Payments, und nehmen Sie übergreifende Einstellungen vor. 
+Für eine detaillierte Beschreibung der verschiedenen Einstellungen beachten Sie bitte die Tooltips 
+<i class="fa fa-question-circle-o" aria-hidden="true"></i>, lesen Sie das <a class="cl-pink" href="https://wiki.fatchip.de/public/faqklarna" target="_blank">Handbuch</a> 
+oder wenden Sie sich an den Klarna Integration Support.',
+    'TCKLARNA_CONFIGURATION_KCO_ADMIN_DESC'             => 'Auf dieser Seite können Sie die Klarna Checkout spezifischen Einstellungen konfigurieren. 
+Für eine detaillierte Beschreibung der verschiedenen Einstellungen beachten Sie bitte die Tooltips 
+<i class="fa fa-question-circle-o" aria-hidden="true"></i>, lesen Sie das <a class="cl-pink" href="https://wiki.fatchip.de/public/faqklarna" target="_blank">Handbuch</a> 
+oder wenden Sie sich an den Klarna Integration Support.',
+    'TCKLARNA_CONFIGURATION_KP_ADMIN_DESC'              => 'Auf dieser Seite wählen Sie, welche Klarna Payments Sie anbieten möchten. 
+Für eine detaillierte Beschreibung der verschiedenen Einstellungen beachten Sie bitte die Tooltips 
+<i class="fa fa-question-circle-o" aria-hidden="true"></i>, lesen Sie das <a class="cl-pink" href="https://wiki.fatchip.de/public/faqklarna" target="_blank">Handbuch</a> 
+oder wenden Sie sich an den Klarna Integration Support.',
 
     'TCKLARNA_PAYMENT_METHOD'                           => 'Zahlungsart',
     'TCKLARNA_EXTERNAL_PAYMENT_METHOD'                  => 'Externe Zahlungsart',
@@ -314,7 +314,7 @@ $aLang = array(
     'TCKLARNA_GIFT_WRAPPING_TITLE'                      => 'Geschenkverpackung',
     'TCKLARNA_GIFT_CARD_TITLE'                          => 'Grußkarte',
 
-    'TCKLARNA_ERROR_SHOP_SSL_NOT_CONFIGURED'            => 'Fataler Fehler: Die Angabe einer gültigen SSL-geschützten (https) this->sSSLShopURL in der config.inc.php Ihres Shops ist Pflicht, wenn Sie den %s aktivieren möchten!',
+    'TCKLARNA_ERROR_SHOP_SSL_NOT_CONFIGURED'            => 'Fataler Fehler: Die Angabe einer gültigen SSL-geschützten (https) $this->sSSLShopURL in der config.inc.php Ihres Shops ist Pflicht, wenn Sie den %s aktivieren möchten!',
     'TCKLARNA_ERROR_WRONG_CREDS'                        => '<strong>Falsche Zugangsdaten!</strong>',
     'TCKLARNA_ERROR_KCO_INACTIVE'                       => 'Setup-Fehler: Klarna Checkout ist im Shop nicht aktiv',
 
@@ -352,12 +352,12 @@ $aLang = array(
     'TCKLARNA_FOOTER_PROMOTION_TOOLTIP'                 => 'Bitte fügen Sie hier den Placement Tag ein, um Ihre verfügbaren Klarna Zahlungsarten im Footer des Shops anzuzeigen',
     'TCKLARNA_BANNER_PROMOTION_TOOLTIP'                 => 'Bitte fügen Sie hier den Placement Tag ein, um einen Banner auf Ihrer Shop-Startseite einzufügen',
     'TCKLARNA_ON_SITE_MESSAGING_HEADER_TITLE'           => 'Was ist On-Site Messaging?',
-    'TCKLARNA_ON_SITE_MESSAGING_HEADER_DESC'            => 'Kunden sind sich nicht immer der verschiedenen Kredit- und Finanzierungsmöglichkeiten bewusst, die ihnen zur Verfügung stehen, bevor sie die Kasse erreichen. Frühzeitig verfügbare Finanzierungsmöglichkeiten beeinflussen die Kaufentscheidung.',
+    'TCKLARNA_ON_SITE_MESSAGING_HEADER_DESC'            => 'Kunden sind sich nicht immer der verschiedenen Kredit- und Finanzierungsmöglichkeiten bewusst, die ihnen zur Verfügung stehen, bevor sie die Kasse erreichen. Frühzeitig verfügbare Finanzierungsmöglichkeiten beeinflussen die Kaufentscheidung.
 
-    'TCKLARNA_ON_SITE_MESSAGING_HEADER_DESC_TPK0'       => 'On-Site Messaging ist einfach und problemlos zu integrieren und bietet maßgeschneiderte Informationen, die von allgemeinen Bannern über die Förderung Ihrer Partnerschaft mit Klarna und die Verfügbarkeit einer Ratenzahlung bis hin zu personalisierten Kreditaktionen auf Produkt- oder Warenkorbseiten reichen.',
-    'TCKLARNA_ON_SITE_MESSAGING_HEADER_DESC_2'          => 'Weitere Informationen zu den ersten Schritten <a class="cl-pink" href="https://docs.klarna.com/conversion-boosters/on-site-messaging/before-you-start/" target="_blank" rel=”noopener”>finden Sie hier</a><br><br>',
-    'TCKLARNA_ON_SITE_MESSAGING_HEADER_DESC_2_TPK1'     => 'Melden Sie sich im <a class="cl-pink" href="https://merchants.klarna.com/" target="_blank">Händlerportal</a> an, um Ihren persönlichen JavaScript- und Placement-Code zu generieren. On-Site-Messaging wird in Ihrem Shop aktiviert, sobald der JavaScript-Code gespeichert und mindestens ein Placement-Code eingegeben wurde.<br>',
-    'TCKLARNA_ON_SITE_MESSAGING_HEADER_DESC_2_TPK2'     => 'Sie können es jederzeit deaktivieren, indem Sie die Codes wieder entfernen.',
+On-Site Messaging ist einfach und problemlos zu integrieren und bietet maßgeschneiderte Informationen, die von allgemeinen Bannern über die Förderung Ihrer Partnerschaft mit Klarna und die Verfügbarkeit einer Ratenzahlung bis hin zu personalisierten Kreditaktionen auf Produkt- oder Warenkorbseiten reichen.',
+    'TCKLARNA_ON_SITE_MESSAGING_HEADER_DESC_2'          => 'Weitere Informationen zu den ersten Schritten <a class="cl-pink" href="https://docs.klarna.com/conversion-boosters/on-site-messaging/before-you-start/" target="_blank" rel=”noopener”>finden Sie hier</a><br><br> 
+Melden Sie sich im <a class="cl-pink" href="https://merchants.klarna.com/" target="_blank">Händlerportal</a> an, um Ihren persönlichen JavaScript- und Placement-Code zu generieren. On-Site-Messaging wird in Ihrem Shop aktiviert, sobald der JavaScript-Code gespeichert und mindestens ein Placement-Code eingegeben wurde.<br> 
+Sie können es jederzeit deaktivieren, indem Sie die Codes wieder entfernen.',
     'TCKLARNA_ON_SITE_MESSAGING_MERCHANT_BUTTON'        => 'Händlerportal',
 
     'TCKLARNA_IS_ENABLED_HEADLINE'                      => 'Klarna Instant Shopping aktivieren',
