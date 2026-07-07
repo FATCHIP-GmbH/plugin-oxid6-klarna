@@ -107,6 +107,7 @@ $aLang = array(
     'TCKLARNA_KEB_SHAPE_pill'                           => 'Χάπι',
     'TCKLARNA_ON_BASKET_PAGE'                           => 'Στη σελίδα του καλαθιού αγορών',
     'TCKLARNA_DISPLAY_EXPRESS_BUTTON'                   => 'Να εμφανιστεί το κουμπί «Klarna Express Checkout»;',
+    'TCKLARNA_DISPLAY_EXPRESS_BUTTON_HTACCESS'          => 'Για να αξιοποιήσετε πλήρως το Klarna Express, απαιτείται παρακολούθηση τοποθεσίας μέσω GeoIP. Προσθέστε τον ακόλουθο κώδικα στο αρχείο .htaccess:"&lt;IfModule mod_geoip.c&gt;    GeoIPEnable On&lt;/IfModule&gt;"',
     'TCKLARNA_PAYMENT_DESIGN'                           => 'Επιλογές σχεδιασμού πληρωμών Klarna',
     'TCKLARNA_CHECKOUT_DESIGN'                          => 'Επιλογές σχεδιασμού του Klarna Checkout',
     'TCKLARNA_COLOR_SETTINGS'                           => 'Ρυθμίσεις χρωμάτων:',

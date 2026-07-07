@@ -107,6 +107,7 @@ $aLang = array(
     'TCKLARNA_KEB_SHAPE_pill'                           => 'Pilleri',
     'TCKLARNA_ON_BASKET_PAGE'                           => 'Ostoskorisivulla',
     'TCKLARNA_DISPLAY_EXPRESS_BUTTON'                   => 'Näytetäänkö Klarna Express Checkout -painike?',
+    'TCKLARNA_DISPLAY_EXPRESS_BUTTON_HTACCESS'          => 'Klarna Expressin täysimääräinen hyödyntäminen edellyttää GeoIP-sijainnin seurantaa. Lisää seuraava koodi .htaccess-tiedostoosi:"&lt;IfModule mod_geoip.c&gt;    GeoIPEnable On&lt;/IfModule&gt;"',
     'TCKLARNA_PAYMENT_DESIGN'                           => 'Klarnan maksusuunnitteluvaihtoehdot',
     'TCKLARNA_CHECKOUT_DESIGN'                          => 'Klarna Checkoutin ulkoasuvaihtoehdot',
     'TCKLARNA_COLOR_SETTINGS'                           => 'Väriasetukset:',

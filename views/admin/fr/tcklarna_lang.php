@@ -107,6 +107,7 @@ $aLang = array(
     'TCKLARNA_KEB_SHAPE_pill'                           => 'Pilule',
     'TCKLARNA_ON_BASKET_PAGE'                           => 'Sur la page du panier',
     'TCKLARNA_DISPLAY_EXPRESS_BUTTON'                   => 'Afficher le bouton « Klarna Express Checkout » ?',
+    'TCKLARNA_DISPLAY_EXPRESS_BUTTON_HTACCESS'          => 'Pour utiliser pleinement Klarna Express, le suivi de localisation via GeoIP est requis. Ajoutez le code suivant à votre fichier .htaccess :"&lt;IfModule mod_geoip.c&gt;    GeoIPEnable On&lt;/IfModule&gt;"',
     'TCKLARNA_PAYMENT_DESIGN'                           => 'Options de conception de paiement Klarna',
     'TCKLARNA_CHECKOUT_DESIGN'                          => 'Options de personnalisation de la page de paiement Klarna',
     'TCKLARNA_COLOR_SETTINGS'                           => 'Paramètres de couleur :',
@@ -354,8 +355,8 @@ ou contactez le service d\'assistance à l\'intégration de Klarna.',
     'TCKLARNA_ON_SITE_MESSAGING_HEADER_DESC'            => 'Les clients ne sont pas toujours conscients des différentes possibilités de crédit et de financement qui s\'offrent à eux avant d\'arriver à la caisse. Les options de financement proposées dès le début influencent la décision d\'achat.
 
 La messagerie sur site est simple et facile à intégrer ; elle propose des informations sur mesure, allant des bannières générales mettant en avant votre partenariat avec Klarna et la possibilité de payer en plusieurs fois, jusqu’aux offres de crédit personnalisées sur les pages de produits ou de panier.',
-    'TCKLARNA_ON_SITE_MESSAGING_HEADER_DESC_2'          => 'Vous trouverez plus d'informations sur les premières étapes ici : <a class="cl-pink" href="https://docs.klarna.com/conversion-boosters/on-site-messaging/before-you-start/" target="_blank" rel="noopener"></a><br><br> 
-Connectez-vous au <a class="cl-pink" href="https://merchants.klarna.com/" target="_blank">Portail Marchand</a> pour générer votre code JavaScript et votre code d'insertion personnalisés. La messagerie intégrée sera activée dans votre boutique une fois le code JavaScript enregistré et au moins un code d'insertion saisi.<br> 
+    'TCKLARNA_ON_SITE_MESSAGING_HEADER_DESC_2'          => 'Vous trouverez plus d\'informations sur les premières étapes ici : <a class="cl-pink" href="https://docs.klarna.com/conversion-boosters/on-site-messaging/before-you-start/" target="_blank" rel="noopener"></a><br><br> 
+Connectez-vous au <a class="cl-pink" href="https://merchants.klarna.com/" target="_blank">Portail Marchand</a> pour générer votre code JavaScript et votre code d\'insertion personnalisés. La messagerie intégrée sera activée dans votre boutique une fois le code JavaScript enregistré et au moins un code d\'insertion saisi.<br> 
 Vous pouvez le désactiver à tout moment en supprimant les codes.',
     'TCKLARNA_ON_SITE_MESSAGING_MERCHANT_BUTTON'        => 'Portail des revendeurs',
 

@@ -107,6 +107,7 @@ $aLang = array(
     'TCKLARNA_KEB_SHAPE_pill'                           => 'Pastilă',
     'TCKLARNA_ON_BASKET_PAGE'                           => 'Pe pagina coșului de cumpărături',
     'TCKLARNA_DISPLAY_EXPRESS_BUTTON'                   => 'Să se afișeze butonul „Klarna Express Checkout”?',
+    'TCKLARNA_DISPLAY_EXPRESS_BUTTON_HTACCESS'          => 'Pentru a utiliza complet Klarna Express, este necesară urmărirea locației prin GeoIP. Adăugați următorul cod în fișierul .htaccess:"&lt;IfModule mod_geoip.c&gt;    GeoIPEnable On&lt;/IfModule&gt;"',
     'TCKLARNA_PAYMENT_DESIGN'                           => 'Opțiuni de design pentru plățile Klarna',
     'TCKLARNA_CHECKOUT_DESIGN'                          => 'Opțiuni de design pentru Klarna Checkout',
     'TCKLARNA_COLOR_SETTINGS'                           => 'Setări de culoare:',

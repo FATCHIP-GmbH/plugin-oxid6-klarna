@@ -107,6 +107,7 @@ $aLang = array(
     'TCKLARNA_KEB_SHAPE_pill'                           => 'Pilulka',
     'TCKLARNA_ON_BASKET_PAGE'                           => 'Na stránce nákupního košíku',
     'TCKLARNA_DISPLAY_EXPRESS_BUTTON'                   => 'Zobrazit tlačítko Klarna Express Checkout?',
+    'TCKLARNA_DISPLAY_EXPRESS_BUTTON_HTACCESS'          => 'Pro plné využití Klarna Express je nutné sledování polohy přes GeoIP. Do souboru .htaccess přidejte následující kód:"&lt;IfModule mod_geoip.c&gt;    GeoIPEnable On&lt;/IfModule&gt;"',
     'TCKLARNA_PAYMENT_DESIGN'                           => 'Možnosti návrhu plateb Klarna',
     'TCKLARNA_CHECKOUT_DESIGN'                          => 'Možnosti designu pokladny Klarna',
     'TCKLARNA_COLOR_SETTINGS'                           => 'Nastavení barev:',

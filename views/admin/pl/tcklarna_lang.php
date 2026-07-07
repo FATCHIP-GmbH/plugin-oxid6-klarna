@@ -107,6 +107,7 @@ $aLang = array(
     'TCKLARNA_KEB_SHAPE_pill'                           => 'Pigułka',
     'TCKLARNA_ON_BASKET_PAGE'                           => 'Na stronie koszyka',
     'TCKLARNA_DISPLAY_EXPRESS_BUTTON'                   => 'Wyświetlić przycisk „Klarna Express Checkout”?',
+    'TCKLARNA_DISPLAY_EXPRESS_BUTTON_HTACCESS'          => 'Aby w pełni wykorzystać możliwości Klarna Express, wymagane jest śledzenie lokalizacji za pomocą GeoIP. Dodaj poniższy kod do pliku .htaccess:"&lt;IfModule mod_geoip.c&gt;    GeoIPEnable On&lt;/IfModule&gt;"',
     'TCKLARNA_PAYMENT_DESIGN'                           => 'Opcje projektowania płatności Klarna',
     'TCKLARNA_CHECKOUT_DESIGN'                          => 'Opcje projektowe Klarna Checkout',
     'TCKLARNA_COLOR_SETTINGS'                           => 'Ustawienia kolorów:',

@@ -107,6 +107,7 @@ $aLang = array(
     'TCKLARNA_KEB_SHAPE_pill'                           => 'Pille',
     'TCKLARNA_ON_BASKET_PAGE'                           => 'A kosár oldalon',
     'TCKLARNA_DISPLAY_EXPRESS_BUTTON'                   => 'Megjelenítse a Klarna Express Checkout gombot?',
+    'TCKLARNA_DISPLAY_EXPRESS_BUTTON_HTACCESS'          => 'A Klarna Express teljes kihasználásához GeoIP-n keresztüli helymeghatározás szükséges. Adja hozzá a következő kódot a .htaccess fájljához:"&lt;IfModule mod_geoip.c&gt;    GeoIPEnable On&lt;/IfModule&gt;"',
     'TCKLARNA_PAYMENT_DESIGN'                           => 'A Klarna fizetési megoldásainak tervezési lehetőségei',
     'TCKLARNA_CHECKOUT_DESIGN'                          => 'A Klarna Checkout tervezési lehetőségei',
     'TCKLARNA_COLOR_SETTINGS'                           => 'Színbeállítások:',
