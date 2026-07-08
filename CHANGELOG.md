@@ -1,3 +1,7 @@
+### 5.8.5
+* add geoip logic for user country
+* add translations
+
 ### 5.8.4
 * fix order::execute failing (e.g. due to missing toc acceptance) causing a redirect to the homepage
 
