@@ -37,7 +37,7 @@ $aLang = array(
     "TCKLARNA_TRUSTED_SHOP_BUYER_PROTECTION" => "Trusted Shops Käuferschutz",
     "TCKLARNA_ALREADY_A_CUSTOMER" => "Bereits Kunde?",
     "TCKLARNA_LAW_NOTICE" => "Es gelten die <a href=\"%s\" class=\"klarna-notification\" target=\"_blank\">Nutzungsbedingungen</a> zur Datenübertragung",
-    "TCKLARNA_OUTSIDE_VOUCHER" => "Sie haben einen Gutschein?",
+    "TCKLARNA_OUTSIDE_VOUCHER" => "Haben Sie einen Gutschein?",
     "TCKLARNA_GO_TO_CHECKOUT" => "Zur Kasse",
     "TCKLARNA_USE_AS_DELIVERY_ADDRESS" => "Als Lieferanschrift verwenden",
     "TCKLARNA_CHOOSE_DELIVERY_ADDRESS" => "Lieferadresse wählen",
