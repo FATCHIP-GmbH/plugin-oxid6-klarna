@@ -430,7 +430,6 @@
                         <td class="name-bold" colspan="2">
                             [{oxmultilang ident="TCKLARNA_DISPLAY_EXPRESS_BUTTON"}]
                         </td>
-                        <td></td>
                         <td class="info-block">
                                                         <span class="kl-tooltip"
                                                               title="[{oxmultilang ident="TCKLARNA_DISPLAY_EXPRESS_BUTTON_HTACCESS"}]">
