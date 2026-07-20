@@ -149,6 +149,17 @@ class KlarnaOrderController extends KlarnaOrderController_parent
 
             if ($isExternalPayment) {
                 $klarnaFakeUsername = Registry::getSession()->getVariable('klarna_checkout_user_email');
+                // add separate getOrder call to get klarna_checkout_user_email if emailaddress is not yet loaded and external payment is started with oe paypal
+                if (empty($klarnaFakeUsername) && $paymentId === 'oxidpaypal') {
+                    $oClient = $this->getKlarnaCheckoutClient();
+                    try {
+                        $this->_aOrderData = $oClient->getOrder();
+                    } catch (KlarnaClientException $oEx) {
+                        KlarnaUtils::logException($oEx);
+                        return;
+                    }
+                    $klarnaFakeUsername = Registry::getSession()->getVariable('klarna_checkout_user_email');
+                }
                 $fakeUser = KlarnaUtils::getFakeUser($klarnaFakeUsername);
                 $fakeUser->setActiveUser();
                 Registry::getSession()->setVariable("usr", $fakeUser->getId());

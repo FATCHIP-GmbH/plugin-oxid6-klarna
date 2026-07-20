@@ -38,7 +38,8 @@ class KlarnaShopControl extends KlarnaShopControl_parent
             $oActTopView->getClassName() != 'ajaxpay' &&
             $oActTopView->getClassName() != 'oscpaypalproxy' &&
             $oActTopView->getClassName() != 'makaira_connect_endpoint' &&
-            $oActTopView->getClassName() != 'tpl'
+            $oActTopView->getClassName() != 'tpl'&&
+            $oActTopView->getClassName() != 'oepaypalstandarddispatcher'
         ) {
             KlarnaUtils::fullyResetKlarnaSession();
         }

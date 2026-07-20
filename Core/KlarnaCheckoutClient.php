@@ -103,7 +103,9 @@ class KlarnaCheckoutClient extends KlarnaClientBase
         $this->aOrder = $this->handleResponse($oResponse, __CLASS__, __FUNCTION__);
 
         Registry::getSession()->setVariable('klarna_checkout_order_id', $this->aOrder['order_id']);
-        Registry::getSession()->setVariable('klarna_checkout_user_email', $this->aOrder['billing_address']['email']);
+        if (!empty($this->aOrder['billing_address']['email'])) {
+            Registry::getSession()->setVariable('klarna_checkout_user_email', $this->aOrder['billing_address']['email']);
+        }
 
         return $this->aOrder;
     }
@@ -136,7 +138,9 @@ class KlarnaCheckoutClient extends KlarnaClientBase
         );
 
         $this->aOrder = $this->handleResponse($oResponse, __CLASS__, __FUNCTION__);
-        Registry::getSession()->setVariable('klarna_checkout_user_email', $this->aOrder['billing_address']['email']);
+        if (!empty($this->aOrder['billing_address']['email'])){
+            Registry::getSession()->setVariable('klarna_checkout_user_email', $this->aOrder['billing_address']['email']);
+        }
 
         return $this->aOrder;
     }
