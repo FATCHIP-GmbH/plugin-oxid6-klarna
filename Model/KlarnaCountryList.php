@@ -18,8 +18,13 @@
 namespace TopConcepts\Klarna\Model;
 
 
+use Doctrine\DBAL\Connection;
+use Doctrine\DBAL\Query\QueryBuilder;
 use OxidEsales\Eshop\Core\DatabaseProvider;
 use TopConcepts\Klarna\Core\KlarnaConsts;
+use OxidEsales\EshopCommunity\Internal\Container\ContainerFactory;
+use OxidEsales\EshopCommunity\Internal\Framework\Database\QueryBuilderFactoryInterface;
+use TopConcepts\Klarna\Core\KlarnaUtils;
 
 class KlarnaCountryList extends KlarnaCountryList_parent
 {
@@ -42,8 +47,15 @@ class KlarnaCountryList extends KlarnaCountryList_parent
         $params = [];
 
         if($filterKcoList === true) {
-            $sSelect.= " AND {$sViewName}.oxisoalpha2 IN (:countries)";
-            $params[':countries'] = oxNew(KlarnaConsts::class)->getKlarnaGlobalCountries();
+            $sSelect.= " AND {$sViewName}.oxisoalpha2 IN (";
+            foreach (oxNew(KlarnaConsts::class)->getKlarnaGlobalCountries() as $iso) {
+                if (!empty($params)) {
+                    $sSelect .= ',';
+                }
+                $sSelect .= '?';
+                $params[] = $iso;
+            }
+            $sSelect .= ")";
         }
 
         $this->selectString($sSelect, $params);
@@ -68,11 +80,20 @@ class KlarnaCountryList extends KlarnaCountryList_parent
         $sSelect   = "SELECT oxid, oxtitle, oxisoalpha2 FROM {$sViewName}
                       WHERE oxactive=1 
                       AND (
-                          oxisoalpha2 NOT IN (:countries)
+                          oxisoalpha2 NOT IN (";
+                    $params = [];
+                    foreach (oxNew(KlarnaConsts::class)->getKlarnaGlobalCountries() as $iso) {
+                        if (!empty($params)) {
+                            $sSelect .= ',';
+                        }
+                        $sSelect .= '?';
+                        $params[] = $iso;
+                    }
+                    $sSelect .= ")
                           OR oxid NOT IN (SELECT oxobjectid FROM oxobject2payment WHERE oxpaymentid = 'klarna_checkout')
                       )
                       ORDER BY oxorder, oxtitle";
-        $this->selectString($sSelect, [':countries' => oxNew(KlarnaConsts::class)->getKlarnaGlobalCountries()]);
+        $this->selectString($sSelect, $params);
     }
 
     /**
@@ -84,40 +105,42 @@ class KlarnaCountryList extends KlarnaCountryList_parent
         $sViewName = getViewName('oxcountry', $iLang);
         $sSelect   = "SELECT {$sViewName}.oxid, {$sViewName}.oxtitle, {$sViewName}.oxisoalpha2 FROM {$sViewName}
                       WHERE {$sViewName}.oxactive=1 
-                      AND {$sViewName}.oxisoalpha2 IN (:countries)";
-        $this->selectString($sSelect, [':countries' => oxNew(KlarnaConsts::class)->getKlarnaGlobalCountries()]);
+                      AND {$sViewName}.oxisoalpha2 IN (";
+        $params = [];
+        foreach (oxNew(KlarnaConsts::class)->getKlarnaGlobalCountries() as $iso) {
+            if (!empty($params)) {
+                $sSelect .= ',';
+            }
+            $sSelect .= '?';
+            $params[] = $iso;
+        }
+        $sSelect .= ')';
+        $this->selectString($sSelect, $params);
     }
 
     public function getKlarnaCountriesTitles($iLang)
     {
         $sViewName = getViewName('oxcountry', $iLang);
-        $sSelect   = "SELECT {$sViewName}.oxisoalpha2, {$sViewName}.oxtitle FROM {$sViewName}
-            WHERE {$sViewName}.oxisoalpha2 IN (:countries)";
-
-        $this->selectString($sSelect, [':countries' => oxNew(KlarnaConsts::class)->getKlarnaCoreCountries()]);
-        $result = array();
-        foreach($this as $country) {
-            $result[$country->oxcountry__oxisoalpha2->value] = $country->oxcountry__oxtitle->value;
+        if (KlarnaUtils::isKlarnaCheckoutEnabled()) {
+            $isoList = oxNew(KlarnaConsts::class)->getKustomCoreCountries();
+        } else {
+            $isoList = oxNew(KlarnaConsts::class)->getKlarnaCoreCountries();
         }
 
-        return $result;
-    }
+        /** @var QueryBuilder $qb */
+        $qb = ContainerFactory::getInstance()
+            ->getContainer()
+            ->get(QueryBuilderFactoryInterface::class)
+            ->create();
 
-    public function loadActiveKlarnaCountriesByPaymentId($paymentId)
-    {
-        $sViewName = getViewName('oxcountry');
-        $sSelect   = "SELECT {$sViewName}.oxid, {$sViewName}.oxtitle, {$sViewName}.oxisoalpha2 FROM {$sViewName}
-                      JOIN oxobject2payment 
-                      ON oxobject2payment.oxobjectid = {$sViewName}.oxid
-                      WHERE oxobject2payment.oxpaymentid = :paymentId
-                      AND oxobject2payment.oxtype = 'oxcountry'
-                      AND {$sViewName}.oxactive=1";
+        $aKlarnaCountries = $qb->select('oxisoalpha2', 'oxtitle')
+            ->from($sViewName)
+            ->where($qb->expr()->in('oxisoalpha2', ':countries'))
+            ->setParameter(':countries', $isoList, Connection::PARAM_STR_ARRAY)
+            ->execute()
+            ->fetchAllKeyValue();
 
-        $sSelect.= " AND {$sViewName}.oxisoalpha2 IN (:countries)";
+        return $aKlarnaCountries;
 
-        $this->selectString($sSelect, [
-            ':paymentId' => $paymentId,
-            ':countries' => oxNew(KlarnaConsts::class)->getKlarnaGlobalCountries()
-        ]);
     }
 }
