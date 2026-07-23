@@ -72,6 +72,7 @@ $aLang = array(
     "TCKLARNA_PLEASE_AGREE_TO_TERMS" => "Bitte stimmen Sie den AGB und den Widerrufsbedingungen für digitale Inhalte zu.",
     "TCKLARNA_ERROR_NOT_ENOUGH_IN_STOCK" => "Nicht ausreichender Lagerbestand des Produkts %s.",
     "TCKLARNA_ERROR_NO_SHIPPING_METHODS_SET_UP" => "Derzeit ist keine Versandart für dieses Land definiert: %s",
+    "TCKLARNA_PAYPAL_EXPRESS_SESSION_KILLED" => "Ihr PayPal-Zahlvorgang wurde abgebrochen. Es wurde kein Geld von PayPal eingezogen.",
 
     "TCKLARNA_ERROR_KEB_USER_EXISTS" => "Unter der angegebenen E-Mail existiert bereits ein User im Shop. Bitte melden Sie sich an um die Klarna-Bestellung fortzusetzen.",
 

@@ -72,6 +72,7 @@ $aLang = array(
     "TCKLARNA_PLEASE_AGREE_TO_TERMS" => "Accetta i Termini e Condizioni e le condizioni di recesso per i contenuti digitali.",
     "TCKLARNA_ERROR_NOT_ENOUGH_IN_STOCK" => "Scorte insufficienti per il prodotto %s.",
     "TCKLARNA_ERROR_NO_SHIPPING_METHODS_SET_UP" => "Al momento non è stato definito alcun metodo di spedizione per questo paese: %s",
+    "TCKLARNA_PAYPAL_EXPRESS_SESSION_KILLED" => "Il pagamento PayPal è stato annullato. PayPal non ha addebitato alcun importo.",
 
     "TCKLARNA_ERROR_KEB_USER_EXISTS" => "Esiste già un utente nel negozio con l'e-mail indicata. Accedi per continuare con l'ordine Klarna.",
 

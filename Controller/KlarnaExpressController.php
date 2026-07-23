@@ -95,6 +95,8 @@ class KlarnaExpressController extends FrontendController
             return;
         }
 
+        $this->ensureNoPayPalExpressSession();
+
         /**
          * Reset Klarna session if flag set by changing user address data in the User Controller earlier.
          */
@@ -114,6 +116,21 @@ class KlarnaExpressController extends FrontendController
         $oSession->setVariable('paymentid', 'klarna_checkout');
 
         parent::init();
+    }
+
+    /**
+     * Check if we have a running PayPal Express session from the osc_paypal module. Cancel the session if so.
+     * Otherwise, we PayPal Express session data will pollute the KCO checkout, leading to errors later in the checkout.
+     */
+    private function ensureNoPayPalExpressSession(): void
+    {
+        if (class_exists(\OxidSolutionCatalysts\PayPal\Core\PayPalSession::class)) {
+            if (\OxidSolutionCatalysts\PayPal\Core\PayPalSession::isPayPalExpressOrderActive()) {
+                \OxidSolutionCatalysts\PayPal\Core\PayPalSession::unsetPayPalOrderId();
+                Registry::getSession()->getBasket()->setPayment(null);
+                Registry::getUtilsView()->addErrorToDisplay('TCKLARNA_PAYPAL_EXPRESS_SESSION_KILLED');
+            }
+        }
     }
 
     /**

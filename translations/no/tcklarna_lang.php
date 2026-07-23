@@ -72,6 +72,7 @@ $aLang = array(
     "TCKLARNA_PLEASE_AGREE_TO_TERMS" => "Vennligst aksepter salgsbetingelsene og vilkårene for angrerett for digitalt innhold.",
     "TCKLARNA_ERROR_NOT_ENOUGH_IN_STOCK" => "Ikke tilstrekkelig lagerbeholdning av produktet %s.",
     "TCKLARNA_ERROR_NO_SHIPPING_METHODS_SET_UP" => "Det er for øyeblikket ikke definert noen fraktmetode for dette landet: %s",
+    "TCKLARNA_PAYPAL_EXPRESS_SESSION_KILLED" => "PayPal-betalingen din ble avbrutt. Ingen penger ble trukket via PayPal.",
 
     "TCKLARNA_ERROR_KEB_USER_EXISTS" => "Det finnes allerede en bruker med den angitte e-postadressen i butikken. Vennligst logg inn for å fortsette med Klarna-bestillingen.",
 
