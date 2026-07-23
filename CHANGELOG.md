@@ -1,3 +1,8 @@
+### 5.8.6
+* cancel OSC PayPal Express session when entering Kustom checkout
+* fix external payments with oe paypal
+* fix array as query param in CountryList-selections
+
 ### 5.8.5
 * add geoip logic for user country
 * add translations
