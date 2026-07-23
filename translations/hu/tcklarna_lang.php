@@ -72,6 +72,7 @@ $aLang = array(
     "TCKLARNA_PLEASE_AGREE_TO_TERMS" => "Kérjük, fogadja el az ÁSZF-et és a digitális tartalmakra vonatkozó elállási feltételeket.",
     "TCKLARNA_ERROR_NOT_ENOUGH_IN_STOCK" => "Nincs elegendő raktárkészlet a következő termékből: %s.",
     "TCKLARNA_ERROR_NO_SHIPPING_METHODS_SET_UP" => "Jelenleg nincs szállítási mód meghatározva ehhez az országhoz: %s",
+    "TCKLARNA_PAYPAL_EXPRESS_SESSION_KILLED" => "A PayPal-fizetését megszakították. A PayPal nem vont le pénzt.",
 
     "TCKLARNA_ERROR_KEB_USER_EXISTS" => "A megadott e-mail-címmel már létezik felhasználó a webáruházban. Kérjük, jelentkezzen be a Klarna-rendelés folytatásához.",
 

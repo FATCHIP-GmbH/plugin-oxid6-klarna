@@ -72,6 +72,7 @@ $aLang = array(
     "TCKLARNA_PLEASE_AGREE_TO_TERMS" => "Hyväksy yleiset sopimusehdot sekä digitaalisen sisällön peruuttamisen ehdot.",
     "TCKLARNA_ERROR_NOT_ENOUGH_IN_STOCK" => "Tuotteen %s varastosaldo ei ole riittävä.",
     "TCKLARNA_ERROR_NO_SHIPPING_METHODS_SET_UP" => "Tälle maalle ei ole tällä hetkellä määritetty toimitustapaa: %s",
+    "TCKLARNA_PAYPAL_EXPRESS_SESSION_KILLED" => "PayPal-maksusi peruutettiin. PayPal ei veloittanut rahaa.",
 
     "TCKLARNA_ERROR_KEB_USER_EXISTS" => "Annetulla sähköpostiosoitteella on jo käyttäjätili verkkokaupassa. Kirjaudu sisään jatkaaksesi Klarna-tilausta.",
 

@@ -72,6 +72,7 @@ $aLang = array(
     "TCKLARNA_PLEASE_AGREE_TO_TERMS" => "Vă rugăm să acceptați Termenii și Condițiile și condițiile de retragere pentru conținutul digital.",
     "TCKLARNA_ERROR_NOT_ENOUGH_IN_STOCK" => "Stoc insuficient pentru produsul %s.",
     "TCKLARNA_ERROR_NO_SHIPPING_METHODS_SET_UP" => "Momentan nu este definită nicio metodă de livrare pentru această țară: %s",
+    "TCKLARNA_PAYPAL_EXPRESS_SESSION_KILLED" => "Plata prin PayPal a fost anulată. PayPal nu a încasat nicio sumă.",
 
     "TCKLARNA_ERROR_KEB_USER_EXISTS" => "Există deja un utilizator în magazin cu adresa de e-mail introdusă. Vă rugăm să vă autentificați pentru a continua comanda Klarna.",
 

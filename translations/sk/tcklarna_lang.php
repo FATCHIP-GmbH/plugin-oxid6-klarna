@@ -72,6 +72,7 @@ $aLang = array(
     "TCKLARNA_PLEASE_AGREE_TO_TERMS" => "Súhlaste prosím s obchodnými podmienkami a podmienkami odstúpenia od zmluvy pre digitálny obsah.",
     "TCKLARNA_ERROR_NOT_ENOUGH_IN_STOCK" => "Nedostatočné množstvo produktu %s na sklade.",
     "TCKLARNA_ERROR_NO_SHIPPING_METHODS_SET_UP" => "Pre túto krajinu nie je momentálne definovaný žiadny spôsob dopravy: %s",
+    "TCKLARNA_PAYPAL_EXPRESS_SESSION_KILLED" => "Vaša platba cez PayPal bola zrušená. Z účtu PayPal neboli stiahnuté žiadne peniaze.",
 
     "TCKLARNA_ERROR_KEB_USER_EXISTS" => "Pod zadaným e-mailom už v obchode existuje používateľ. Pre pokračovanie v objednávke cez Klarnu sa prosím prihláste.",
 

@@ -75,6 +75,7 @@ $aLang = array(
     "TCKLARNA_PLEASE_AGREE_TO_TERMS" => "Please agree to Terms and Conditions and Right to Withdrawal for a downloadable item.",
     "TCKLARNA_ERROR_NOT_ENOUGH_IN_STOCK" => "Not enough items of product %s in stock.",
     "TCKLARNA_ERROR_NO_SHIPPING_METHODS_SET_UP" => "Currently we have no shipping method set up for this country: %s",
+    "TCKLARNA_PAYPAL_EXPRESS_SESSION_KILLED" => "Your PayPal payment was cancelled. No money was collected by PayPal.",
 
     "TCKLARNA_ERROR_KEB_USER_EXISTS" => "There is already a registered user under the given E-Mail address. Please login in order to continue your Klarna Order.",
 
@@ -118,4 +119,3 @@ $aLang = array(
 
     "TCKLARNA_IS_ERROR_DEFAULT" => "Something went wrong. Reload the page and try again.",
 );
-
