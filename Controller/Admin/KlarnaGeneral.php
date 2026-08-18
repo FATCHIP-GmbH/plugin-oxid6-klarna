@@ -3,14 +3,10 @@
 namespace TopConcepts\Klarna\Controller\Admin;
 
 
-use Doctrine\DBAL\Connection;
-use Doctrine\DBAL\Query\QueryBuilder;
 use OxidEsales\Eshop\Application\Model\DeliverySetList;
 use OxidEsales\Eshop\Core\DatabaseProvider;
 use OxidEsales\Eshop\Core\Registry;
 use OxidEsales\Eshop\Core\Request;
-use OxidEsales\EshopCommunity\Internal\Container\ContainerFactory;
-use OxidEsales\EshopCommunity\Internal\Framework\Database\QueryBuilderFactoryInterface;
 use TopConcepts\Klarna\Core\KlarnaConsts;
 use TopConcepts\Klarna\Core\KlarnaUtils;
 
@@ -137,28 +133,23 @@ class KlarnaGeneral extends KlarnaBaseConfig
         if ($this->_aKlarnaCountries) {
             return $this->_aKlarnaCountries;
         }
+
         $sViewName = getViewName('oxcountry', $this->getViewDataElement('adminlang'));
         if (KlarnaUtils::isKlarnaCheckoutEnabled()) {
             $isoList = oxNew(KlarnaConsts::class)->getKustomCoreCountries();
         } else {
             $isoList = oxNew(KlarnaConsts::class)->getKlarnaCoreCountries();
         }
+        $isoListPlaceholder = join(', ', array_fill(0, count($isoList), '?'));
 
-        /** @var QueryBuilder $qb */
-        $qb = ContainerFactory::getInstance()
-            ->getContainer()
-            ->get(QueryBuilderFactoryInterface::class)
-            ->create();
+        $sSelect = "SELECT oxisoalpha2, oxtitle FROM $sViewName WHERE oxactive = 1 AND oxisoalpha2 IN ($isoListPlaceholder)";
+        $result = DatabaseProvider::getDb()->select($sSelect, $isoList);
 
-        $this->_aKlarnaCountries = $qb->select('oxisoalpha2', 'oxtitle')
-            ->from($sViewName)
-            ->where($qb->expr()->in('oxisoalpha2', ':countries'))
-            ->setParameter(':countries', $isoList, Connection::PARAM_STR_ARRAY)
-            ->andWhere('oxactive = 1')
-            ->execute()
-            ->fetchAllKeyValue();
-
-        return $this->_aKlarnaCountries;
+        $aKlarnaCountries = [];
+        foreach ($result->fetchAll() as $row) {
+            $aKlarnaCountries[$row[0]] = $row[1];
+        }
+        return $this->_aKlarnaCountries = $aKlarnaCountries;
     }
 
     public function getShippingMethods() {

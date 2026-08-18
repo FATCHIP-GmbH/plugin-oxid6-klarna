@@ -25,6 +25,7 @@ use OxidEsales\Eshop\Core\Registry;
 use OxidEsales\Eshop\Core\Database\Adapter\Doctrine\Database;
 use OxidEsales\DoctrineMigrationWrapper\MigrationsBuilder;
 use Symfony\Component\Console\Output\BufferedOutput;
+use Symfony\Component\Console\Output\ConsoleOutput;
 
 final class KlarnaInstaller
 {
@@ -89,7 +90,7 @@ final class KlarnaInstaller
     {
         $migrations = (new MigrationsBuilder())->build();
 
-        $output = new BufferedOutput();
+        $output = new ConsoleOutput();
         $migrations->setOutput($output);
         $neeedsUpdate = $migrations->execute('migrations:up-to-date', 'tcklarna');
 

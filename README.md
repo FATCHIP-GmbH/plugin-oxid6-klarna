@@ -12,7 +12,7 @@ Klarna Checkout and Klarna Payments Module for the OXID eShop
 
 ## Description ##
 
-OXID eShop Plugin to integrate Klarna Checkout and Klarna Payments to OXID eShop Version >= 6.0.0
+OXID eShop Plugin to integrate Klarna Checkout and Klarna Payments to OXID eShop Version >= 6.1.0
 
 ## Installation ##
 

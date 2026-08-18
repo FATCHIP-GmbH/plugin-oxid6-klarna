@@ -18,12 +18,8 @@
 namespace TopConcepts\Klarna\Model;
 
 
-use Doctrine\DBAL\Connection;
-use Doctrine\DBAL\Query\QueryBuilder;
 use OxidEsales\Eshop\Core\DatabaseProvider;
 use TopConcepts\Klarna\Core\KlarnaConsts;
-use OxidEsales\EshopCommunity\Internal\Container\ContainerFactory;
-use OxidEsales\EshopCommunity\Internal\Framework\Database\QueryBuilderFactoryInterface;
 use TopConcepts\Klarna\Core\KlarnaUtils;
 
 class KlarnaCountryList extends KlarnaCountryList_parent
@@ -126,20 +122,15 @@ class KlarnaCountryList extends KlarnaCountryList_parent
         } else {
             $isoList = oxNew(KlarnaConsts::class)->getKlarnaCoreCountries();
         }
+        $isoListPlaceholder = join(', ', array_fill(0, count($isoList), '?'));
 
-        /** @var QueryBuilder $qb */
-        $qb = ContainerFactory::getInstance()
-            ->getContainer()
-            ->get(QueryBuilderFactoryInterface::class)
-            ->create();
+        $sSelect = "SELECT oxisoalpha2, oxtitle FROM $sViewName WHERE oxisoalpha2 IN ($isoListPlaceholder)";
+        $result = DatabaseProvider::getDb()->select($sSelect, $isoList);
 
-        $aKlarnaCountries = $qb->select('oxisoalpha2', 'oxtitle')
-            ->from($sViewName)
-            ->where($qb->expr()->in('oxisoalpha2', ':countries'))
-            ->setParameter(':countries', $isoList, Connection::PARAM_STR_ARRAY)
-            ->execute()
-            ->fetchAllKeyValue();
-
+        $aKlarnaCountries = [];
+        foreach ($result->fetchAll() as $row) {
+            $aKlarnaCountries[$row[0]] = $row[1];
+        }
         return $aKlarnaCountries;
 
     }
