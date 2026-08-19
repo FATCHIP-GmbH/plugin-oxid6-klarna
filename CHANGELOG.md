@@ -1,3 +1,6 @@
+### 5.8.7
+* restore compatibility with OXID 6.1
+
 ### 5.8.6
 * cancel OSC PayPal Express session when entering Kustom checkout
 * fix external payments with oe paypal
