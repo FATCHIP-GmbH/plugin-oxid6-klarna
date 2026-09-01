@@ -377,6 +377,7 @@ class KlarnaUtils
         $session->deleteVariable('sCountryISO');
         $session->deleteVariable('sFakeUserId');
         $session->deleteVariable("kexFakeUserId");
+        $session->deleteVariable("keborderpayload");
 
         $session = Registry::getSession();
         if ($session->getVariable("blNeedLogout") && !$session->getVariable("klarnaLoggedInNaturally")) {

@@ -1,3 +1,6 @@
+### 5.8.8
+* fix session state: remove keborderpayload on error or after completing the purchase
+
 ### 5.8.7
 * restore compatibility with OXID 6.1
 
