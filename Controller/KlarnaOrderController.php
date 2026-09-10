@@ -998,7 +998,11 @@ class KlarnaOrderController extends KlarnaOrderController_parent
         $oSession->setVariable("paymentid", $paymentId);
         $oBasket = $oSession->getBasket();
         // make sure we have the right shipping option
-        $oBasket->setShipping($this->_aOrderData['selected_shipping_option']['id']);
+        $sShippingSetId = $this->_aOrderData['selected_shipping_option']['id'];
+        if (strpos($sShippingSetId, KlarnaOrder::PACK_STATION_PREFIX) === 0) {
+            $sShippingSetId = substr($sShippingSetId, strlen(KlarnaOrder::PACK_STATION_PREFIX));
+        }
+        $oBasket->setShipping($sShippingSetId);
         $oBasket->setPayment($paymentId);
         $oBasket->onUpdate();
 
