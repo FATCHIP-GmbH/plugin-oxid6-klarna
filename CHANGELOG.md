@@ -1,3 +1,6 @@
+### 5.8.9
+* fix external payment using the generated Packstation delivery set
+
 ### 5.8.8
 * fix session state: remove keborderpayload on error or after completing the purchase
 
