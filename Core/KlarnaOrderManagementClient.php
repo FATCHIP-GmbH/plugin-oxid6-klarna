@@ -322,15 +322,17 @@ class KlarnaOrderManagementClient extends KlarnaClientBase
         if (is_array($aResponse)) {
             $original = $aResponse['error_messages'][0];
             if ($aResponse['error_code'] === "CAPTURE_NOT_ALLOWED") {
-                preg_match(
+                $result = preg_match(
                     '/(?P<text1>Captured amount )(?P<price1>\d{1,8})(?P<text2> .* )(?P<price2>\d{1,8})(?P<text3> .*\.)/',
                     $original, $matches
                 );
 
-                $price1 = ((float)$matches['price1']) / 100;
-                $price2 = ((float)$matches['price2']) / 100;
+                if ($result === 1) {
+                    $price1 = ((float)$matches['price1']) / 100;
+                    $price2 = ((float)$matches['price2']) / 100;
 
-                return $matches['text1'] . $price1 . ' ' . $matches['text2'] . $price2 . ' ' . $matches['text3'];
+                    return $matches['text1'] . $price1 . ' ' . $matches['text2'] . $price2 . ' ' . $matches['text3'];
+                }
             }
 
             return $original;
