@@ -1,3 +1,6 @@
+### 5.8.10
+* fix mangling of capture failed error message
+
 ### 5.8.9
 * fix external payment using the generated Packstation delivery set
 
