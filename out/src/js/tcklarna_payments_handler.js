@@ -174,7 +174,10 @@ window.klarnaAsyncCallback = function () {
 
             $sbmButton.attr('disabled', true);
             $form.submit();
-
+            // cleanup data to prevent possible form resubmit
+            window.keborderpayload = null;
+            window.kebordertoken = null;
+            window.kebordermd5 = null;
         } else if (response.show_form === false) {
             $($kpRadio.active).closest('.kp-outer').hide(600);
         }

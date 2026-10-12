@@ -434,8 +434,10 @@ class KlarnaOrderController extends KlarnaOrderController_parent
         if(!$this->getUser() && isset($this->_oUser)){
             $this->setUser($this->_oUser);
         }
-
         $result = parent::execute();  // @codeCoverageIgnore
+
+        // remove express payload after Order->execute to prevent possible double orders
+        Registry::getSession()->deleteVariable("keborderpayload");
 
         return $result; // @codeCoverageIgnore
     }
