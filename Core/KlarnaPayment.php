@@ -161,7 +161,7 @@ class KlarnaPayment extends BaseModel
             "purchase_currency" => $currencyISO,
             "merchant_urls"     => array(
                 "confirmation" => Registry::getConfig()->getSslShopUrl() . '?cl=thankyou' . $shopUrlParam,
-                "authorization" => Registry::getConfig()->getSslShopUrl() . "cl=KlarnaAuthCallbackEndpoint$shopUrlParam&secret=$userid",
+                "authorization" => Registry::getConfig()->getSslShopUrl() . "?cl=KlarnaAuthCallbackEndpoint$shopUrlParam&secret=$userid",
             ),
         );
 

@@ -1,5 +1,6 @@
 ### 5.8.11
 * added checks to prevent possible doubling of orders
+* fix KlarnaAuthCallbackEndpoint Url
 
 ### 5.8.10
 * fix mangling of capture failed error message
