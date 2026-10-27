@@ -120,8 +120,8 @@ class KlarnaPaymentsClient extends KlarnaClientBase
      * @throws KlarnaWrongCredentialsException
      * @throws \OxidEsales\Eshop\Core\Exception\StandardException
      */
-    public function postKexSession($data) {
-        $this->postSession($data);
+    public function postKexSession($data, $sessionId) {
+        $this->postSession($data, $sessionId);
     }
 
     /**
