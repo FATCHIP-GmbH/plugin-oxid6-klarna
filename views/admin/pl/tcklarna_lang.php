@@ -390,7 +390,7 @@ Można to w każdej chwili wyłączyć, usuwając te kody.',
     'TCKLARNA_IS_DEFAULT_COUNTRY_TIP'                   => 'Proszę wybrać z listy kraj, który ma być domyślnie ustawiony przy uruchomieniu usługi Klarna Instant Shopping, dopóki klient nie poda jeszcze swojego kraju.',
     'TCKLARNA_IS_TERMS_URI_TIP'                         => 'W tym miejscu należy podać adres URL prowadzący do ogólnych warunków handlowych. Link do nich zostanie umieszczony w okienku pop-up Klarna Instant Shopping. Należy podać prawidłowy adres URL, zaczynający się od https://.',
 
-    'TCKLARNA_SHIPPING_KCO'                             => 'Przypisanie metod wysyłki dla Klarna Checkout i Klarna Express',
+    'TCKLARNA_SHIPPING_KCO'                             => 'Przypisanie metod wysyłki dla Klarna Checkout',
     'TCKLARNA_SHIPPING_KCO_DESC'                        => 'Proszę przypisać zdefiniowanym przez Państwa sposobom wysyłki odpowiednie nazwy Klarna. Dzięki temu przyporządkowaniu można między innymi skonfigurować dostawę do punktów odbioru przesyłek.',
     'TCKLARNA_SHIPPING_SETTINGS'                        => 'Sposoby wysyłki',
     'TCKLARNA_COMPLETE_REFUND'                          => 'Zaksięgować całe zamówienie jako kredyt',

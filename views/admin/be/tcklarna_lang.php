@@ -390,7 +390,7 @@ U kunt deze functie op elk moment uitschakelen door de codes weer te verwijderen
     'TCKLARNA_IS_DEFAULT_COUNTRY_TIP'                   => 'Kies uit de lijst welk land standaard moet worden ingesteld wanneer Klarna Instant Shopping wordt geopend, zolang de klant zijn land nog niet heeft opgegeven.',
     'TCKLARNA_IS_TERMS_URI_TIP'                         => 'Voer hier de URL naar uw algemene voorwaarden in. Hiernaar wordt in de Klarna Instant Shopping-pop-up gelinkt. U moet een geldige URL opgeven die begint met https://.',
 
-    'TCKLARNA_SHIPPING_KCO'                             => 'Toewijzing van verzendmethoden voor Klarna Checkout en Klarna Express',
+    'TCKLARNA_SHIPPING_KCO'                             => 'Toewijzing van verzendmethoden voor Klarna Checkout',
     'TCKLARNA_SHIPPING_KCO_DESC'                        => 'Wijs alstublieft de juiste Klarna-benamingen toe aan de door u gedefinieerde verzendmethoden. Via deze toewijzing stelt u onder andere de levering aan pakstations in.',
     'TCKLARNA_SHIPPING_SETTINGS'                        => 'Verzendmethoden',
     'TCKLARNA_COMPLETE_REFUND'                          => 'De volledige bestelling crediteren',

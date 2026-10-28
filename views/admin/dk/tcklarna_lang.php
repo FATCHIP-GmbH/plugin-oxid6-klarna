@@ -390,7 +390,7 @@ Du kan til enhver tid deaktivere det ved at fjerne koderne igen.',
     'TCKLARNA_IS_DEFAULT_COUNTRY_TIP'                   => 'Vælg venligst fra listen, hvilket land der som standard skal være valgt, når Klarna Instant Shopping åbnes, så længe kunden endnu ikke har angivet sit land.',
     'TCKLARNA_IS_TERMS_URI_TIP'                         => 'Indtast her URL’en til dine generelle forretningsbetingelser. Der vil blive indsat et link til disse i Klarna Instant Shopping-pop op-vinduet. Der skal angives en gyldig URL, der begynder med https://.',
 
-    'TCKLARNA_SHIPPING_KCO'                             => 'Valg af forsendelsesmetode til Klarna Checkout og Klarna Express',
+    'TCKLARNA_SHIPPING_KCO'                             => 'Valg af forsendelsesmetode til Klarna Checkout',
     'TCKLARNA_SHIPPING_KCO_DESC'                        => 'Tildel venligst de relevante Klarna-betegnelser til de forsendelsesmetoder, du har defineret. Gennem denne tildeling kan du blandt andet konfigurere levering til pakkestationer.',
     'TCKLARNA_SHIPPING_SETTINGS'                        => 'Forsendelsesmetoder',
     'TCKLARNA_COMPLETE_REFUND'                          => 'Kreditere hele ordren',

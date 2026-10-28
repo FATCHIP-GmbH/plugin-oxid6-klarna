@@ -390,7 +390,7 @@ Vous pouvez le désactiver à tout moment en supprimant les codes.',
     'TCKLARNA_IS_DEFAULT_COUNTRY_TIP'                   => 'Veuillez sélectionner dans la liste le pays qui doit être sélectionné par défaut lors de l\'ouverture de Klarna Instant Shopping, tant que le client n\'a pas encore indiqué son pays.',
     'TCKLARNA_IS_TERMS_URI_TIP'                         => 'Indiquez ici l\'URL de vos conditions générales de vente. Un lien vers celles-ci sera affiché dans la fenêtre contextuelle Klarna Instant Shopping. Vous devez indiquer une URL valide commençant par https://.',
 
-    'TCKLARNA_SHIPPING_KCO'                             => 'Attribution des modes de livraison pour Klarna Checkout et Klarna Express',
+    'TCKLARNA_SHIPPING_KCO'                             => 'Attribution des modes de livraison pour Klarna Checkout',
     'TCKLARNA_SHIPPING_KCO_DESC'                        => 'Veuillez associer les désignations Klarna correspondantes aux modes de livraison que vous avez définis. Cette association vous permettra notamment de configurer la livraison vers les points relais.',
     'TCKLARNA_SHIPPING_SETTINGS'                        => 'Modes de livraison',
     'TCKLARNA_COMPLETE_REFUND'                          => 'Créditer la totalité de la commande',

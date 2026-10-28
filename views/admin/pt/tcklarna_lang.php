@@ -390,7 +390,7 @@ Pode desativá-lo a qualquer momento, removendo novamente os códigos.',
     'TCKLARNA_IS_DEFAULT_COUNTRY_TIP'                   => 'Por favor, selecione na lista o país que deve ser predefinido por defeito ao aceder ao Klarna Instant Shopping, enquanto o cliente ainda não tiver indicado o seu país.',
     'TCKLARNA_IS_TERMS_URI_TIP'                         => 'Indique aqui o URL dos seus Termos e Condições Gerais. Estes serão apresentados com um link na janela pop-up do Klarna Instant Shopping. É necessário indicar um URL válido que comece por https://.',
 
-    'TCKLARNA_SHIPPING_KCO'                             => 'Atribuição de métodos de envio para o Klarna Checkout e o Klarna Express',
+    'TCKLARNA_SHIPPING_KCO'                             => 'Atribuição de métodos de envio para o Klarna Checkout',
     'TCKLARNA_SHIPPING_KCO_DESC'                        => 'Por favor, associe as designações correspondentes da Klarna aos seus modos de envio definidos. Através desta associação, poderá, entre outras coisas, configurar a entrega em pontos de recolha.',
     'TCKLARNA_SHIPPING_SETTINGS'                        => 'Modos de envio',
     'TCKLARNA_COMPLETE_REFUND'                          => 'Creditar a encomenda na totalidade',

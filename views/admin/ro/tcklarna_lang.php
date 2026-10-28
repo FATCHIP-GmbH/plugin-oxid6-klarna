@@ -390,7 +390,7 @@ Conectați-vă la <a class="cl-pink" href="https://merchants.klarna.com/" target
     'TCKLARNA_IS_DEFAULT_COUNTRY_TIP'                   => 'Vă rugăm să selectați din listă țara care să fie setată implicit la accesarea Klarna Instant Shopping, atât timp cât clientul nu și-a specificat încă țara.',
     'TCKLARNA_IS_TERMS_URI_TIP'                         => 'Introduceți aici adresa URL către Termenii și condițiile dvs. generale. Aceștia vor fi afișați sub formă de link în fereastra pop-up Klarna Instant Shopping. Trebuie să introduceți o adresă URL validă, care să înceapă cu https://.',
 
-    'TCKLARNA_SHIPPING_KCO'                             => 'Atribuirea metodelor de livrare pentru Klarna Checkout și Klarna Express',
+    'TCKLARNA_SHIPPING_KCO'                             => 'Atribuirea metodelor de livrare pentru Klarna Checkout',
     'TCKLARNA_SHIPPING_KCO_DESC'                        => 'Vă rugăm să asociați denumirile corespunzătoare din Klarna cu modalitățile de livrare pe care le-ați definit. Prin această asociere configurați, printre altele, livrarea către punctele de ridicare.',
     'TCKLARNA_SHIPPING_SETTINGS'                        => 'Modalități de livrare',
     'TCKLARNA_COMPLETE_REFUND'                          => 'Să se crediteze întreaga comandă',

@@ -390,7 +390,7 @@ Můžete jej kdykoli deaktivovat tím, že kódy opět odstraníte.',
     'TCKLARNA_IS_DEFAULT_COUNTRY_TIP'                   => 'Z seznamu prosím vyberte, která země se má při spuštění služby Klarna Instant Shopping automaticky nastavit jako výchozí, dokud zákazník nezadá svou zemi.',
     'TCKLARNA_IS_TERMS_URI_TIP'                         => 'Zde zadejte adresu URL svých všeobecných obchodních podmínek. Ty budou propojeny v okně Klarna Instant Shopping. Je nutné zadat platnou adresu URL začínající https://.',
 
-    'TCKLARNA_SHIPPING_KCO'                             => 'Přiřazení způsobů dopravy pro Klarna Checkout a Klarna Express',
+    'TCKLARNA_SHIPPING_KCO'                             => 'Přiřazení způsobů dopravy pro Klarna Checkout',
     'TCKLARNA_SHIPPING_KCO_DESC'                        => 'Přiřaďte prosím k vašim definovaným způsobům dopravy odpovídající názvy společnosti Klarna. Prostřednictvím tohoto přiřazení nastavíte mimo jiné i doručování do balíkových automatů.',
     'TCKLARNA_SHIPPING_SETTINGS'                        => 'Způsoby doručení',
     'TCKLARNA_COMPLETE_REFUND'                          => 'Připsat celou objednávku na účet',

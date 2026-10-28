@@ -390,7 +390,7 @@ Bármikor kikapcsolhatja, ha eltávolítja a kódokat.',
     'TCKLARNA_IS_DEFAULT_COUNTRY_TIP'                   => 'Kérjük, válassza ki a listából, hogy melyik ország legyen alapértelmezésként beállítva a Klarna Instant Shopping megnyitásakor, amíg az ügyfél még nem adta meg az országát.',
     'TCKLARNA_IS_TERMS_URI_TIP'                         => 'Itt adja meg az Általános Szerződési Feltételeinek URL-címét. Ezekre a Klarna Instant Shopping felugró ablakban hivatkozás jelenik meg. Érvényes, https://-vel kezdődő URL-címet kell megadni.',
 
-    'TCKLARNA_SHIPPING_KCO'                             => 'Szállítási módok hozzárendelése a Klarna Checkout és a Klarna Express szolgáltatásokhoz',
+    'TCKLARNA_SHIPPING_KCO'                             => 'Szállítási módok hozzárendelése a Klarna Checkout',
     'TCKLARNA_SHIPPING_KCO_DESC'                        => 'Kérjük, rendelje hozzá a meghatározott szállítási módokhoz a megfelelő Klarna-megnevezéseket. Ezzel a hozzárendeléssel többek között beállíthatja a csomagátvevő állomásokra történő szállítást is.',
     'TCKLARNA_SHIPPING_SETTINGS'                        => 'Szállítási módok',
     'TCKLARNA_COMPLETE_REFUND'                          => 'A teljes megrendelés összegét jóváírni',

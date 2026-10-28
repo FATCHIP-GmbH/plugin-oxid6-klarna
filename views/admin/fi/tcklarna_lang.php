@@ -390,7 +390,7 @@ Voit poistaa sen käytöstä milloin tahansa poistamalla koodit.',
     'TCKLARNA_IS_DEFAULT_COUNTRY_TIP'                   => 'Valitse luettelosta, mikä maa asetetaan oletukseksi Klarna Instant Shopping -palvelun avaamisen yhteydessä, kunnes asiakas on ilmoittanut maansa.',
     'TCKLARNA_IS_TERMS_URI_TIP'                         => 'Syötä tähän yleisten käyttöehtojesi URL-osoite. Niihin linkitetään Klarna Instant Shopping -ponnahdusikkunassa. On annettava kelvollinen URL-osoite, joka alkaa https://.',
 
-    'TCKLARNA_SHIPPING_KCO'                             => 'Toimitustapojen määrittäminen Klarna Checkout- ja Klarna Express -palveluille',
+    'TCKLARNA_SHIPPING_KCO'                             => 'Toimitustapojen määrittäminen Klarna Checkout',
     'TCKLARNA_SHIPPING_KCO_DESC'                        => 'Määritä määrittämillesi toimitustavoille vastaavat Klarna-nimitykset. Tämän määrittelyn avulla voit muun muassa määrittää toimitukset pakettiautomaatteihin.',
     'TCKLARNA_SHIPPING_SETTINGS'                        => 'Toimitustavat',
     'TCKLARNA_COMPLETE_REFUND'                          => 'Hyvitä koko tilaus',
