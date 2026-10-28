@@ -118,6 +118,7 @@ class KlarnaOrderController extends KlarnaOrderController_parent
 
             // create fake user from kebauthresponse
             /** @var KlarnaUser $fakeUser */
+            Registry::getSession()->deleteVariable('deladrid');
             $deladrid = null;
             if ((!$this->getUser() || $this->getUser()->isFake()) && $fakeUserId = $oSession->getVariable("kexFakeUserId")) {
                 $fakeUser = oxNew(User::class);
