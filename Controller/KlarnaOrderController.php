@@ -23,6 +23,7 @@ use OxidEsales\Eshop\Core\DatabaseProvider;
 use OxidEsales\Eshop\Core\Exception\DatabaseErrorException;
 use OxidEsales\PayPalModule\Controller\ExpressCheckoutDispatcher;
 use OxidEsales\PayPalModule\Controller\StandardDispatcher;
+use TopConcepts\Klarna\Component\KlarnaBasketComponent;
 use TopConcepts\Klarna\Core\KlarnaCheckoutClient;
 use TopConcepts\Klarna\Core\KlarnaClientBase;
 use TopConcepts\Klarna\Core\KlarnaConsts;
@@ -117,6 +118,7 @@ class KlarnaOrderController extends KlarnaOrderController_parent
 
             // create fake user from kebauthresponse
             /** @var KlarnaUser $fakeUser */
+            Registry::getSession()->deleteVariable('deladrid');
             $deladrid = null;
             if ((!$this->getUser() || $this->getUser()->isFake()) && $fakeUserId = $oSession->getVariable("kexFakeUserId")) {
                 $fakeUser = oxNew(User::class);
@@ -135,10 +137,18 @@ class KlarnaOrderController extends KlarnaOrderController_parent
             }
             $oSession->setVariable('finalizeRequired', $kebauthresponse->finalize_required);
 
-        }
-
-
-        if ($keborderpayload = $oSession->getVariable("keborderpayload")) {
+            if ($keborderpayload = $oSession->getVariable("keborderpayload")) {
+                // Check if order has been updated after Klarna authorization (e.g. shipping cost)
+                $sNewOrderPayload = oxNew(KlarnaBasketComponent::class)->getKebOrderPayload();
+                if ($keborderpayload !== $sNewOrderPayload) {
+                    // Push order changes to Klarna
+                    $aKeyWhitelist = ['locale', 'order_amount', 'order_lines', 'order_tax_amount', 'purchase_country', 'purchase_currency'];
+                    $aUpdatePayload = array_intersect_key(json_decode($sNewOrderPayload, true), array_flip($aKeyWhitelist));
+                    $klarnaPaymentclient->postKexSession(json_encode($aUpdatePayload), $kebauthresponse->session_id);
+                }
+                $this->addTplParam("keborderpayload", $sNewOrderPayload);
+            }
+        } else if ($keborderpayload = $oSession->getVariable("keborderpayload")) {
             $this->addTplParam("keborderpayload", $keborderpayload);
         }
 

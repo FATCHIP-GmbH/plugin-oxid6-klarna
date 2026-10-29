@@ -390,7 +390,7 @@ Accedi al <a class="cl-pink" href="https://merchants.klarna.com/" target="_blank
     'TCKLARNA_IS_DEFAULT_COUNTRY_TIP'                   => 'Selezionare dall\'elenco il Paese che deve essere impostato come predefinito all\'apertura di Klarna Instant Shopping, fintanto che il cliente non abbia ancora specificato il proprio Paese.',
     'TCKLARNA_IS_TERMS_URI_TIP'                         => 'Inserisci qui l\'URL delle tue Condizioni generali di contratto. Queste saranno collegate tramite link nel pop-up di Klarna Instant Shopping. È necessario inserire un URL valido che inizi con https://.',
 
-    'TCKLARNA_SHIPPING_KCO'                             => 'Assegnazione delle modalità di spedizione per Klarna Checkout e Klarna Express',
+    'TCKLARNA_SHIPPING_KCO'                             => 'Assegnazione delle modalità di spedizione per Klarna Checkout',
     'TCKLARNA_SHIPPING_KCO_DESC'                        => 'Si prega di associare alle modalità di spedizione definite le corrispondenti denominazioni Klarna. Tramite questa associazione è possibile, tra l’altro, configurare la consegna ai punti di ritiro.',
     'TCKLARNA_SHIPPING_SETTINGS'                        => 'Modalità di spedizione',
     'TCKLARNA_COMPLETE_REFUND'                          => 'Accreditare l\'intero importo dell\'ordine',
