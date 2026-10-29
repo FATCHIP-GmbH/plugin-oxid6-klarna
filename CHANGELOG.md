@@ -1,3 +1,10 @@
+### 5.8.12
+* fix changes in order data after KEX session creation (e.g. shipping cost changed) breaking the finalize call
+* reset Klarna Express data when leaving checkout, also add CMS pages to whitelist so ToC and withdrawal pages don't break checkout
+* fix wording of delivery options headline
+* fix switch from Klarna Express to Amazon causing a server error
+* clean up possibly existing previous delivery address when processing klarna express data
+
 ### 5.8.11
 * added checks to prevent possible doubling of orders
 * fix KlarnaAuthCallbackEndpoint Url
